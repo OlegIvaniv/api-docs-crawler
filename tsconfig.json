@@ -1,10 +1,12 @@
 {
     "extends": "@apify/tsconfig",
     "compilerOptions": {
-        "module": "ES2022",
-        "target": "ES2022",
+        "module": "esnext",
+        "target": "esnext",
         "outDir": "dist",
         "noUnusedLocals": false,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
         "lib": ["DOM"]
     },
     "include": [

@@ -4,9 +4,10 @@ import { Actor } from 'apify';
 import { Readability } from '@mozilla/readability';
 import { JSDOM } from 'jsdom';
 import { ElementHandle, Page } from 'playwright';
-import Services from '../services.json';
+import Services from '../services.json' assert { type: "json" };
 import _ from 'lodash';
 import { NodeHtmlMarkdown, NodeHtmlMarkdownOptions } from 'node-html-markdown'
+
 
 // PlaywrightCrawler crawls the web using a headless
 // browser controlled by the Playwright library.
