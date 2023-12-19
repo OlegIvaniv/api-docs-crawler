@@ -7,10 +7,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:52:34.436+00",
     "status": "scraped",
-    "reference_url": "https://docs.crisp.chat/references/rest-api/v1/",
-    "merged_schema": "",
-    "dataset_id": "5JL47m3zp10ebSTDp",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.crisp.chat/references/rest-api/v1/"
   },
   {
     "service_id": 138,
@@ -21,9 +18,6 @@
     "updated_at": "2023-12-14 19:43:40.625+00",
     "status": "large_entity",
     "reference_url": "https://developers.clicksend.com/docs/rest/v3/",
-    "merged_schema": "",
-    "dataset_id": "2tHPDSvobEiicdK4D",
-    "dataset_tokens": 337005,
     "type": "singlePage",
     "selectors": {
       "name": "h2",
@@ -39,9 +33,6 @@
     "updated_at": "2023-12-14 20:03:52.827+00",
     "status": "parsed_content",
     "reference_url": "https://metatext.io/documentation/api",
-    "merged_schema": "",
-    "dataset_id": "d9ZXefMgAtZbjIDzT",
-    "dataset_tokens": "",
     "type": "individualPages",
     "globs": ["**/documentation/**/*"]
   },
@@ -54,9 +45,6 @@
     "updated_at": "2023-12-14 20:05:04.709+00",
     "status": "parsed_content",
     "reference_url": "https://developer.invoiced.com/api",
-    "merged_schema": "",
-    "dataset_id": "6pmEEOhCtxgXDGUya",
-    "dataset_tokens": "",
     "type": "singlePage",
     "selectors": {
       "name": "h2",
@@ -72,9 +60,6 @@
     "updated_at": "2023-12-14 14:46:31.447+00",
     "status": "scraping",
     "reference_url": "https://docs.alchemy.com/reference",
-    "merged_schema": "",
-    "dataset_id": "yodjPhHHdMZ4RFAJf",
-    "dataset_tokens": "",
     "type": "individualPages",
     "globs": ["**/reference/**/*"]
   },
@@ -87,9 +72,6 @@
     "updated_at": "2023-12-14 20:45:15.315+00",
     "status": "parsed_content",
     "reference_url": "https://docs.tisane.ai/",
-    "merged_schema": "",
-    "dataset_id": "oUVfLQjlds4d4pn7X",
-    "dataset_tokens": "",
     "type": "singlePageSections",
     "selectors": {
       "name": "h3",
@@ -105,9 +87,6 @@
     "updated_at": "2023-12-14 20:08:19.015+00",
     "status": "missing_reference",
     "reference_url": "https://developers.workast.com/",
-    "merged_schema": "",
-    "dataset_id": "14FAjAE2x8Zc8ByQY",
-    "dataset_tokens": "",
     "type": "individualPages",
     "selectors": {
       "click": "li.ant-menu-submenu .ant-menu-submenu-title",
@@ -123,9 +102,6 @@
     "updated_at": "2023-12-14 15:24:35.909+00",
     "status": "scraped",
     "reference_url": "https://webscraper.io/documentation/web-scraper-cloud/api",
-    "merged_schema": "",
-    "dataset_id": "4zkp742NFerJboL0N",
-    "dataset_tokens": "",
     "type": "singlePage",
     "selectors": {
       "name": "h3",
@@ -141,9 +117,6 @@
     "updated_at": "2023-12-14 15:14:33.676+00",
     "status": "scraped",
     "reference_url": "https://developers.supportivekoala.com/",
-    "merged_schema": "",
-    "dataset_id": "P5RLC1sbCD7LLYe3x",
-    "dataset_tokens": "",
     "type": "singlePageSections",
     "selectors": {
       "name": "h1",
@@ -159,9 +132,6 @@
     "updated_at": "2023-12-14 16:20:33.666+00",
     "status": "scraped",
     "reference_url": "https://support.formsonfire.com/en/support/solutions/36000111224",
-    "merged_schema": "",
-    "dataset_id": "fr8sdst34Pkm4hDyu",
-    "dataset_tokens": "",
     "type": "individualPages",
     "globs": ["**/en/support/solutions/articles/**/*"]
   },
@@ -175,9 +145,11 @@
     "updated_at": "2023-12-14 15:02:33.762+00",
     "status": "scraped",
     "reference_url": "https://developers.onupkeep.com/",
-    "merged_schema": "",
-    "dataset_id": "LMXDdmhhLa5EGG6j6",
-    "dataset_tokens": ""
+    "type": "singlePage",
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2"
+    }
   },
   {
     "service_id": 155,
@@ -188,9 +160,7 @@
     "updated_at": "2023-12-14 15:34:33.703+00",
     "status": "scraped",
     "reference_url": "https://tinyurl.com/app/dev",
-    "merged_schema": "",
-    "dataset_id": "kfIKETS08plfts06R",
-    "dataset_tokens": ""
+    "type": "swagger"
   },
   {
     "service_id": 142,
@@ -201,9 +171,8 @@
     "updated_at": "2023-12-14 15:24:35.912+00",
     "status": "scraped",
     "reference_url": "https://docs.cloudlayer.io/api",
-    "merged_schema": "",
-    "dataset_id": "SaSUD7yiD5hnmO4ph",
-    "dataset_tokens": ""
+    "type": "individualPages",
+    "globs_exclude": ["**/changelog/*", "**/home/**", "**/examples/**", "**/interactions/**"]
   },
   {
     "service_id": 140,
@@ -214,9 +183,11 @@
     "updated_at": "2023-12-14 15:26:33.479+00",
     "status": "scraped",
     "reference_url": "https://docs.mux.com/api-reference",
-    "merged_schema": "",
-    "dataset_id": "vdiuGima0AFlxTNZQ",
-    "dataset_tokens": ""
+    "type": "singlePageSections",
+    "selectors": {
+      "name": "a:first-child",
+      "delimiter": "[data-api-resource-tag='true'] [data-api-resource-operation='true']"
+    }
   },
   {
     "service_id": 144,
@@ -226,23 +197,9 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:30:34.054+00",
     "status": "scraped",
-    "reference_url": "https://developer.getguru.com/docs",
-    "merged_schema": "",
-    "dataset_id": "f9f2FIoRi5kFtEVVY",
-    "dataset_tokens": ""
-  },
-  {
-    "service_id": 245,
-    "name": "Microsoft Teams Admin",
-    "url": "https://teams.microsoft.com",
-    "description": "Microsoft Teams Admin is a management platform that enables administrators to oversee and customize various settings within the Microsoft Teams application. It allows them to control user access, configure security settings, manage apps, and monitor usage and analytics.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:34:54.343+00",
-    "status": "scraped",
-    "reference_url": "https://developer.microsoft.com/en-us/graph/rest-api",
-    "merged_schema": "",
-    "dataset_id": "WB6QW5spxsdfamVXq",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.getguru.com/reference",
+    "type": "individualPages",
+    "globs": ["**/reference/**"]
   },
   {
     "service_id": 61,
@@ -253,22 +210,11 @@
     "updated_at": "2023-12-14 14:33:45.396+00",
     "status": "scraped",
     "reference_url": "https://apidocs.orderdesk.com/",
-    "merged_schema": "",
-    "dataset_id": "4uuXGwxSyziEHfycz",
-    "dataset_tokens": ""
-  },
-  {
-    "service_id": 58,
-    "name": "Tilda",
-    "url": "https://tilda.cc",
-    "description": "Tilda is a versatile no-code website builder that simplifies the process of crafting a wide range of websites, including online stores, engaging landing pages, informative blogs, captivating portfolios, and interactive online courses.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:32:05.398+00",
-    "status": "scraped",
-    "reference_url": "https://help.tilda.cc/api",
-    "merged_schema": "",
-    "dataset_id": "qOnp9XaUP32nw7SKs",
-    "dataset_tokens": ""
+    "type": "singlePage",
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2[id]"
+    }
   },
   {
     "service_id": 60,
@@ -279,9 +225,11 @@
     "updated_at": "2023-12-14 14:32:05.399+00",
     "status": "scraped",
     "reference_url": "https://verifalia.com/developers",
-    "merged_schema": "",
-    "dataset_id": "NNNRGPGF4W4bfztGR",
-    "dataset_tokens": ""
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "section.navbar-toc-section[id]"
+    }
   },
   {
     "service_id": 56,
@@ -291,10 +239,8 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:35:51.882+00",
     "status": "scraped",
-    "reference_url": "https://docs.daffy.org/",
-    "merged_schema": "",
-    "dataset_id": "llFEMybuq06lz6KhO",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.daffy.org/ref/balance",
+    "type": "individualPages"
   },
   {
     "service_id": 193,
@@ -304,10 +250,8 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:46:34.083+00",
     "status": "scraped",
-    "reference_url": "https://api.draftable.com/",
-    "merged_schema": "",
-    "dataset_id": "kTaje1IgAeXq9znFq",
-    "dataset_tokens": ""
+    "reference_url": "https://api.draftable.com/api-explorer",
+    "type": "swagger"
   },
   {
     "service_id": 152,
@@ -318,9 +262,12 @@
     "updated_at": "2023-12-14 15:36:33.651+00",
     "status": "scraped",
     "reference_url": "https://developer.benchmarkemail.com/",
-    "merged_schema": "",
-    "dataset_id": "c4nE35q6e3kvv4DWi",
-    "dataset_tokens": ""
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "#doc-wrapper section > section[id]:has(h3)",
+      "click": ".documentation-core-list__item-name"
+    }
   },
   {
     "service_id": 154,
@@ -330,10 +277,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:44:33.729+00",
     "status": "scraped",
-    "reference_url": "https://www.yodiz.com/api/",
-    "merged_schema": "",
-    "dataset_id": "nCQRMqZtRm0ES2Qod",
-    "dataset_tokens": ""
+    "reference_url": "https://www.yodiz.com/api/"
   },
   {
     "service_id": 81,
@@ -343,10 +287,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:46:36.524+00",
     "status": "scraped",
-    "reference_url": "https://hp-api.onrender.com/",
-    "merged_schema": "",
-    "dataset_id": "jo9XuKcqgpSbNjHws",
-    "dataset_tokens": ""
+    "reference_url": "https://hp-api.onrender.com/"
   },
   {
     "service_id": 82,
@@ -356,10 +297,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:46:36.526+00",
     "status": "scraped",
-    "reference_url": "https://fluentsupport.com/rest-api/",
-    "merged_schema": "",
-    "dataset_id": "AmDCvmXpRIjqCr5oU",
-    "dataset_tokens": ""
+    "reference_url": "https://fluentsupport.com/rest-api/"
   },
   {
     "service_id": 85,
@@ -369,10 +307,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:46:36.528+00",
     "status": "scraped",
-    "reference_url": "https://scrapeninja.net/docs/category/api-reference/",
-    "merged_schema": "",
-    "dataset_id": "lquoTX9eYBhbRBXeD",
-    "dataset_tokens": ""
+    "reference_url": "https://scrapeninja.net/docs/category/api-reference/"
   },
   {
     "service_id": 93,
@@ -382,10 +317,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:50:35.51+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.nextroll.com/crud-api/",
-    "merged_schema": "",
-    "dataset_id": "4pdjNHhXzNi8Geyqs",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.nextroll.com/crud-api/"
   },
   {
     "service_id": 156,
@@ -395,10 +327,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:34:31.148+00",
     "status": "scraping",
-    "reference_url": "https://github.com/Simplero/Simplero-API",
-    "merged_schema": "",
-    "dataset_id": "rtC5CJCiWTb6l91hu",
-    "dataset_tokens": ""
+    "reference_url": "https://github.com/Simplero/Simplero-API"
   },
   {
     "service_id": 159,
@@ -408,10 +337,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:40:34.269+00",
     "status": "scraped",
-    "reference_url": "https://help.ortto.com/developer/latest/api-reference/",
-    "merged_schema": "",
-    "dataset_id": "zvMehP6fjDbmq1r08",
-    "dataset_tokens": ""
+    "reference_url": "https://help.ortto.com/developer/latest/api-reference/"
   },
   {
     "service_id": 76,
@@ -421,10 +347,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.019+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 96,
@@ -434,10 +357,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:52:34.438+00",
     "status": "scraped",
-    "reference_url": "https://documentation.webinarjam.com/category/webinarjam-api/",
-    "merged_schema": "",
-    "dataset_id": "4wgjwWOt9Ngmmjoxm",
-    "dataset_tokens": ""
+    "reference_url": "https://documentation.webinarjam.com/category/webinarjam-api/"
   },
   {
     "service_id": 98,
@@ -447,10 +367,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:52:34.441+00",
     "status": "scraped",
-    "reference_url": "https://api.watchsignals.com/docs",
-    "merged_schema": "",
-    "dataset_id": "cLrYwAlHOCTOaG2ZG",
-    "dataset_tokens": ""
+    "reference_url": "https://api.watchsignals.com/docs"
   },
   {
     "service_id": 99,
@@ -460,10 +377,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:52:34.443+00",
     "status": "scraped",
-    "reference_url": "https://docs.pirateweather.net/en/latest/API/",
-    "merged_schema": "",
-    "dataset_id": "JAyKgsVLNnpW4CySn",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.pirateweather.net/en/latest/API/"
   },
   {
     "service_id": 201,
@@ -473,10 +387,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:50:34.344+00",
     "status": "scraped",
-    "reference_url": "https://developer.tdameritrade.com/apis",
-    "merged_schema": "",
-    "dataset_id": "BM6ic2xLf33Iwuy3t",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.tdameritrade.com/apis"
   },
   {
     "service_id": 88,
@@ -486,10 +397,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:50:35.506+00",
     "status": "scraped",
-    "reference_url": "https://huggingface.co/docs/api-inference",
-    "merged_schema": "",
-    "dataset_id": "mYTf3qy7AjluaUI3Q",
-    "dataset_tokens": ""
+    "reference_url": "https://huggingface.co/docs/api-inference"
   },
   {
     "service_id": 158,
@@ -499,10 +407,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:36:33.653+00",
     "status": "scraped",
-    "reference_url": "https://desk.zoho.com/DeskAPIDocument",
-    "merged_schema": "",
-    "dataset_id": "wEXdjX6tbeO2Oc7hc",
-    "dataset_tokens": ""
+    "reference_url": "https://desk.zoho.com/DeskAPIDocument"
   },
   {
     "service_id": 75,
@@ -512,10 +417,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:39:52.386+00",
     "status": "scraped",
-    "reference_url": "https://developers.smartsuite.com/docs/intro",
-    "merged_schema": "",
-    "dataset_id": "AfuxeKoEaH8yBfXZB",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.smartsuite.com/docs/intro"
   },
   {
     "service_id": 100,
@@ -525,10 +427,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:00:34.01+00",
     "status": "scraped",
-    "reference_url": "https://www.shipstation.com/docs/api/",
-    "merged_schema": "",
-    "dataset_id": "edX1PiWUgh1FsNgAh",
-    "dataset_tokens": ""
+    "reference_url": "https://www.shipstation.com/docs/api/"
   },
   {
     "service_id": 157,
@@ -538,10 +437,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:42:33.638+00",
     "status": "scraped",
-    "reference_url": "https://developer.shiphero.com/",
-    "merged_schema": "",
-    "dataset_id": "Nx1xDm3sfRrRF8kJw",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.shiphero.com/"
   },
   {
     "service_id": 261,
@@ -551,10 +447,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 20:09:27.054+00",
     "status": "scraped",
-    "reference_url": "https://developer.acquire.io/rest-apis",
-    "merged_schema": "",
-    "dataset_id": "bqWcakCnxT9eqrx9x",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.acquire.io/rest-apis"
   },
   {
     "service_id": 164,
@@ -564,10 +457,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:12:33.583+00",
     "status": "scraped",
-    "reference_url": "https://developer.smartthings.com/docs/api/public",
-    "merged_schema": "",
-    "dataset_id": "6Mbrqouck1mIdTSNm",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.smartthings.com/docs/api/public"
   },
   {
     "service_id": 218,
@@ -577,10 +467,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:06:34.105+00",
     "status": "scraped",
-    "reference_url": "https://developers.awork.com/",
-    "merged_schema": "",
-    "dataset_id": "WKAkDRcRae2PIjvHU",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.awork.com/"
   },
   {
     "service_id": 134,
@@ -590,10 +477,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:45:21.097+00",
     "status": "large_entity",
-    "reference_url": "https://developer.rechargepayments.com/",
-    "merged_schema": "",
-    "dataset_id": "MKGt2gxxnDE1XOz0X",
-    "dataset_tokens": 97978
+    "reference_url": "https://developer.rechargepayments.com/"
   },
   {
     "service_id": 163,
@@ -603,10 +487,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:00:34.301+00",
     "status": "scraped",
-    "reference_url": "https://developers.3scri.be/",
-    "merged_schema": "",
-    "dataset_id": "1huh5EEPTvickGH6V",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.3scri.be/"
   },
   {
     "service_id": 160,
@@ -616,10 +497,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:42:33.64+00",
     "status": "scraped",
-    "reference_url": "https://signrequest.com/api/v1/docs/",
-    "merged_schema": "",
-    "dataset_id": "du5GE1LH4cjOithFv",
-    "dataset_tokens": ""
+    "reference_url": "https://signrequest.com/api/v1/docs/"
   },
   {
     "service_id": 121,
@@ -629,10 +507,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:12:33.642+00",
     "status": "scraped",
-    "reference_url": "https://docs.datarobot.com/en/docs/api/reference/index.html",
-    "merged_schema": "",
-    "dataset_id": "tL8SGmMHq74MnvTAO",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.datarobot.com/en/docs/api/reference/index.html"
   },
   {
     "service_id": 111,
@@ -642,10 +517,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:02:33.761+00",
     "status": "scraped",
-    "reference_url": "https://developers.teamgate.com/",
-    "merged_schema": "",
-    "dataset_id": "0Mevhl8DHXRrPGWB0",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.teamgate.com/"
   },
   {
     "service_id": 113,
@@ -655,10 +527,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:04:33.692+00",
     "status": "scraped",
-    "reference_url": "https://teamdeck.io/developers/api",
-    "merged_schema": "",
-    "dataset_id": "Hq2ti4fPIsMVkfRM1",
-    "dataset_tokens": ""
+    "reference_url": "https://teamdeck.io/developers/api"
   },
   {
     "service_id": 118,
@@ -668,10 +537,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:04:33.695+00",
     "status": "scraped",
-    "reference_url": "https://pusher.com/docs/channels/library_auth_reference/rest-api/",
-    "merged_schema": "",
-    "dataset_id": "qxxQ2d0EHzbeU8UW6",
-    "dataset_tokens": ""
+    "reference_url": "https://pusher.com/docs/channels/library_auth_reference/rest-api/"
   },
   {
     "service_id": 206,
@@ -681,10 +547,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:52:34.627+00",
     "status": "scraped",
-    "reference_url": "https://docs.patreon.com/",
-    "merged_schema": "",
-    "dataset_id": "pElo5Ai9wB8RNWovU",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.patreon.com/"
   },
   {
     "service_id": 161,
@@ -694,10 +557,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:14:33.497+00",
     "status": "scraped",
-    "reference_url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account",
-    "merged_schema": "",
-    "dataset_id": "acAdKkMKqZWBammOr",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
   },
   {
     "service_id": 212,
@@ -707,10 +567,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:56:35.178+00",
     "status": "scraped",
-    "reference_url": "https://support.formsite.com/hc/en-us/articles/360000288594-API",
-    "merged_schema": "",
-    "dataset_id": "oqTvWZpfed6D1aHHM",
-    "dataset_tokens": ""
+    "reference_url": "https://support.formsite.com/hc/en-us/articles/360000288594-API"
   },
   {
     "service_id": 219,
@@ -720,10 +577,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:22:33.642+00",
     "status": "scraped",
-    "reference_url": "https://docs.fullcontact.com/docs",
-    "merged_schema": "",
-    "dataset_id": "IMlpD77MNwNBYZ0ns",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.fullcontact.com/docs"
   },
   {
     "service_id": 213,
@@ -733,10 +587,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:04:33.666+00",
     "status": "scraped",
-    "reference_url": "https://api.turbohire.co",
-    "merged_schema": "",
-    "dataset_id": "I5xPPJlfPQdsugHUd",
-    "dataset_tokens": ""
+    "reference_url": "https://api.turbohire.co"
   },
   {
     "service_id": 224,
@@ -746,10 +597,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:08:34.256+00",
     "status": "scraped",
-    "reference_url": "https://api-docs.heysummit.com/#introduction",
-    "merged_schema": "",
-    "dataset_id": "l1hXrTFy8k9x2N8y2",
-    "dataset_tokens": ""
+    "reference_url": "https://api-docs.heysummit.com/#introduction"
   },
   {
     "service_id": 238,
@@ -759,10 +607,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:12:54.709+00",
     "status": "scraped",
-    "reference_url": "https://api.sierrainteractivedev.com/",
-    "merged_schema": "",
-    "dataset_id": "JlK7k9Swuu3D9Ddjq",
-    "dataset_tokens": ""
+    "reference_url": "https://api.sierrainteractivedev.com/"
   },
   {
     "service_id": 239,
@@ -772,10 +617,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:58:53.66+00",
     "status": "scraped",
-    "reference_url": "https://docs.airnowapi.org/webservices",
-    "merged_schema": "",
-    "dataset_id": "uhhAcLW0FgsCwLlBV",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.airnowapi.org/webservices"
   },
   {
     "service_id": 105,
@@ -785,10 +627,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:02:33.757+00",
     "status": "scraped",
-    "reference_url": "https://www.convertapi.com/doc",
-    "merged_schema": "",
-    "dataset_id": "U1X6tr9QGDj7mnYwa",
-    "dataset_tokens": ""
+    "reference_url": "https://www.convertapi.com/doc"
   },
   {
     "service_id": 223,
@@ -798,10 +637,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:08:34.255+00",
     "status": "scraped",
-    "reference_url": "https://api-docs.hubplanner.com/",
-    "merged_schema": "",
-    "dataset_id": "Fad3dJfcEsytNJqNM",
-    "dataset_tokens": ""
+    "reference_url": "https://api-docs.hubplanner.com/"
   },
   {
     "service_id": 242,
@@ -811,10 +647,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.086+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 237,
@@ -824,10 +657,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:34:54.342+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.salessimplify.com/",
-    "merged_schema": "",
-    "dataset_id": "D2x2oHeKbokeZeydv",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.salessimplify.com/"
   },
   {
     "service_id": 107,
@@ -837,10 +667,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:02:33.759+00",
     "status": "scraped",
-    "reference_url": "https://support.snatchbot.me/docs/api",
-    "merged_schema": "",
-    "dataset_id": "UkHXW1R56bgl4FIb1",
-    "dataset_tokens": ""
+    "reference_url": "https://support.snatchbot.me/docs/api"
   },
   {
     "service_id": 102,
@@ -850,10 +677,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:00:34.013+00",
     "status": "scraped",
-    "reference_url": "https://docs.ideal-postcodes.co.uk/docs/api",
-    "merged_schema": "",
-    "dataset_id": "cKMP8FHa8clAt9YjB",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.ideal-postcodes.co.uk/docs/api"
   },
   {
     "service_id": 103,
@@ -863,10 +687,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:00:34.015+00",
     "status": "scraped",
-    "reference_url": "https://pinboard.in/api/",
-    "merged_schema": "",
-    "dataset_id": "kUfctKEXNh5rz0GQj",
-    "dataset_tokens": ""
+    "reference_url": "https://pinboard.in/api/"
   },
   {
     "service_id": 104,
@@ -876,10 +697,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:00:34.017+00",
     "status": "scraped",
-    "reference_url": "https://www.linode.com/docs/api/",
-    "merged_schema": "",
-    "dataset_id": "A7erakE45uoeQh9My",
-    "dataset_tokens": ""
+    "reference_url": "https://www.linode.com/docs/api/"
   },
   {
     "service_id": 19,
@@ -889,10 +707,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 20:07:28.181+00",
     "status": "parsed_content",
-    "reference_url": "https://developer.float.com/",
-    "merged_schema": "",
-    "dataset_id": "3uGjKK9hWqnLSZBcd",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.float.com/"
   },
   {
     "service_id": 172,
@@ -902,10 +717,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:06:33.84+00",
     "status": "scraped",
-    "reference_url": "https://help.corsizio.com/category/28-developer-api",
-    "merged_schema": "",
-    "dataset_id": "LkCuXbzMy2Mt8DvD5",
-    "dataset_tokens": ""
+    "reference_url": "https://help.corsizio.com/category/28-developer-api"
   },
   {
     "service_id": 10,
@@ -915,10 +727,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:09.98+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 17,
@@ -928,10 +737,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:09.985+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 123,
@@ -941,10 +747,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.033+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 254,
@@ -954,10 +757,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.13+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 177,
@@ -967,10 +767,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:16:34.707+00",
     "status": "scraped",
-    "reference_url": "https://docs.joinmastodon.org/api/",
-    "merged_schema": "",
-    "dataset_id": "wMAm5unyzuOyDmUqZ",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.joinmastodon.org/api/"
   },
   {
     "service_id": 165,
@@ -980,10 +777,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:04:33.69+00",
     "status": "scraped",
-    "reference_url": "https://www.whatconverts.com/api/overview/",
-    "merged_schema": "",
-    "dataset_id": "OxWKBbiRyTllboUc7",
-    "dataset_tokens": ""
+    "reference_url": "https://www.whatconverts.com/api/overview/"
   },
   {
     "service_id": 66,
@@ -993,10 +787,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:46:36.521+00",
     "status": "scraped",
-    "reference_url": "https://docs.triggercmd.com/",
-    "merged_schema": "",
-    "dataset_id": "LbMgzson8BUXG5Wab",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.triggercmd.com/"
   },
   {
     "service_id": 67,
@@ -1006,10 +797,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:37:52.627+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.imgur.com/",
-    "merged_schema": "",
-    "dataset_id": "WRNG9f9lK5hDET2ZF",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.imgur.com/"
   },
   {
     "service_id": 168,
@@ -1019,10 +807,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:12:33.585+00",
     "status": "scraped",
-    "reference_url": "https://dayschedule.com/docs/api",
-    "merged_schema": "",
-    "dataset_id": "RzzhBsGrLeIV5YLoX",
-    "dataset_tokens": ""
+    "reference_url": "https://dayschedule.com/docs/api"
   },
   {
     "service_id": 166,
@@ -1032,10 +817,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:14:33.514+00",
     "status": "scraped",
-    "reference_url": "https://tdocs.wubook.net/wired.html",
-    "merged_schema": "",
-    "dataset_id": "Djbz0bt8vJHkaKxh6",
-    "dataset_tokens": ""
+    "reference_url": "https://tdocs.wubook.net/wired.html"
   },
   {
     "service_id": 186,
@@ -1045,10 +827,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:26:31.77+00",
     "status": "missing_reference",
-    "reference_url": "https://api-docs.databricks.com/",
-    "merged_schema": "",
-    "dataset_id": "EmYrkbfIgalKV8EC8",
-    "dataset_tokens": ""
+    "reference_url": "https://api-docs.databricks.com/"
   },
   {
     "service_id": 228,
@@ -1058,10 +837,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:24:33.559+00",
     "status": "scraped",
-    "reference_url": "https://developer.enormail.eu/",
-    "merged_schema": "",
-    "dataset_id": "kI9TGkbKhEhKfF38D",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.enormail.eu/"
   },
   {
     "service_id": 232,
@@ -1071,10 +847,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:26:34.853+00",
     "status": "scraped",
-    "reference_url": "https://docs.moonmail.io/docs/",
-    "merged_schema": "",
-    "dataset_id": "3JMbppVsAUjWq4ED7",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.moonmail.io/docs/"
   },
   {
     "service_id": 241,
@@ -1084,10 +857,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:30:53.711+00",
     "status": "scraped",
-    "reference_url": "https://developers.esendex.com/api-reference/",
-    "merged_schema": "",
-    "dataset_id": "IHPKMgwpcF87J1t2o",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.esendex.com/api-reference/"
   },
   {
     "service_id": 243,
@@ -1097,10 +867,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:32:54.067+00",
     "status": "scraped",
-    "reference_url": "https://legacy.smsit.ai/api.html",
-    "merged_schema": "",
-    "dataset_id": "Txhd0KmAQGtc3eEFM",
-    "dataset_tokens": ""
+    "reference_url": "https://legacy.smsit.ai/api.html"
   },
   {
     "service_id": 244,
@@ -1110,10 +877,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:40:53.986+00",
     "status": "scraped",
-    "reference_url": "https://api.swagup.com/docs/",
-    "merged_schema": "",
-    "dataset_id": "I4jmqgOoldYJmqILS",
-    "dataset_tokens": ""
+    "reference_url": "https://api.swagup.com/docs/"
   },
   {
     "service_id": 257,
@@ -1123,10 +887,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.133+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 230,
@@ -1136,10 +897,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:32:54.065+00",
     "status": "scraped",
-    "reference_url": "https://support.liveagent.com/840770-Complete-API-reference",
-    "merged_schema": "",
-    "dataset_id": "0u7s7cOauW9hBjzZp",
-    "dataset_tokens": ""
+    "reference_url": "https://support.liveagent.com/840770-Complete-API-reference"
   },
   {
     "service_id": 262,
@@ -1149,10 +907,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.142+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 231,
@@ -1162,10 +917,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:08:53.648+00",
     "status": "scraped",
-    "reference_url": "https://developer.knowbe4.com/",
-    "merged_schema": "",
-    "dataset_id": "earb53cfprVm8y0ZK",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.knowbe4.com/"
   },
   {
     "service_id": 233,
@@ -1175,10 +927,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:10:53.659+00",
     "status": "scraped",
-    "reference_url": "https://api.cloze.com/api-docs/",
-    "merged_schema": "",
-    "dataset_id": "8uMOn7bqyoEwF8EbX",
-    "dataset_tokens": ""
+    "reference_url": "https://api.cloze.com/api-docs/"
   },
   {
     "service_id": 198,
@@ -1188,10 +937,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:48:33.746+00",
     "status": "scraped",
-    "reference_url": "https://woodpecker.co/help/api-2-0-api-reference/",
-    "merged_schema": "",
-    "dataset_id": "echqaFsGkPM0839PY",
-    "dataset_tokens": ""
+    "reference_url": "https://woodpecker.co/help/api-2-0-api-reference/"
   },
   {
     "service_id": 180,
@@ -1201,10 +947,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:28:34.669+00",
     "status": "scraped",
-    "reference_url": "https://dev.bandwidth.com/apis/",
-    "merged_schema": "",
-    "dataset_id": "adqGK1aSq8Jctjg1w",
-    "dataset_tokens": ""
+    "reference_url": "https://dev.bandwidth.com/apis/"
   },
   {
     "service_id": 181,
@@ -1214,10 +957,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:18:33.851+00",
     "status": "scraped",
-    "reference_url": "https://www.gocanvas.com/content/integrations/custom-rest-api/",
-    "merged_schema": "",
-    "dataset_id": "RDzwKIJsdFll0lvf9",
-    "dataset_tokens": ""
+    "reference_url": "https://www.gocanvas.com/content/integrations/custom-rest-api/"
   },
   {
     "service_id": 183,
@@ -1227,10 +967,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:26:33.543+00",
     "status": "scraped",
-    "reference_url": "https://developers.sellix.io/",
-    "merged_schema": "",
-    "dataset_id": "Tr0XAIvAMEtCmWiMy",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.sellix.io/"
   },
   {
     "service_id": 178,
@@ -1240,10 +977,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:20:33.664+00",
     "status": "scraped",
-    "reference_url": "https://sslmate.com/help/reference/ct_search_api_v1",
-    "merged_schema": "",
-    "dataset_id": "ao5P0Cwxi68qGGkil",
-    "dataset_tokens": ""
+    "reference_url": "https://sslmate.com/help/reference/ct_search_api_v1"
   },
   {
     "service_id": 182,
@@ -1253,10 +987,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:24:33.545+00",
     "status": "scraped",
-    "reference_url": "https://docs.abuseipdb.com/",
-    "merged_schema": "",
-    "dataset_id": "zObkDXkVr5a2vFNfF",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.abuseipdb.com/"
   },
   {
     "service_id": 185,
@@ -1266,10 +997,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:24:33.548+00",
     "status": "scraped",
-    "reference_url": "https://developers.pipefy.com/docs",
-    "merged_schema": "",
-    "dataset_id": "LDrEzBjQIW7UiqWNe",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.pipefy.com/docs"
   },
   {
     "service_id": 189,
@@ -1279,10 +1007,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:26:33.545+00",
     "status": "scraped",
-    "reference_url": "https://developers.statuscake.com/api/",
-    "merged_schema": "",
-    "dataset_id": "WOhs0soIZEK5IlYXe",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.statuscake.com/api/"
   },
   {
     "service_id": 187,
@@ -1292,10 +1017,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:30:33.694+00",
     "status": "scraped",
-    "reference_url": "https://developer.crowdin.com/api/v2/",
-    "merged_schema": "",
-    "dataset_id": "fdfI0equ87FfUegK2",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.crowdin.com/api/v2/"
   },
   {
     "service_id": 188,
@@ -1305,10 +1027,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:30:33.697+00",
     "status": "scraped",
-    "reference_url": "https://docs.api.dock.io/",
-    "merged_schema": "",
-    "dataset_id": "5aTWXR5rgH4aheypZ",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.api.dock.io/"
   },
   {
     "service_id": 55,
@@ -1318,10 +1037,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.002+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 211,
@@ -1331,10 +1047,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:58:33.543+00",
     "status": "scraped",
-    "reference_url": "https://support.simplekpi.com/Developers",
-    "merged_schema": "",
-    "dataset_id": "MauskyWYYTFCAf1Ow",
-    "dataset_tokens": ""
+    "reference_url": "https://support.simplekpi.com/Developers"
   },
   {
     "service_id": 57,
@@ -1344,10 +1057,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.007+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 74,
@@ -1357,10 +1067,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.015+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 137,
@@ -1370,10 +1077,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.05+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 146,
@@ -1383,10 +1087,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.054+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 167,
@@ -1396,10 +1097,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:02:33.568+00",
     "status": "scraped",
-    "reference_url": "https://try.gitea.io/api/swagger",
-    "merged_schema": "",
-    "dataset_id": "VSXIcodgrF3ANWVaT",
-    "dataset_tokens": ""
+    "reference_url": "https://try.gitea.io/api/swagger"
   },
   {
     "service_id": 199,
@@ -1409,10 +1107,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:54:33.578+00",
     "status": "scraped",
-    "reference_url": "https://badgerupdatedapi.docs.apiary.io/",
-    "merged_schema": "",
-    "dataset_id": "3gi1SXcn6yxs9Jgfl",
-    "dataset_tokens": ""
+    "reference_url": "https://badgerupdatedapi.docs.apiary.io/"
   },
   {
     "service_id": 194,
@@ -1422,10 +1117,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:44:33.941+00",
     "status": "scraped",
-    "reference_url": "https://docs.gupshup.io/reference",
-    "merged_schema": "",
-    "dataset_id": "6CWwHp2bBh6rr1C7q",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.gupshup.io/reference"
   },
   {
     "service_id": 263,
@@ -1435,10 +1127,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:43:29.916+00",
     "status": "scraped",
-    "reference_url": "https://www.kaggle.com/docs/api",
-    "merged_schema": "",
-    "dataset_id": "c6CLPPgZHhOzEDvNk",
-    "dataset_tokens": ""
+    "reference_url": "https://www.kaggle.com/docs/api"
   },
   {
     "service_id": 190,
@@ -1448,10 +1137,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:46:34.082+00",
     "status": "scraped",
-    "reference_url": "https://developers.rewardful.com/rest-api/overview",
-    "merged_schema": "",
-    "dataset_id": "AVxBqN2AffhX1hJA7",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.rewardful.com/rest-api/overview"
   },
   {
     "service_id": 196,
@@ -1461,10 +1147,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:48:33.742+00",
     "status": "scraped",
-    "reference_url": "https://www.7todos.com/app/api",
-    "merged_schema": "",
-    "dataset_id": "aWWZbgUA0p6vVy7Ne",
-    "dataset_tokens": ""
+    "reference_url": "https://www.7todos.com/app/api"
   },
   {
     "service_id": 197,
@@ -1474,10 +1157,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:48:33.745+00",
     "status": "scraped",
-    "reference_url": "https://betterproposals.io/resources/api/",
-    "merged_schema": "",
-    "dataset_id": "rsoKxHAaSIplUYGnX",
-    "dataset_tokens": ""
+    "reference_url": "https://betterproposals.io/resources/api/"
   },
   {
     "service_id": 195,
@@ -1487,10 +1167,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:50:34.342+00",
     "status": "scraped",
-    "reference_url": "https://developers.surveysparrow.com/rest-apis",
-    "merged_schema": "",
-    "dataset_id": "r3S4kqbOSKe29AH6I",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.surveysparrow.com/rest-apis"
   },
   {
     "service_id": 200,
@@ -1500,10 +1177,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:56:35.176+00",
     "status": "scraped",
-    "reference_url": "https://www.accuranker.com/integration/rest-api/",
-    "merged_schema": "",
-    "dataset_id": "BC8Rn1XRx5NWfetzs",
-    "dataset_tokens": ""
+    "reference_url": "https://www.accuranker.com/integration/rest-api/"
   },
   {
     "service_id": 69,
@@ -1513,10 +1187,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.011+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 169,
@@ -1526,10 +1197,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.062+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 150,
@@ -1539,10 +1207,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.058+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 220,
@@ -1552,10 +1217,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.072+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 127,
@@ -1565,10 +1227,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:20:33.583+00",
     "status": "scraped",
-    "reference_url": "https://docs.influxdata.com/influxdb/cloud/api/",
-    "merged_schema": "",
-    "dataset_id": "dYVeJ5Rys2VQvDfaf",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.influxdata.com/influxdb/cloud/api/"
   },
   {
     "service_id": 202,
@@ -1578,10 +1237,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.066+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 149,
@@ -1591,10 +1247,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:25:31.427+00",
     "status": "scraping",
-    "reference_url": "https://developers.generativeai.google/api/rest/generativelanguage",
-    "merged_schema": "",
-    "dataset_id": "4LoYWSvPLPQbl90r9",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.generativeai.google/api/rest/generativelanguage"
   },
   {
     "service_id": 125,
@@ -1604,10 +1257,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:10:33.663+00",
     "status": "scraped",
-    "reference_url": "https://thankster.com/api/",
-    "merged_schema": "",
-    "dataset_id": "Wbf5kV5iXZ1AgfmTm",
-    "dataset_tokens": ""
+    "reference_url": "https://thankster.com/api/"
   },
   {
     "service_id": 184,
@@ -1617,10 +1267,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:46:34.079+00",
     "status": "scraped",
-    "reference_url": "https://docs.reversecontact.com/",
-    "merged_schema": "",
-    "dataset_id": "sigkIpxby8CnCZksD",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.reversecontact.com/"
   },
   {
     "service_id": 128,
@@ -1630,10 +1277,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:24:35.908+00",
     "status": "scraped",
-    "reference_url": "https://apis.botstar.com/docs/",
-    "merged_schema": "",
-    "dataset_id": "yJYRe9ga8oqdmphba",
-    "dataset_tokens": ""
+    "reference_url": "https://apis.botstar.com/docs/"
   },
   {
     "service_id": 147,
@@ -1643,10 +1287,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:26:33.481+00",
     "status": "scraped",
-    "reference_url": "https://api.accelo.com/docs/",
-    "merged_schema": "",
-    "dataset_id": "xmd7XSlwr4Luv7duH",
-    "dataset_tokens": ""
+    "reference_url": "https://api.accelo.com/docs/"
   },
   {
     "service_id": 145,
@@ -1656,10 +1297,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:34:33.701+00",
     "status": "scraped",
-    "reference_url": "https://detrackapiv2.docs.apiary.io/",
-    "merged_schema": "",
-    "dataset_id": "87PlHDvEglCUGxlde",
-    "dataset_tokens": ""
+    "reference_url": "https://detrackapiv2.docs.apiary.io/"
   },
   {
     "service_id": 256,
@@ -1669,10 +1307,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:00:53.74+00",
     "status": "scraped",
-    "reference_url": "https://www.lusha.com/docs/",
-    "merged_schema": "",
-    "dataset_id": "cLntfAz6UM6Xkf5k0",
-    "dataset_tokens": ""
+    "reference_url": "https://www.lusha.com/docs/"
   },
   {
     "service_id": 151,
@@ -1682,10 +1317,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:44:33.726+00",
     "status": "scraped",
-    "reference_url": "https://dictionaryapi.dev/",
-    "merged_schema": "",
-    "dataset_id": "BsOpFQorWNeqCmX7D",
-    "dataset_tokens": ""
+    "reference_url": "https://dictionaryapi.dev/"
   },
   {
     "service_id": 148,
@@ -1695,10 +1327,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:00:34.295+00",
     "status": "scraped",
-    "reference_url": "https://help.proprofsproject.com/api-for-developers",
-    "merged_schema": "",
-    "dataset_id": "RyuW0qyNcBofux2zg",
-    "dataset_tokens": ""
+    "reference_url": "https://help.proprofsproject.com/api-for-developers"
   },
   {
     "service_id": 208,
@@ -1708,10 +1337,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:08:34.251+00",
     "status": "scraped",
-    "reference_url": "https://developers.deepgram.com/reference",
-    "merged_schema": "",
-    "dataset_id": "XgnN6YzjyUEhGyHor",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.deepgram.com/reference"
   },
   {
     "service_id": 192,
@@ -1721,10 +1347,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:44:33.939+00",
     "status": "scraped",
-    "reference_url": "https://docs.crowdpower.io/",
-    "merged_schema": "",
-    "dataset_id": "bEuzyu3zDre5gbSGP",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.crowdpower.io/"
   },
   {
     "service_id": 277,
@@ -1734,10 +1357,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:47:29.204+00",
     "status": "scraped",
-    "reference_url": "https://api.brandmentions.com/documentation.html",
-    "merged_schema": "",
-    "dataset_id": "kdz1u16bJGdfZTIWJ",
-    "dataset_tokens": ""
+    "reference_url": "https://api.brandmentions.com/documentation.html"
   },
   {
     "service_id": 203,
@@ -1747,10 +1367,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:50:34.346+00",
     "status": "scraped",
-    "reference_url": "https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html",
-    "merged_schema": "",
-    "dataset_id": "PiNEnMlIXfJ86rio5",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html"
   },
   {
     "service_id": 110,
@@ -1760,10 +1377,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.025+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 117,
@@ -1773,10 +1387,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:04:33.694+00",
     "status": "scraped",
-    "reference_url": "https://mxtoolbox.com/c/products/mxtoolboxapi",
-    "merged_schema": "",
-    "dataset_id": "R1KDXUtgogPDoUd1e",
-    "dataset_tokens": ""
+    "reference_url": "https://mxtoolbox.com/c/products/mxtoolboxapi"
   },
   {
     "service_id": 214,
@@ -1786,10 +1397,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:02:33.546+00",
     "status": "scraped",
-    "reference_url": "https://developer.capsulecrm.com/",
-    "merged_schema": "",
-    "dataset_id": "seVVvw3ObKec4iIvS",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.capsulecrm.com/"
   },
   {
     "service_id": 116,
@@ -1799,10 +1407,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:14:33.674+00",
     "status": "scraped",
-    "reference_url": "https://docs.instabot.io/docs/serverapi",
-    "merged_schema": "",
-    "dataset_id": "Mof0qEEnBEIuVn7jG",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.instabot.io/docs/serverapi"
   },
   {
     "service_id": 8,
@@ -1812,10 +1417,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.242+00",
     "status": "scraped",
-    "reference_url": "https://www.myphoner.com/docs/api/",
-    "merged_schema": "",
-    "dataset_id": "1heBUGBtb8EONNBWc",
-    "dataset_tokens": ""
+    "reference_url": "https://www.myphoner.com/docs/api/"
   },
   {
     "service_id": 129,
@@ -1825,10 +1427,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:30:34.049+00",
     "status": "scraped",
-    "reference_url": "https://www.zoho.com/books/api/v3/",
-    "merged_schema": "",
-    "dataset_id": "zHZgBOhPZdGRfqzub",
-    "dataset_tokens": ""
+    "reference_url": "https://www.zoho.com/books/api/v3/"
   },
   {
     "service_id": 204,
@@ -1838,10 +1437,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:54:33.581+00",
     "status": "scraped",
-    "reference_url": "https://docs.plecto.com/kb/en/api-developer-299244",
-    "merged_schema": "",
-    "dataset_id": "b0CmTIRrdWxQjff6P",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.plecto.com/kb/en/api-developer-299244"
   },
   {
     "service_id": 205,
@@ -1851,10 +1447,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:54:33.582+00",
     "status": "scraped",
-    "reference_url": "https://simpletexting.com/api/docs/",
-    "merged_schema": "",
-    "dataset_id": "X4LRZuzqwCwzyEtfU",
-    "dataset_tokens": ""
+    "reference_url": "https://simpletexting.com/api/docs/"
   },
   {
     "service_id": 259,
@@ -1864,10 +1457,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:06:53.643+00",
     "status": "scraped",
-    "reference_url": "https://developers.switchboard.ai/",
-    "merged_schema": "",
-    "dataset_id": "RyucQY3Jrh1rlYWmP",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.switchboard.ai/"
   },
   {
     "service_id": 225,
@@ -1877,10 +1467,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:10:33.963+00",
     "status": "scraped",
-    "reference_url": "https://developers.rdstation.com/docs/api-rest",
-    "merged_schema": "",
-    "dataset_id": "WhUuve1ixXPIfH1OE",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.rdstation.com/docs/api-rest"
   },
   {
     "service_id": 226,
@@ -1890,10 +1477,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:12:34.981+00",
     "status": "scraped",
-    "reference_url": "https://announcekit.app/docs",
-    "merged_schema": "",
-    "dataset_id": "JKkHwQcyLD4dk4jyq",
-    "dataset_tokens": ""
+    "reference_url": "https://announcekit.app/docs"
   },
   {
     "service_id": 258,
@@ -1903,10 +1487,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:45:29.161+00",
     "status": "scraped",
-    "reference_url": "https://paperform.readme.io/reference",
-    "merged_schema": "",
-    "dataset_id": "wMaJPRo3hditrZtDV",
-    "dataset_tokens": ""
+    "reference_url": "https://paperform.readme.io/reference"
   },
   {
     "service_id": 132,
@@ -1916,10 +1497,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.045+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 209,
@@ -1929,10 +1507,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:56:32.059+00",
     "status": "scraping",
-    "reference_url": "https://docs.opn.ooo/",
-    "merged_schema": "",
-    "dataset_id": "LY9ceVpsv8sdp3BTU",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.opn.ooo/"
   },
   {
     "service_id": 173,
@@ -1942,10 +1517,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:16:34.705+00",
     "status": "scraped",
-    "reference_url": "https://accrediblecredentialapi.docs.apiary.io/",
-    "merged_schema": "",
-    "dataset_id": "Wb4oJx4zj6lSPB26z",
-    "dataset_tokens": ""
+    "reference_url": "https://accrediblecredentialapi.docs.apiary.io/"
   },
   {
     "service_id": 207,
@@ -1955,10 +1527,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:52:34.629+00",
     "status": "scraped",
-    "reference_url": "https://route4me.io/docs/",
-    "merged_schema": "",
-    "dataset_id": "GRr2jeQU37fHeIAns",
-    "dataset_tokens": ""
+    "reference_url": "https://route4me.io/docs/"
   },
   {
     "service_id": 47,
@@ -1968,10 +1537,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:32:05.394+00",
     "status": "scraped",
-    "reference_url": "https://developers.klaviyo.com/en/reference/api_overview",
-    "merged_schema": "",
-    "dataset_id": "Ps2pUP7rvaP18q8Os",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.klaviyo.com/en/reference/api_overview"
   },
   {
     "service_id": 46,
@@ -1981,10 +1547,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:26:54.636+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.teamup.com/",
-    "merged_schema": "",
-    "dataset_id": "6XWYJn9R5qXNxc1KY",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.teamup.com/"
   },
   {
     "service_id": 11,
@@ -1994,10 +1557,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.245+00",
     "status": "scraped",
-    "reference_url": "https://app.gumroad.com/api",
-    "merged_schema": "",
-    "dataset_id": "gmv2maGV9ERw5DWKC",
-    "dataset_tokens": ""
+    "reference_url": "https://app.gumroad.com/api"
   },
   {
     "service_id": 21,
@@ -2007,10 +1567,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:25:27.148+00",
     "status": "scraped",
-    "reference_url": "https://developer.godaddy.com/doc",
-    "merged_schema": "",
-    "dataset_id": "5HqPPmLOvJS1ANAY9",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.godaddy.com/doc"
   },
   {
     "service_id": 49,
@@ -2020,10 +1577,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:32:05.397+00",
     "status": "scraped",
-    "reference_url": "https://developer.nusii.com/",
-    "merged_schema": "",
-    "dataset_id": "nAzp1MZryHYfaJWFg",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.nusii.com/"
   },
   {
     "service_id": 53,
@@ -2033,10 +1587,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:33:45.391+00",
     "status": "scraped",
-    "reference_url": "https://developers.pinterest.com/docs/api/v5/",
-    "merged_schema": "",
-    "dataset_id": "eU7P3Zv9VMNOWQQHq",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.pinterest.com/docs/api/v5/"
   },
   {
     "service_id": 22,
@@ -2046,10 +1597,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:30:14.289+00",
     "status": "scraped",
-    "reference_url": "https://api.marketplacer.com/docs/",
-    "merged_schema": "",
-    "dataset_id": "tJKYp4OdJzJVRGvXc",
-    "dataset_tokens": ""
+    "reference_url": "https://api.marketplacer.com/docs/"
   },
   {
     "service_id": 52,
@@ -2059,10 +1607,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:30:14.298+00",
     "status": "scraped",
-    "reference_url": "https://papyrs.com/docs/api/",
-    "merged_schema": "",
-    "dataset_id": "hX2GaywCzysqIspRw",
-    "dataset_tokens": ""
+    "reference_url": "https://papyrs.com/docs/api/"
   },
   {
     "service_id": 215,
@@ -2072,10 +1617,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:58:33.545+00",
     "status": "scraped",
-    "reference_url": "https://ocr.space/ocrapi",
-    "merged_schema": "",
-    "dataset_id": "P9Ol6eBRE9d58iE09",
-    "dataset_tokens": ""
+    "reference_url": "https://ocr.space/ocrapi"
   },
   {
     "service_id": 217,
@@ -2085,10 +1627,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:22:33.64+00",
     "status": "scraped",
-    "reference_url": "https://developers.envoy.com/hub/reference/overview-1",
-    "merged_schema": "",
-    "dataset_id": "rWEJetesSEdc8Umfn",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.envoy.com/hub/reference/overview-1"
   },
   {
     "service_id": 260,
@@ -2098,10 +1637,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:00:53.747+00",
     "status": "scraped",
-    "reference_url": "https://docs.signaturit.com/api/latest",
-    "merged_schema": "",
-    "dataset_id": "jNp8Ak2v5Qwhz9fbW",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.signaturit.com/api/latest"
   },
   {
     "service_id": 274,
@@ -2111,10 +1647,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:43:29.921+00",
     "status": "scraped",
-    "reference_url": "https://developer.vimeo.com/api/reference",
-    "merged_schema": "",
-    "dataset_id": "iaJFT3c3TZMUtxOp3",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.vimeo.com/api/reference"
   },
   {
     "service_id": 276,
@@ -2124,10 +1657,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:45:29.173+00",
     "status": "scraped",
-    "reference_url": "https://docs.airbrake.io/docs/devops-tools/api/",
-    "merged_schema": "",
-    "dataset_id": "R2uDVgegJxGKH5bTW",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.airbrake.io/docs/devops-tools/api/"
   },
   {
     "service_id": 115,
@@ -2137,10 +1667,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:06:34.115+00",
     "status": "scraped",
-    "reference_url": "https://developer.brex.com/docs/quickstart/",
-    "merged_schema": "",
-    "dataset_id": "DbYu1rsOjN6OzfAIn",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.brex.com/docs/quickstart/"
   },
   {
     "service_id": 278,
@@ -2150,10 +1677,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:49:29.213+00",
     "status": "scraped",
-    "reference_url": "https://developers.zonkafeedback.com/docs/api-reference",
-    "merged_schema": "",
-    "dataset_id": "0GnT2aDtyyZdLDKAu",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.zonkafeedback.com/docs/api-reference"
   },
   {
     "service_id": 108,
@@ -2163,10 +1687,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:04:33.689+00",
     "status": "scraped",
-    "reference_url": "https://developer.unbounce.com/api_reference/",
-    "merged_schema": "",
-    "dataset_id": "tPDVJeWp0yQThCG3r",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.unbounce.com/api_reference/"
   },
   {
     "service_id": 222,
@@ -2176,10 +1697,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:08:34.254+00",
     "status": "scraped",
-    "reference_url": "https://hexdocs.pm/textgain/api-reference.html",
-    "merged_schema": "",
-    "dataset_id": "hzjbl05hrMQhPL14t",
-    "dataset_tokens": ""
+    "reference_url": "https://hexdocs.pm/textgain/api-reference.html"
   },
   {
     "service_id": 130,
@@ -2189,10 +1707,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.041+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 122,
@@ -2202,10 +1717,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:24:35.906+00",
     "status": "scraped",
-    "reference_url": "https://developers.short.io/reference",
-    "merged_schema": "",
-    "dataset_id": "y2md1HD6WegkYtf28",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.short.io/reference"
   },
   {
     "service_id": 273,
@@ -2215,10 +1727,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:45:29.166+00",
     "status": "scraped",
-    "reference_url": "https://www.pivotaltracker.com/help/api/rest/v5",
-    "merged_schema": "",
-    "dataset_id": "TeYQagIGutXPVmj6W",
-    "dataset_tokens": ""
+    "reference_url": "https://www.pivotaltracker.com/help/api/rest/v5"
   },
   {
     "service_id": 70,
@@ -2228,10 +1737,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:37:52.629+00",
     "status": "scraped",
-    "reference_url": "https://api.rawg.io/docs/",
-    "merged_schema": "",
-    "dataset_id": "gUCq8y1FQ8p8z5pOU",
-    "dataset_tokens": ""
+    "reference_url": "https://api.rawg.io/docs/"
   },
   {
     "service_id": 36,
@@ -2241,10 +1747,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:25:27.151+00",
     "status": "scraped",
-    "reference_url": "https://www.bigdatacloud.com/free-api",
-    "merged_schema": "",
-    "dataset_id": "BPAq1wr3h5GTXXAWf",
-    "dataset_tokens": ""
+    "reference_url": "https://www.bigdatacloud.com/free-api"
   },
   {
     "service_id": 279,
@@ -2254,10 +1757,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:49:29.215+00",
     "status": "scraped",
-    "reference_url": "https://developer.calendly.com/api-docs/",
-    "merged_schema": "",
-    "dataset_id": "DkFqpf0CKfqzjqI4H",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.calendly.com/api-docs/"
   },
   {
     "service_id": 32,
@@ -2267,10 +1767,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.27+00",
     "status": "scraped",
-    "reference_url": "https://radar.com/documentation/api",
-    "merged_schema": "",
-    "dataset_id": "0adzLUFiGeShYSjQA",
-    "dataset_tokens": ""
+    "reference_url": "https://radar.com/documentation/api"
   },
   {
     "service_id": 37,
@@ -2280,10 +1777,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.275+00",
     "status": "scraped",
-    "reference_url": "https://help.suitedash.com/article/550-secure-api",
-    "merged_schema": "",
-    "dataset_id": "9z6WVmnxKSgvCTV9a",
-    "dataset_tokens": ""
+    "reference_url": "https://help.suitedash.com/article/550-secure-api"
   },
   {
     "service_id": 38,
@@ -2293,10 +1787,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.276+00",
     "status": "scraped",
-    "reference_url": "https://app.swaggerhub.com/apis-docs/Handwrytten/handwrytten/",
-    "merged_schema": "",
-    "dataset_id": "moulaWw2TwEWJL7Gs",
-    "dataset_tokens": ""
+    "reference_url": "https://app.swaggerhub.com/apis-docs/Handwrytten/handwrytten/"
   },
   {
     "service_id": 45,
@@ -2306,10 +1797,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 20:37:08.044+00",
     "status": "scraped",
-    "reference_url": "https://dev.landbot.io/docs/",
-    "merged_schema": "",
-    "dataset_id": "rvgmBNvBVUy3CDvwR",
-    "dataset_tokens": ""
+    "reference_url": "https://dev.landbot.io/docs/"
   },
   {
     "service_id": 29,
@@ -2319,10 +1807,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:09.991+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 31,
@@ -2332,10 +1817,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:09.998+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 126,
@@ -2345,10 +1827,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.037+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 174,
@@ -2358,10 +1837,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:40:34.458+00",
     "status": "scraped",
-    "reference_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/",
-    "merged_schema": "",
-    "dataset_id": "4bPF3eMqmRLZLZUoW",
-    "dataset_tokens": ""
+    "reference_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/"
   },
   {
     "service_id": 170,
@@ -2371,10 +1847,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:04:33.692+00",
     "status": "scraped",
-    "reference_url": "https://realphonevalidation.com/api-documentation/",
-    "merged_schema": "",
-    "dataset_id": "QJyrMEQKrRzyXOZFo",
-    "dataset_tokens": ""
+    "reference_url": "https://realphonevalidation.com/api-documentation/"
   },
   {
     "service_id": 247,
@@ -2384,10 +1857,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:41:29.642+00",
     "status": "scraped",
-    "reference_url": "https://api.imgbb.com/",
-    "merged_schema": "",
-    "dataset_id": "P083JoWCjY7taJA54",
-    "dataset_tokens": ""
+    "reference_url": "https://api.imgbb.com/"
   },
   {
     "service_id": 235,
@@ -2397,10 +1867,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.081+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 175,
@@ -2410,10 +1877,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:14:33.518+00",
     "status": "scraped",
-    "reference_url": "https://knowledge.gatekeeperhq.com/en/docs/configuring-api",
-    "merged_schema": "",
-    "dataset_id": "aYv4nnCzWADldMXhh",
-    "dataset_tokens": ""
+    "reference_url": "https://knowledge.gatekeeperhq.com/en/docs/configuring-api"
   },
   {
     "service_id": 176,
@@ -2423,10 +1887,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:18:33.847+00",
     "status": "scraped",
-    "reference_url": "https://rest.textmagic.com/api/v2/doc/",
-    "merged_schema": "",
-    "dataset_id": "JQPEJ6OQQz5oKyJfv",
-    "dataset_tokens": ""
+    "reference_url": "https://rest.textmagic.com/api/v2/doc/"
   },
   {
     "service_id": 191,
@@ -2436,10 +1897,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:28:34.672+00",
     "status": "scraped",
-    "reference_url": "https://api.raventools.com/docs/",
-    "merged_schema": "",
-    "dataset_id": "S13QfhA4c1qSOCOvY",
-    "dataset_tokens": ""
+    "reference_url": "https://api.raventools.com/docs/"
   },
   {
     "service_id": 227,
@@ -2449,10 +1907,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:26:34.85+00",
     "status": "scraped",
-    "reference_url": "https://www.salesmessage.com/salesmessage-api",
-    "merged_schema": "",
-    "dataset_id": "tbyVa77lci57SfeW6",
-    "dataset_tokens": ""
+    "reference_url": "https://www.salesmessage.com/salesmessage-api"
   },
   {
     "service_id": 236,
@@ -2462,10 +1917,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:44:53.634+00",
     "status": "scraped",
-    "reference_url": "https://restpack.io/screenshot/docs",
-    "merged_schema": "",
-    "dataset_id": "IlVmGsrEgXz9DGNTG",
-    "dataset_tokens": ""
+    "reference_url": "https://restpack.io/screenshot/docs"
   },
   {
     "service_id": 248,
@@ -2475,10 +1927,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:42:53.95+00",
     "status": "scraped",
-    "reference_url": "https://developers.databox.com/",
-    "merged_schema": "",
-    "dataset_id": "nxhaaPbhmkFPkfof1",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.databox.com/"
   },
   {
     "service_id": 229,
@@ -2488,10 +1937,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:34:54.335+00",
     "status": "scraped",
-    "reference_url": "https://mews-systems.gitbook.io/connector-api/",
-    "merged_schema": "",
-    "dataset_id": "987fUx0aXgdOhcyrB",
-    "dataset_tokens": ""
+    "reference_url": "https://mews-systems.gitbook.io/connector-api/"
   },
   {
     "service_id": 246,
@@ -2501,10 +1947,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:46:53.756+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.thrivecart.com/",
-    "merged_schema": "",
-    "dataset_id": "3vzSYtZIYOsc5DR4r",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.thrivecart.com/"
   },
   {
     "service_id": 250,
@@ -2514,10 +1957,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:58:53.662+00",
     "status": "scraped",
-    "reference_url": "https://developer.breezy.hr/reference",
-    "merged_schema": "",
-    "dataset_id": "uNlFp0fizIpTwjiic",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.breezy.hr/reference"
   },
   {
     "service_id": 252,
@@ -2527,10 +1967,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-15 11:38:10.123+00",
     "status": "missing_reference",
-    "reference_url": "",
-    "merged_schema": "",
-    "dataset_id": "",
-    "dataset_tokens": ""
+    "reference_url": ""
   },
   {
     "service_id": 255,
@@ -2540,10 +1977,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:46:53.758+00",
     "status": "scraped",
-    "reference_url": "http://developers.leadboxer.com/",
-    "merged_schema": "",
-    "dataset_id": "7Ux7pLTFUqSjLFkp0",
-    "dataset_tokens": ""
+    "reference_url": "http://developers.leadboxer.com/"
   },
   {
     "service_id": 251,
@@ -2553,10 +1987,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:44:53.676+00",
     "status": "scraped",
-    "reference_url": "https://api.calendarhero.com/documentation",
-    "merged_schema": "",
-    "dataset_id": "mfiqQuDgZQzvZwTcT",
-    "dataset_tokens": ""
+    "reference_url": "https://api.calendarhero.com/documentation"
   },
   {
     "service_id": 253,
@@ -2566,10 +1997,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 18:44:53.679+00",
     "status": "scraped",
-    "reference_url": "https://smartreach.io/api_docs",
-    "merged_schema": "",
-    "dataset_id": "wgHvGSsPtaTjDIuvZ",
-    "dataset_tokens": ""
+    "reference_url": "https://smartreach.io/api_docs"
   },
   {
     "service_id": 270,
@@ -2579,10 +2007,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:45:29.163+00",
     "status": "scraped",
-    "reference_url": "https://docs.confluent.io/platform/current/kafka-rest/index.html",
-    "merged_schema": "",
-    "dataset_id": "quPoOXeeSzkc0RJMb",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.confluent.io/platform/current/kafka-rest/index.html"
   },
   {
     "service_id": 35,
@@ -2592,10 +2017,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.273+00",
     "status": "scraped",
-    "reference_url": "https://developer.atlassian.com/cloud/confluence/rest/api-group-content/",
-    "merged_schema": "",
-    "dataset_id": "yf1lrdsC3d1BPbagK",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.atlassian.com/cloud/confluence/rest/api-group-content/"
   },
   {
     "service_id": 265,
@@ -2605,10 +2027,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:41:29.644+00",
     "status": "scraped",
-    "reference_url": "https://www.omniconvert.com/api/",
-    "merged_schema": "",
-    "dataset_id": "SkUxACoRILOLK1uoF",
-    "dataset_tokens": ""
+    "reference_url": "https://www.omniconvert.com/api/"
   },
   {
     "service_id": 266,
@@ -2618,10 +2037,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:41:29.646+00",
     "status": "scraped",
-    "reference_url": "https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation",
-    "merged_schema": "",
-    "dataset_id": "fbwi3TZAKvZAsvOMe",
-    "dataset_tokens": ""
+    "reference_url": "https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation"
   },
   {
     "service_id": 268,
@@ -2631,10 +2047,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:41:29.647+00",
     "status": "scraped",
-    "reference_url": "https://help.qualaroo.com/hc/en-us/sections/200469946-API-Documentation",
-    "merged_schema": "",
-    "dataset_id": "bIzj1pyTxyDXABdgo",
-    "dataset_tokens": ""
+    "reference_url": "https://help.qualaroo.com/hc/en-us/sections/200469946-API-Documentation"
   },
   {
     "service_id": 267,
@@ -2644,10 +2057,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:43:29.919+00",
     "status": "scraped",
-    "reference_url": "https://chargify.api-docs.io/",
-    "merged_schema": "",
-    "dataset_id": "tjurhDsCr4tY7TPTz",
-    "dataset_tokens": ""
+    "reference_url": "https://chargify.api-docs.io/"
   },
   {
     "service_id": 271,
@@ -2657,10 +2067,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:47:29.201+00",
     "status": "scraped",
-    "reference_url": "https://www.whatconverts.com/api/",
-    "merged_schema": "",
-    "dataset_id": "DqEBGPhBNlZ3TjiTC",
-    "dataset_tokens": ""
+    "reference_url": "https://www.whatconverts.com/api/"
   },
   {
     "service_id": 269,
@@ -2670,10 +2077,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 20:01:27.082+00",
     "status": "scraped",
-    "reference_url": "https://docs.faros.ai/reference",
-    "merged_schema": "",
-    "dataset_id": "rGygEgxsLlSQdKN0r",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.faros.ai/reference"
   },
   {
     "service_id": 272,
@@ -2683,10 +2087,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:45:29.165+00",
     "status": "scraped",
-    "reference_url": "https://help.rapid7.com/insightvm/en-us/api/index.html",
-    "merged_schema": "",
-    "dataset_id": "lWsTxt525h0htsrpl",
-    "dataset_tokens": ""
+    "reference_url": "https://help.rapid7.com/insightvm/en-us/api/index.html"
   },
   {
     "service_id": 275,
@@ -2696,10 +2097,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:45:29.168+00",
     "status": "scraped",
-    "reference_url": "https://api.collegefootballdata.com/documentation",
-    "merged_schema": "",
-    "dataset_id": "JdwQlGPX41bRonFmf",
-    "dataset_tokens": ""
+    "reference_url": "https://api.collegefootballdata.com/documentation"
   },
   {
     "service_id": 141,
@@ -2709,10 +2107,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:24:35.911+00",
     "status": "scraped",
-    "reference_url": "https://developers.mailify.com/",
-    "merged_schema": "",
-    "dataset_id": "3NnmYfDukkPkQWPGo",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.mailify.com/"
   },
   {
     "service_id": 171,
@@ -2722,10 +2117,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 16:14:33.516+00",
     "status": "scraped",
-    "reference_url": "http://development.isnadmin.com.s3-website-us-west-2.amazonaws.com/",
-    "merged_schema": "",
-    "dataset_id": "X2JtrLrPacJxoCNP7",
-    "dataset_tokens": ""
+    "reference_url": "http://development.isnadmin.com.s3-website-us-west-2.amazonaws.com/"
   },
   {
     "service_id": 143,
@@ -2735,10 +2127,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:30:34.052+00",
     "status": "scraped",
-    "reference_url": "http://api-doc.sitecreator.io/",
-    "merged_schema": "",
-    "dataset_id": "1lctNbNoqAMBNHcc2",
-    "dataset_tokens": ""
+    "reference_url": "http://api-doc.sitecreator.io/"
   },
   {
     "service_id": 221,
@@ -2748,10 +2137,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:11:31.976+00",
     "status": "scraping",
-    "reference_url": "https://github.com/moonclerk/developer",
-    "merged_schema": "",
-    "dataset_id": "2zrHwxPoupyJn3dyL",
-    "dataset_tokens": ""
+    "reference_url": "https://github.com/moonclerk/developer"
   },
   {
     "service_id": 7,
@@ -2761,10 +2147,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.24+00",
     "status": "scraped",
-    "reference_url": "https://get.mem.ai/help-and-support/build-with-the-mem-api",
-    "merged_schema": "",
-    "dataset_id": "biTCDN1Htn3xAxebp",
-    "dataset_tokens": ""
+    "reference_url": "https://get.mem.ai/help-and-support/build-with-the-mem-api"
   },
   {
     "service_id": 1,
@@ -2774,10 +2157,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-11-20 21:07:16.412+00",
     "status": "scraped",
-    "reference_url": "https://dev.fitbit.com/build/reference/web-api/",
-    "merged_schema": "",
-    "dataset_id": "wM5KsTKfUKinAxvZI",
-    "dataset_tokens": ""
+    "reference_url": "https://dev.fitbit.com/build/reference/web-api/"
   },
   {
     "service_id": 28,
@@ -2787,10 +2167,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:25:27.149+00",
     "status": "scraped",
-    "reference_url": "https://www.planyo.com/api.php",
-    "merged_schema": "",
-    "dataset_id": "ZXMVmq8vXV46Va14D",
-    "dataset_tokens": ""
+    "reference_url": "https://www.planyo.com/api.php"
   },
   {
     "service_id": 2,
@@ -2800,10 +2177,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:01.595+00",
     "status": "scraped",
-    "reference_url": "https://api.sms-magic.com/doc/",
-    "merged_schema": "",
-    "dataset_id": "DO4u6wNN1rpmBZMta",
-    "dataset_tokens": ""
+    "reference_url": "https://api.sms-magic.com/doc/"
   },
   {
     "service_id": 20,
@@ -2813,10 +2187,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.259+00",
     "status": "scraped",
-    "reference_url": "https://api-docs.ecwid.com/reference/overview",
-    "merged_schema": "",
-    "dataset_id": "pFtnf23oD9JtA8R9c",
-    "dataset_tokens": ""
+    "reference_url": "https://api-docs.ecwid.com/reference/overview"
   },
   {
     "service_id": 5,
@@ -2826,10 +2197,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:25:27.145+00",
     "status": "scraped",
-    "reference_url": "https://api.laposta.nl/doc/",
-    "merged_schema": "",
-    "dataset_id": "BKcFGpnxK9rwfLWcw",
-    "dataset_tokens": ""
+    "reference_url": "https://api.laposta.nl/doc/"
   },
   {
     "service_id": 4,
@@ -2839,10 +2207,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.236+00",
     "status": "scraped",
-    "reference_url": "https://idealspot.gitlab.io/developer-docs",
-    "merged_schema": "",
-    "dataset_id": "XJJeCu0hbYGPKZSDY",
-    "dataset_tokens": ""
+    "reference_url": "https://idealspot.gitlab.io/developer-docs"
   },
   {
     "service_id": 9,
@@ -2852,10 +2217,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.243+00",
     "status": "scraped",
-    "reference_url": "https://docparser.com/api/",
-    "merged_schema": "",
-    "dataset_id": "Mh4MdswLaHocKaPp4",
-    "dataset_tokens": ""
+    "reference_url": "https://docparser.com/api/"
   },
   {
     "service_id": 3,
@@ -2865,10 +2227,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:30:14.287+00",
     "status": "scraped",
-    "reference_url": "https://developers.formstack.com/reference",
-    "merged_schema": "",
-    "dataset_id": "LZ5arOvtZbQRi9BAA",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.formstack.com/reference"
   },
   {
     "service_id": 44,
@@ -2878,10 +2237,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:38:46.295+00",
     "status": "scraped",
-    "reference_url": "https://canvas.instructure.com/doc/api/",
-    "merged_schema": "",
-    "dataset_id": "Rb9YlIsKTdZRtHGV1",
-    "dataset_tokens": ""
+    "reference_url": "https://canvas.instructure.com/doc/api/"
   },
   {
     "service_id": 6,
@@ -2891,10 +2247,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.239+00",
     "status": "scraped",
-    "reference_url": "https://support.totango.com/hc/en-us/articles/203639605-Totango-HTTP-API-",
-    "merged_schema": "",
-    "dataset_id": "rir3W3e0myyiNjXf8",
-    "dataset_tokens": ""
+    "reference_url": "https://support.totango.com/hc/en-us/articles/203639605-Totango-HTTP-API-"
   },
   {
     "service_id": 12,
@@ -2904,10 +2257,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.246+00",
     "status": "scraped",
-    "reference_url": "https://exchange.blockchain.com/api/",
-    "merged_schema": "",
-    "dataset_id": "azCgyVIiAfETBNnRC",
-    "dataset_tokens": ""
+    "reference_url": "https://exchange.blockchain.com/api/"
   },
   {
     "service_id": 14,
@@ -2917,10 +2267,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.247+00",
     "status": "scraped",
-    "reference_url": "https://kanbantool.com/developer/api-v3",
-    "merged_schema": "",
-    "dataset_id": "qAV1tAJdjIgiQdVLh",
-    "dataset_tokens": ""
+    "reference_url": "https://kanbantool.com/developer/api-v3"
   },
   {
     "service_id": 15,
@@ -2930,10 +2277,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.248+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.reply.io/",
-    "merged_schema": "",
-    "dataset_id": "HG3BMhJfHfaTBXwfW",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.reply.io/"
   },
   {
     "service_id": 18,
@@ -2943,10 +2287,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.255+00",
     "status": "scraped",
-    "reference_url": "https://howto.caspio.com/web-services-api/rest-api/",
-    "merged_schema": "",
-    "dataset_id": "P6NKvvJJTRoNdZQcw",
-    "dataset_tokens": ""
+    "reference_url": "https://howto.caspio.com/web-services-api/rest-api/"
   },
   {
     "service_id": 23,
@@ -2956,10 +2297,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.26+00",
     "status": "scraped",
-    "reference_url": "https://api.producthunt.com/v2/docs",
-    "merged_schema": "",
-    "dataset_id": "6vJCm1nGIwNIw6uzS",
-    "dataset_tokens": ""
+    "reference_url": "https://api.producthunt.com/v2/docs"
   },
   {
     "service_id": 24,
@@ -2969,10 +2307,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.263+00",
     "status": "scraped",
-    "reference_url": "https://ritekit.docs.apiary.io/#",
-    "merged_schema": "",
-    "dataset_id": "Erdg3ji53i8Ef44XC",
-    "dataset_tokens": ""
+    "reference_url": "https://ritekit.docs.apiary.io/#"
   },
   {
     "service_id": 25,
@@ -2982,10 +2317,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.265+00",
     "status": "scraped",
-    "reference_url": "https://sifterapp.com/developer/documentation/",
-    "merged_schema": "",
-    "dataset_id": "sCrwSL2aWkoQrfPA5",
-    "dataset_tokens": ""
+    "reference_url": "https://sifterapp.com/developer/documentation/"
   },
   {
     "service_id": 26,
@@ -2995,10 +2327,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.266+00",
     "status": "scraped",
-    "reference_url": "https://docs.snipcart.com/v3/api-reference/introduction",
-    "merged_schema": "",
-    "dataset_id": "6TmfaZgTyc1fMaqqN",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.snipcart.com/v3/api-reference/introduction"
   },
   {
     "service_id": 27,
@@ -3008,10 +2337,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.267+00",
     "status": "scraped",
-    "reference_url": "https://missiveapp.com/help/api-documentation/overview",
-    "merged_schema": "",
-    "dataset_id": "iS8BKqcczHWY5aUyf",
-    "dataset_tokens": ""
+    "reference_url": "https://missiveapp.com/help/api-documentation/overview"
   },
   {
     "service_id": 30,
@@ -3021,10 +2347,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.268+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.reply.io/",
-    "merged_schema": "",
-    "dataset_id": "9WtNCKEpGAhim9YuF",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.reply.io/"
   },
   {
     "service_id": 33,
@@ -3034,10 +2357,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.271+00",
     "status": "scraped",
-    "reference_url": "https://ably.com/docs/api/rest-api",
-    "merged_schema": "",
-    "dataset_id": "CreyMekVdHeQUS7NP",
-    "dataset_tokens": ""
+    "reference_url": "https://ably.com/docs/api/rest-api"
   },
   {
     "service_id": 34,
@@ -3047,10 +2367,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.272+00",
     "status": "scraped",
-    "reference_url": "https://developer.mixpanel.com/reference/overview",
-    "merged_schema": "",
-    "dataset_id": "jQ28U3Lup4gmxBgvr",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.mixpanel.com/reference/overview"
   },
   {
     "service_id": 39,
@@ -3060,10 +2377,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.277+00",
     "status": "scraped",
-    "reference_url": "https://api4.nozbe.com/v1/api",
-    "merged_schema": "",
-    "dataset_id": "nWkWM9Z1sSunfd2vh",
-    "dataset_tokens": ""
+    "reference_url": "https://api4.nozbe.com/v1/api"
   },
   {
     "service_id": 41,
@@ -3073,10 +2387,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:22:35.279+00",
     "status": "scraped",
-    "reference_url": "https://en.formdesk.com/features/webservice-api/",
-    "merged_schema": "",
-    "dataset_id": "pevb3u4V1lbrjUy2u",
-    "dataset_tokens": ""
+    "reference_url": "https://en.formdesk.com/features/webservice-api/"
   },
   {
     "service_id": 50,
@@ -3086,10 +2397,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:30:14.295+00",
     "status": "scraped",
-    "reference_url": "https://client.spondyr.io/#/Public/Public/Documentation",
-    "merged_schema": "",
-    "dataset_id": "Mnmr9mQ3mbYjYYCb7",
-    "dataset_tokens": ""
+    "reference_url": "https://client.spondyr.io/#/Public/Public/Documentation"
   },
   {
     "service_id": 51,
@@ -3099,10 +2407,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:30:14.296+00",
     "status": "scraped",
-    "reference_url": "https://www.unisender.com/ru/support/api/common/bulk-email/",
-    "merged_schema": "",
-    "dataset_id": "WrUGHWvqqE6WZh5UO",
-    "dataset_tokens": ""
+    "reference_url": "https://www.unisender.com/ru/support/api/common/bulk-email/"
   },
   {
     "service_id": 54,
@@ -3112,10 +2417,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:33:45.394+00",
     "status": "scraped",
-    "reference_url": "https://developer.chargeover.com/",
-    "merged_schema": "",
-    "dataset_id": "c9sZWf8u2GCj8kAgQ",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.chargeover.com/"
   },
   {
     "service_id": 62,
@@ -3125,10 +2427,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:33:45.397+00",
     "status": "scraped",
-    "reference_url": "https://apiflash.com/documentation",
-    "merged_schema": "",
-    "dataset_id": "YfeqLyyX6wy14kevf",
-    "dataset_tokens": ""
+    "reference_url": "https://apiflash.com/documentation"
   },
   {
     "service_id": 63,
@@ -3138,10 +2437,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:06:34.113+00",
     "status": "scraped",
-    "reference_url": "https://snapdocs-closings.readme.io/",
-    "merged_schema": "",
-    "dataset_id": "b9K8Kct0qnHd5JmEb",
-    "dataset_tokens": ""
+    "reference_url": "https://snapdocs-closings.readme.io/"
   },
   {
     "service_id": 64,
@@ -3151,10 +2447,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:38:46.296+00",
     "status": "scraped",
-    "reference_url": "https://developers.survicate.com/",
-    "merged_schema": "",
-    "dataset_id": "NEQ5TLKdRnkIggPmF",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.survicate.com/"
   },
   {
     "service_id": 59,
@@ -3164,10 +2457,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:34:13.231+00",
     "status": "scraped",
-    "reference_url": "https://cloudconvert.com/api/v2",
-    "merged_schema": "",
-    "dataset_id": "xTCxwvRClykCGg1Kh",
-    "dataset_tokens": ""
+    "reference_url": "https://cloudconvert.com/api/v2"
   },
   {
     "service_id": 65,
@@ -3177,10 +2467,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:35:51.884+00",
     "status": "scraped",
-    "reference_url": "https://developers.marketingmaster.io/",
-    "merged_schema": "",
-    "dataset_id": "6zPmjIWnuibMPWjfa",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.marketingmaster.io/"
   },
   {
     "service_id": 71,
@@ -3190,10 +2477,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:36:28.585+00",
     "status": "scraped",
-    "reference_url": "https://developers.karbonhq.com/api/",
-    "merged_schema": "",
-    "dataset_id": "xf1K7dxqOGm4rZiZA",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.karbonhq.com/api/"
   },
   {
     "service_id": 68,
@@ -3203,10 +2487,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:38:46.298+00",
     "status": "scraped",
-    "reference_url": "https://apidocs.myworkboard.com/",
-    "merged_schema": "",
-    "dataset_id": "4rHBJbty9sCAsUgQA",
-    "dataset_tokens": ""
+    "reference_url": "https://apidocs.myworkboard.com/"
   },
   {
     "service_id": 77,
@@ -3216,10 +2497,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:39:52.389+00",
     "status": "scraped",
-    "reference_url": "https://developers.giphy.com/docs/api/",
-    "merged_schema": "",
-    "dataset_id": "HR8mggZJriG2AaCHm",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.giphy.com/docs/api/"
   },
   {
     "service_id": 80,
@@ -3229,10 +2507,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:51:24.613+00",
     "status": "scraped",
-    "reference_url": "https://developers.trengo.com/docs",
-    "merged_schema": "",
-    "dataset_id": "lngbI5hqLTBD8wxp0",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.trengo.com/docs"
   },
   {
     "service_id": 40,
@@ -3242,10 +2517,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:45:00.929+00",
     "status": "scraped",
-    "reference_url": "https://dev.chartmogul.com/reference",
-    "merged_schema": "",
-    "dataset_id": "49bpygq0hbiuhbtgT",
-    "dataset_tokens": ""
+    "reference_url": "https://dev.chartmogul.com/reference"
   },
   {
     "service_id": 72,
@@ -3255,10 +2527,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:45:00.931+00",
     "status": "scraped",
-    "reference_url": "https://rest.cleverreach.com/howto/",
-    "merged_schema": "",
-    "dataset_id": "fbgTofvrwgrZc82hZ",
-    "dataset_tokens": ""
+    "reference_url": "https://rest.cleverreach.com/howto/"
   },
   {
     "service_id": 73,
@@ -3268,10 +2537,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:45:00.932+00",
     "status": "scraped",
-    "reference_url": "https://sportsdata.io/developers/api-documentation",
-    "merged_schema": "",
-    "dataset_id": "h02U4ymXi3X47NFkn",
-    "dataset_tokens": ""
+    "reference_url": "https://sportsdata.io/developers/api-documentation"
   },
   {
     "service_id": 13,
@@ -3281,10 +2547,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:45:00.936+00",
     "status": "scraped",
-    "reference_url": "https://developer.safetyculture.com/reference",
-    "merged_schema": "",
-    "dataset_id": "yEbj5RaLo62aP9haV",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.safetyculture.com/reference"
   },
   {
     "service_id": 48,
@@ -3294,10 +2557,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:45:00.942+00",
     "status": "scraped",
-    "reference_url": "https://docs.ai21.com/reference",
-    "merged_schema": "",
-    "dataset_id": "HN06foNhNNWuFSmED",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.ai21.com/reference"
   },
   {
     "service_id": 78,
@@ -3307,10 +2567,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:45:00.943+00",
     "status": "scraped",
-    "reference_url": "https://help.linkish.io/api-docs",
-    "merged_schema": "",
-    "dataset_id": "ko4AZAiepfWYqpYGU",
-    "dataset_tokens": ""
+    "reference_url": "https://help.linkish.io/api-docs"
   },
   {
     "service_id": 79,
@@ -3320,10 +2577,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:45:00.944+00",
     "status": "scraped",
-    "reference_url": "https://docs.bunny.net/reference/bunnynet-api-overview",
-    "merged_schema": "",
-    "dataset_id": "pYvNOIFIve6guzdqc",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.bunny.net/reference/bunnynet-api-overview"
   },
   {
     "service_id": 86,
@@ -3333,10 +2587,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:51:24.42+00",
     "status": "scraped",
-    "reference_url": "https://docs.claid.ai/",
-    "merged_schema": "",
-    "dataset_id": "fCdlipMzYoyvjqhmZ",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.claid.ai/"
   },
   {
     "service_id": 87,
@@ -3346,10 +2597,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:51:24.558+00",
     "status": "scraped",
-    "reference_url": "https://smaily.com/help/api/",
-    "merged_schema": "",
-    "dataset_id": "xnhAx3ycl0RLyN8p5",
-    "dataset_tokens": ""
+    "reference_url": "https://smaily.com/help/api/"
   },
   {
     "service_id": 84,
@@ -3359,10 +2607,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 14:51:24.623+00",
     "status": "scraped",
-    "reference_url": "http://developers.maestro.io/api/rest",
-    "merged_schema": "",
-    "dataset_id": "FhwNPy6cfDJgcUvAA",
-    "dataset_tokens": ""
+    "reference_url": "http://developers.maestro.io/api/rest"
   },
   {
     "service_id": 89,
@@ -3372,10 +2617,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:05:00.911+00",
     "status": "scraped",
-    "reference_url": "https://app.amilia.com/apidocs/",
-    "merged_schema": "",
-    "dataset_id": "4C8aTpoBizUGV310j",
-    "dataset_tokens": ""
+    "reference_url": "https://app.amilia.com/apidocs/"
   },
   {
     "service_id": 83,
@@ -3385,10 +2627,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:05:01.256+00",
     "status": "scraped",
-    "reference_url": "https://devdocs.helcim.com/reference",
-    "merged_schema": "",
-    "dataset_id": "ZeuBhUOMW2IzEOxSh",
-    "dataset_tokens": ""
+    "reference_url": "https://devdocs.helcim.com/reference"
   },
   {
     "service_id": 97,
@@ -3398,10 +2637,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:05:01.261+00",
     "status": "scraped",
-    "reference_url": "https://documenter.getpostman.com/view/11606268/TzseGkXr",
-    "merged_schema": "",
-    "dataset_id": "nbEKQSzidR24Rgrkl",
-    "dataset_tokens": ""
+    "reference_url": "https://documenter.getpostman.com/view/11606268/TzseGkXr"
   },
   {
     "service_id": 101,
@@ -3411,10 +2647,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:05:01.263+00",
     "status": "scraped",
-    "reference_url": "https://firmao.net/api.php",
-    "merged_schema": "",
-    "dataset_id": "1OQWAP6qzCDgtJilu",
-    "dataset_tokens": ""
+    "reference_url": "https://firmao.net/api.php"
   },
   {
     "service_id": 94,
@@ -3424,10 +2657,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 21:52:15.908+00",
     "status": "scraped",
-    "reference_url": "https://docs.simplehash.com/reference",
-    "merged_schema": "",
-    "dataset_id": "KN0ppprg5M3FjY4j3",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.simplehash.com/reference"
   },
   {
     "service_id": 240,
@@ -3437,10 +2667,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 20:48:30.192+00",
     "status": "scraped",
-    "reference_url": "https://developers.easyship.com/reference",
-    "merged_schema": "",
-    "dataset_id": "H3u847lQkUb33L5Yg",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.easyship.com/reference"
   },
   {
     "service_id": 264,
@@ -3450,10 +2677,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 20:48:30.768+00",
     "status": "scraped",
-    "reference_url": "https://developers.oxylabs.io/",
-    "merged_schema": "",
-    "dataset_id": "diNv8LbrjnckTqzyS",
-    "dataset_tokens": ""
+    "reference_url": "https://developers.oxylabs.io/"
   },
   {
     "service_id": 112,
@@ -3463,10 +2687,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:48:32.88+00",
     "status": "scraped",
-    "reference_url": "https://docs.writesonic.com/reference",
-    "merged_schema": "",
-    "dataset_id": "1A1mzqrXTRoNyDiNB",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.writesonic.com/reference"
   },
   {
     "service_id": 95,
@@ -3476,10 +2697,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:18:50.388+00",
     "status": "scraped",
-    "reference_url": "https://training.bitrix24.com/rest_help/",
-    "merged_schema": "",
-    "dataset_id": "9cYpUNjAbeuHnsKgS",
-    "dataset_tokens": ""
+    "reference_url": "https://training.bitrix24.com/rest_help/"
   },
   {
     "service_id": 162,
@@ -3489,10 +2707,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:24:58.457+00",
     "status": "scraped",
-    "reference_url": "https://docs.dynatrace.com/docs/dynatrace-api/environment-api",
-    "merged_schema": "",
-    "dataset_id": "AaE1ecz2eYdLK8PUM",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.dynatrace.com/docs/dynatrace-api/environment-api"
   },
   {
     "service_id": 120,
@@ -3502,10 +2717,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:48:33.427+00",
     "status": "scraped",
-    "reference_url": "https://docs.teachable.com/reference",
-    "merged_schema": "",
-    "dataset_id": "bDhQenFoYa8akhwmc",
-    "dataset_tokens": ""
+    "reference_url": "https://docs.teachable.com/reference"
   },
   {
     "service_id": 124,
@@ -3515,10 +2727,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:48:33.492+00",
     "status": "scraped",
-    "reference_url": "https://gender-api.com/en/api-docs",
-    "merged_schema": "",
-    "dataset_id": "bjuSIv8foolohUskb",
-    "dataset_tokens": ""
+    "reference_url": "https://gender-api.com/en/api-docs"
   },
   {
     "service_id": 119,
@@ -3528,10 +2737,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 15:48:33.507+00",
     "status": "scraped",
-    "reference_url": "https://www.klazify.com/category#docs",
-    "merged_schema": "",
-    "dataset_id": "CmsGEFtNn8hlTEnOX",
-    "dataset_tokens": ""
+    "reference_url": "https://www.klazify.com/category#docs"
   },
   {
     "service_id": 234,
@@ -3541,10 +2747,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 19:18:51.612+00",
     "status": "scraped",
-    "reference_url": "https://developer.uservoice.com/docs/api/v2/reference",
-    "merged_schema": "",
-    "dataset_id": "NBrN22W83hFeBCzxP",
-    "dataset_tokens": ""
+    "reference_url": "https://developer.uservoice.com/docs/api/v2/reference"
   },
   {
     "service_id": 136,
@@ -3554,10 +2757,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:25:00.903+00",
     "status": "scraped",
-    "reference_url": "https://dev.digicert.com/",
-    "merged_schema": "",
-    "dataset_id": "tayMCvyhSXKw8AaBG",
-    "dataset_tokens": ""
+    "reference_url": "https://dev.digicert.com/"
   },
   {
     "service_id": 106,
@@ -3567,10 +2767,7 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:25:01.808+00",
     "status": "scraped",
-    "reference_url": "https://webapi.mymarketing.co.il/api/docs/",
-    "merged_schema": "",
-    "dataset_id": "Nh6f3mKszOqxz30iA",
-    "dataset_tokens": ""
+    "reference_url": "https://webapi.mymarketing.co.il/api/docs/"
   },
   {
     "service_id": 42,
@@ -3580,9 +2777,6 @@
     "created_at": "2023-11-15 09:10:09.822961+00",
     "updated_at": "2023-12-14 17:25:01.81+00",
     "status": "scraped",
-    "reference_url": "https://location.foursquare.com/developer/reference",
-    "merged_schema": "",
-    "dataset_id": "a8kYgDF5mdPhLB6i0",
-    "dataset_tokens": ""
+    "reference_url": "https://location.foursquare.com/developer/reference"
   }
 ]
