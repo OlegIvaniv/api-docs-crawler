@@ -7,7 +7,7 @@
    
     {
       "name": "Debug main.ts with tsx",
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
       "skipFiles": [
           "<node_internals>/**"
