@@ -3,7 +3,7 @@ import { Dataset, EnqueueStrategy, InfiniteScrollOptions, Log, PlaywrightCrawler
 import { Actor } from 'apify';
 import { Readability } from '@mozilla/readability';
 import { JSDOM } from 'jsdom';
-import { ElementHandle, Page } from 'playwright';
+import { ElementHandle, Locator, Page } from 'playwright';
 import Services from '../services.json' assert { type: "json" };
 import _ from 'lodash';
 import { NodeHtmlMarkdown, NodeHtmlMarkdownOptions } from 'node-html-markdown'
@@ -19,7 +19,7 @@ interface Endpoint {
 }
 
 interface EndpointSelectors {
-    name?: string;
+    name?: string | string[];
     delimiter?: string;
     click?: string;
     link?: string;
@@ -60,6 +60,34 @@ function getReadableHtml(html: string) {
     
     return reader.parse();
 }
+async function getFirstMatchingElementRaw(rawHtml: string, selectors?: string | string[]) {
+    if (!selectors) return null;
+    if (!Array.isArray(selectors)) {
+        selectors = [selectors];
+    }
+    const doc = new JSDOM(rawHtml);
+    for (const selector of selectors) {
+        const element = doc.window.document.querySelector(selector);
+        if (element) {
+            return element;
+        }
+    }
+    return null;
+}
+
+async function getFirstMatchingElement(el: Locator, selectors?: string | string[]) {
+    if (!selectors) return null;
+    if (!Array.isArray(selectors)) {
+        selectors = [selectors];
+    }
+    for (const selector of selectors) {
+        const element = await el.locator(selector);
+        if (await element.count() > 0) {
+            return element;
+        }
+    }
+    return null;
+}
 
 async function parserSinglePageSections({ page, selectors }: SinglePageFlatSectionParserArgs) {
     if (!selectors?.delimiter || !selectors?.name) {
@@ -69,10 +97,10 @@ async function parserSinglePageSections({ page, selectors }: SinglePageFlatSecti
     const htmlSections = await page.locator(selectors?.delimiter).all();
     for (const delimiterElement of htmlSections) {
         const rawHtml = await delimiterElement.evaluate((element) => element.outerHTML);
-        const name = await delimiterElement
-            .evaluate(
-                (element, selectors) => element.querySelector(selectors?.name ?? '')?.textContent ?? '', selectors
-            ) ?? '';
+        const nameElement = await getFirstMatchingElement(delimiterElement, selectors?.name);
+
+        const name = await nameElement?.textContent() ?? '';
+        console.log("🚀 ~ file: main.ts:88 ~ parserSinglePageSections ~ name:", name)
 
         endpoints.push({
             name,
@@ -83,35 +111,75 @@ async function parserSinglePageSections({ page, selectors }: SinglePageFlatSecti
     return endpoints;
 }
 
-async function parseSwagger({ page }: SinglePageFlatSectionParserArgs) {
-    const operations = await page.locator('.opblock-summary .opblock-summary-control').all();
-    try {
-        await page.locator('.qc-cmp2-summary-buttons button[mode="primary"]').click();
-    } catch {}
+async function parseSwagger({ page, log }: SinglePageFlatSectionParserArgs) {
+    log?.info(`Parsing swagger`);
+    await page.waitForLoadState('networkidle', { timeout: 5000 }).catch(() => {
+        log?.warning(`Page is not ready after 5 seconds, continuing anyway`);
+    });
+
+    const shrinkAllButtons = await page.locator('.opblock-summary-control[aria-expanded=true]').all();
+    for (const button of shrinkAllButtons) {
+        await button.scrollIntoViewIfNeeded();
+        await button.click();
+    }
+    log?.info(`Clicked ${shrinkAllButtons.length} shrink buttons`);
+    
+    const operations = await page.locator('.opblock-summary-control[aria-expanded=false]').all();
+    log?.info(`Found ${operations.length} operations`);
+    const partialEndpoints: Partial<Endpoint>[] = [];
     for (const operation of operations) {
         await operation.scrollIntoViewIfNeeded();
         await operation.click();
-    }
+        
+        // let allSections: ElementHandle[] = [];
+        let openSectionsLocator: Locator;
+        let allSections: Locator[];
+        try {
+            openSectionsLocator = await page.locator('.opblock.is-open');
+            allSections = await openSectionsLocator.all();
+        } catch (error) {
+            log?.info(`No open sections found for operation ${operation} ${error}`)
+           break;
+        }
 
-    const endpoints: Endpoint[] = [];
-    const sections = await page.locator('.opblock.is-open').all();
-    for (const endpoint of sections) {
+        if (allSections.length !== 1) {
+            log?.warning(`Found ${allSections.length} open sections, expected 1, closing and skipping`);
+            await page.locator('.opblock-summary-control[aria-expanded=true]').click();
+            continue;
+        }
+
+        const endpoint = await page.locator('.opblock.is-open').first();
+        // await endpoint.scrollIntoViewIfNeeded();
+        const start = Date.now();
         await endpoint.evaluate((element) => element.scrollIntoView());
-        const name = await endpoint.locator('.opblock-summary-description').textContent() ?? '';
-        const rawHtml = await endpoint.innerHTML();
-        const markdown = NodeHtmlMarkdown.translate(rawHtml);
-        const parsedHtml = getReadableHtml(rawHtml);
+        const method = await endpoint.locator('.opblock-summary-method').textContent() ?? '';
+        const path = await endpoint.locator('.opblock-summary-path').textContent() ?? '';
+        const description = await endpoint.locator('.opblock-summary-description').textContent() ?? '';
 
-        endpoints.push({
+        const name = `[${method}][${path}]: ${description}`;
+        const rawHtml = await endpoint.innerHTML();
+
+        await page.locator('.opblock-summary-control[aria-expanded=true]').click();
+        log?.info(`[${partialEndpoints.length}/${operations.length}][${Date.now() - start}ms] Parsed endpoint: ${name}`);
+        
+        partialEndpoints.push({
             name: name.trim(),
-            // rawHtml,
-            markdown,
-            parsedHtml
+            rawHtml
         });
     }
 
+    const endpoints = partialEndpoints
+        .filter(e => e.rawHtml)
+        .map(e => ({ 
+            name: e.name?.trim() ?? '',
+            ...parseRawHtml(e.rawHtml!) }
+        ));
+
+    log?.info(`Finished parsing all ${operations.length} operations. Found ${partialEndpoints.length} endpoints`);
+
     return endpoints;
 }
+
 async function parserSinglePageFlatSection({ page, selectors }: SinglePageFlatSectionParserArgs) {
     if (!selectors?.delimiter || !selectors.name) {
         throw new Error('Delimiter and name is required for parserSinglePageFlatSection');
@@ -137,8 +205,8 @@ async function parserSinglePageFlatSection({ page, selectors }: SinglePageFlatSe
 
     const completeEndpoints = await Promise.all(
         htmlSections.map(async (rawHtml: string) => {
-            const doc = new JSDOM(rawHtml);
-            const name = doc.window.document.querySelector(selectors?.name ?? '')?.textContent ?? '';
+            const nameElement = await getFirstMatchingElementRaw(rawHtml, selectors?.name);
+            const name = nameElement?.textContent?.trim() ?? '';
 
             return {
                 name,
@@ -150,7 +218,7 @@ async function parserSinglePageFlatSection({ page, selectors }: SinglePageFlatSe
     return completeEndpoints;
 }
 
-async function parserIndividualPage({ page }: { page: Page, log: Log; }) {
+async function parserIndividualPage({ page, log, selectors }: SinglePageFlatSectionParserArgs) {
     const rawHtml = await page.$eval('body', (body) => body.innerHTML)
     let h1: string | undefined;
     try {
@@ -159,20 +227,26 @@ async function parserIndividualPage({ page }: { page: Page, log: Log; }) {
 
     const title = h1 || await page.title();
 
-    const doc = new JSDOM(rawHtml);
-   
-    const tagsToRemove = ['script', 'style', 'link', 'i', 'meta', 'svg', 'img'];
-    tagsToRemove.forEach(tag => doc.window.document.querySelectorAll(tag).forEach(element => element.remove()));
-
-    let reader = new Readability(doc.window.document);
-    const parsedHtml = await reader.parse();
-    const markdown = NodeHtmlMarkdown.translate(rawHtml);
+    let endpoints: Endpoint[] = [];
+    if (selectors?.delimiter && selectors?.name) {
+        endpoints = await scrollAndParse({ page, selectors, log, type: 'singlePage' });
+    } else {
+        const doc = new JSDOM(rawHtml);
+       
+        const tagsToRemove = ['script', 'style', 'link', 'i', 'meta', 'svg', 'img'];
+        tagsToRemove.forEach(tag => doc.window.document.querySelectorAll(tag).forEach(element => element.remove()));
     
-    return [{
-        name: h1 ?? title,
-        parsedHtml,
-        markdown
-    }];
+        let reader = new Readability(doc.window.document);
+        const parsedHtml = await reader.parse();
+        const markdown = NodeHtmlMarkdown.translate(rawHtml);
+        endpoints.push({
+            name: h1 ?? title,
+            parsedHtml,
+            markdown
+        });
+    }
+    
+    return endpoints;
 }
 
 function parseRawHtml(rawHtml: string) {
@@ -191,14 +265,81 @@ function isStableForLastNScrolls(history: number[], n: number) {
     return new Set(recentHistory).size === 1;
 }
 
+async function scrollAndParse({ page, selectors, type, log }: {
+     page: Page, 
+     selectors?: EndpointSelectors, 
+     log?: Log
+     type: ScraperConfig['type'] 
+    }
+) {
+    const parsingFunction = type === 'singlePage' ? parserSinglePageFlatSection : parserSinglePageSections; 
+    const endpointsSet: Map<string, Partial<Endpoint>> = new Map();
+    
+    const windowHeight = await page.evaluate(() => window.innerHeight);
+    let scrollHeight = await page.evaluate(() => document.body.scrollHeight);
+    let scrollAmount = windowHeight * 1.2;
+    let scrollPosition = 0;
+
+    let endpoints: Endpoint[] = [];
+    const scrollSizeHistory: number[] = [];
+    const startTime = Date.now();
+    while (scrollPosition < scrollHeight) {
+        await page.evaluate((scrollAmount) => window.scrollBy(0, scrollAmount), scrollAmount)
+        const scrollEndpoints = await parsingFunction({ page, selectors, log });
+
+        if (scrollEndpoints.filter(e => !e.name || e.name === '').length > 0) {
+            console.log('Missing endpoint name', scrollEndpoints.filter(e => !e.name || e.name === ''))
+        }
+        scrollEndpoints.forEach(newEndpoint => endpointsSet.set(newEndpoint.name ?? '', newEndpoint));
+        
+        const endpointsCount = endpointsSet.size;
+        scrollSizeHistory.push(endpointsCount);
+
+        const isStable = isStableForLastNScrolls(scrollSizeHistory, 10);
+        const isLastScroll = scrollHeight - scrollPosition < scrollAmount;
+
+        if(isStable && !isLastScroll) {
+            log?.info(`Scrolling is stable, next scroll will be the last one`);
+        }
+
+        scrollPosition =  isStable && !isLastScroll
+            ? scrollHeight - 1
+            : scrollPosition + scrollAmount;
+        scrollHeight = await page.evaluate(() => document.body.scrollHeight);
+
+        log?.info(`Scroll position: ${Math.round(scrollPosition / scrollHeight * 100)}%, ${endpointsCount} items parsed`);
+    }
+    const endScrollingTime = Date.now();
+    log?.info(`Scrolling took ${endScrollingTime - startTime}ms`);
+
+    console.log('Endpoints', endpointsSet.size)
+    const partialEndpoints = [...endpointsSet.values()];
+    const parsedEndpoints: Endpoint[] = partialEndpoints
+        .filter(e => e.rawHtml)
+        .map(e => ({ 
+            name: e.name?.trim() ?? '',
+            ...parseRawHtml(e.rawHtml!) }
+        ));
+
+    const endParsingTime = Date.now();
+    log?.info(`Parsing took ${endParsingTime - endScrollingTime}ms`);
+    endpoints.push(...parsedEndpoints);
+    return endpoints;
+}
+
 async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: ScraperConfig, dataset: Dataset) {
     const crawler = new PlaywrightCrawler({
-        requestHandlerTimeoutSecs: 360,
+        // Some docs are long...
+        requestHandlerTimeoutSecs: type === 'individualPages' ? 120 : 780,
         // Use the requestHandler to process each of the crawled pages.
         async requestHandler({ request, page, enqueueLinks, log, closeCookieModals, enqueueLinksByClickingElements }) {
             const start = Date.now();
-            log.info(`Processing ${request.loadedUrl}`);
-            await page.waitForLoadState('networkidle')
+            log.info(`Processing ${request.loadedUrl}, type: ${type}`);
+
+            // Do not throw an error if the page is not ready within 5 seconds
+            await page.waitForLoadState('networkidle', { timeout: 12000 }).catch(() => {
+                log.warning(`Page ${request.loadedUrl} is not ready after 5 seconds, continuing anyway`);
+            });
             const endNetworkIdle = Date.now();
             log.info(`Network idle after ${endNetworkIdle - start}ms`);
             
@@ -217,77 +358,19 @@ async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: S
             log.info(`Title of ${request.loadedUrl} is '${title}'`);
 
             let endpoints: Endpoint[] = [];
+            
             if (['singlePage', 'singlePageSections'].includes(type) && selectors) {               
-                const parsingFunction = type === 'singlePage' ? parserSinglePageFlatSection : parserSinglePageSections; 
-                const endpointsSet: Map<string, Partial<Endpoint>> = new Map();
-                
-                // Scroll in intervals of 1/4 of the window height
-                const windowHeight = await page.evaluate(() => window.innerHeight);
-                let scrollHeight = await page.evaluate(() => document.body.scrollHeight);
-                let scrollAmount = windowHeight * 1;
-                let scrollPosition = 0;
-                const scrollSizeHistory: number[] = [];
-                const startTime = Date.now();
-                while (scrollPosition < scrollHeight) {
-                    await page.evaluate((scrollAmount) => window.scrollBy(0, scrollAmount), scrollAmount);
-                    const scrollEndpoints = await parsingFunction({ page, selectors, log });
-
-                    if (scrollEndpoints.filter(e => !e.name || e.name === '').length > 0) {
-                        console.log('Missing endpoint name', scrollEndpoints.filter(e => !e.name || e.name === ''))
-                    }
-                    scrollEndpoints.forEach(newEndpoint => endpointsSet.set(newEndpoint.name ?? '', newEndpoint));
-                    
-                    const endpointsCount = endpointsSet.size;
-                    scrollSizeHistory.push(endpointsCount);
-
-                    const isStable = isStableForLastNScrolls(scrollSizeHistory, 2);
-                    const isLastScroll = scrollHeight - scrollPosition < scrollAmount;
-
-                    if(isStable && !isLastScroll) {
-                        log.info(`Scrolling is stable, next scroll will be the last one`);
-                    }
-
-                    scrollPosition =  isStable && !isLastScroll
-                        ? scrollHeight - 1
-                        : scrollPosition + scrollAmount;
-                    scrollHeight = await page.evaluate(() => document.body.scrollHeight);
-
-                    log.info(`Scroll position: ${Math.round(scrollPosition / scrollHeight * 100)}%, ${endpointsCount} items parsed`);
-                }
-                const endScrollingTime = Date.now();
-                log.info(`Scrolling took ${endScrollingTime - startTime}ms`);
-
-                console.log('Endpoints', endpointsSet.size)
-                const partialEndpoints = [...endpointsSet.values()];
-                const parsedEndpoints: Endpoint[] = partialEndpoints
-                    .filter(e => e.rawHtml)
-                    .map(e => ({ 
-                        name: e.name ?? '',
-                        ...parseRawHtml(e.rawHtml!) }
-                    ));
-
-                const endParsingTime = Date.now();
-                log.info(`Parsing took ${endParsingTime - endScrollingTime}ms`);
-                endpoints.push(...parsedEndpoints);
+                endpoints = await scrollAndParse({ page, selectors, type, log })
             } 
             
             if (type === 'individualPages') {
-                endpoints = await parserIndividualPage({ page, log });
+                endpoints = await parserIndividualPage({ page, log, selectors });
             }
             if (type === 'swagger') {
-                endpoints = await parseSwagger({ page });
+                endpoints = await parseSwagger({ page, log });
             }
 
-            
-            if (selectors?.click) {
-                const allSubmenus = await page.locator(selectors?.click);
-                for (const submenu of await allSubmenus.all()) {
-                    if(!submenu) continue;
-                    await submenu.scrollIntoViewIfNeeded();
-                    await submenu.click();
-                }
-            }
-
+        
             await dataset.pushData({ title, url: request.loadedUrl, endpoints });
             if (type === 'individualPages') {
                 await enqueueLinks({
@@ -328,9 +411,11 @@ async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: S
     await crawler.run();
 }
 
-async function crawlServices() {
+async function crawlServices(serviceId?: number) {
     for (const service of Services) {
-        if (service.service_id !== 152 || !service.type) continue;
+        if (!service.type) continue;
+        if (serviceId && service.service_id !== serviceId) continue;
+        console.log('Scraping', service.name);
         const serviceData = {
             id: service.service_id ?? uuid(),
             name: service.name,
@@ -352,7 +437,10 @@ async function crawlServices() {
         }, dataset);
     }
 }
+const serviceId = process.argv[2];
+
 await Actor.init();
+await crawlServices(Number(serviceId));
 // const input = await Actor.getInput() as ActorInputSchema;
 // if (input) {
 //     console.log("🚀 ~ file: main.ts:419 ~ input:", input)
@@ -374,7 +462,7 @@ await Actor.init();
 //     await scrape(payload, dataset);
 // } else {
 // }
-await crawlServices();
+
 await Actor.exit();
 
 

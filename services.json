@@ -231,469 +231,453 @@
     "name": "Harry Potter API",
     "url": "https://potterapi.com/",
     "description": "The Harry Potter API is a web service that provides developers with access to a vast collection of data related to the Harry Potter series. It allows users to retrieve information about characters, spells, houses, and more programmatically.",
-    "reference_url": "https://hp-api.onrender.com/"
+    "reference_url": "https://hp-api.onrender.com/",
+    "type": "individualPages",
+    "globs": ["https://hp-api.onrender.com/"]
   },
   {
     "service_id": 82,
     "name": "Fluent Support",
     "url": "https://fluentsupport.com/",
     "description": "Fluent Support is an adaptable and feature-packed plugin for WordPress, serving as a comprehensive solution for help desk and customer support needs. With it, you can seamlessly deliver exceptional customer assistance and efficiently handle inquiries, all directly from your WordPress dashboard.",
-    "reference_url": "https://fluentsupport.com/rest-api/"
+    "reference_url": "https://fluentsupport.com/rest-api/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2[id]"
+    }
   },
   {
     "service_id": 85,
     "name": "ScrapeNinja",
     "url": "https://scrapeninja.net/",
     "description": "Scrapeninja is a powerful web scraping tool designed to extract data from websites. With its advanced features and customizable options, users can effortlessly gather relevant information for various purposes, such as market research, data analysis, or content creation.",
-    "reference_url": "https://scrapeninja.net/docs/category/api-reference/"
+    "reference_url": "https://scrapeninja.net/docs/category/api-reference/",
+    "type": "individualPages",
+    "globs": ["https://scrapeninja.net/docs/api-reference/*"]
   },
   {
     "service_id": 93,
     "name": "AdRoll",
     "url": "https://adroll.com",
     "description": "AdRoll is a digital marketing platform that offers retargeting and personalized advertising solutions for businesses. It helps companies reach their target audience effectively by displaying relevant ads across various channels, maximizing their online advertising ROI.",
-    "reference_url": "https://apidocs.nextroll.com/crud-api/"
-  },
-  {
-    "service_id": 156,
-    "name": "Simplero",
-    "url": "https://simplero.com",
-    "description": "Simplero is an all-in-one platform designed to simplify online business management. With features like website creation, email marketing tools, and membership site management, Simplero streamlines processes and empowers entrepreneurs to efficiently run and grow their businesses.",
-    "reference_url": "https://github.com/Simplero/Simplero-API"
-  },
-  {
-    "service_id": 159,
-    "name": "Ortto",
-    "url": "https://ortto.com/",
-    "description": "Ortto is a comprehensive marketing automation and analytics platform that enables marketers to execute effective campaigns for business growth. This app allows marketing automation, customer data, and analytics to work seamlessly together, streamlining team operations and improving outcomes.",
-    "reference_url": "https://help.ortto.com/developer/latest/api-reference/"
+    "reference_url": "https://apidocs.nextroll.com/crud-api/reference.html",
+    "type": "singlePageSections",
+    "selectors": {
+      "name": "dd > p:first-child",
+      "delimiter": "#operations .post"
+    }
   },
   {
     "service_id": 76,
     "name": "Dokan",
     "url": "https://wedevs.com/dokan/",
     "description": "Dokan is a software tool and library for creating and mounting virtual file systems in Windows. It allows users to access files from various storage solutions, including cloud services and remote servers, as if they were local files on their computer.",
-    "reference_url": ""
-  },
-  {
-    "service_id": 96,
-    "name": "WebinarJam",
-    "url": "https://WebinarJam.com",
-    "description": "WebinarJam is a cloud-based webinar platform that allows users to host live webinars, create automated webinars, and engage with participants through interactive features. It provides a comprehensive toolkit for online presentations, marketing, and training, making it an efficient solution for businesses and professionals.",
-    "reference_url": "https://documentation.webinarjam.com/category/webinarjam-api/"
-  },
-  {
-    "service_id": 98,
-    "name": "WatchSignals",
-    "url": "https://watchsignals.com/",
-    "description": "Watchsignals is a platform that provides real-time monitoring and analysis of stock market data to help investors make informed decisions. With its advanced algorithms and customizable alerts, Watchsignals offers valuable insights and enables users to stay updated on market trends and potential opportunities.",
-    "reference_url": "https://api.watchsignals.com/docs"
+    "reference_url": "https://getdokan.github.io/dokan/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2[id]"
+    }
   },
   {
     "service_id": 99,
     "name": "Pirate Weather",
     "url": "https://pirateweather.net/",
     "description": "Pirate-weather refers to the ideal sailing conditions for pirates, characterized by clear skies, a steady breeze, and calm seas. It creates a perfect setting for pirate adventures, allowing them to navigate easily and plan their plundering escapades without hindrance from harsh weather conditions.",
-    "reference_url": "https://docs.pirateweather.net/en/latest/API/"
+    "reference_url": "https://docs.pirateweather.net/en/latest/API/",
+    "type": "individualPages",
+    "globs": ["https://docs.pirateweather.net/en/latest/API/"]
   },
   {
     "service_id": 201,
     "name": "TD Ameritrade",
     "url": "https://www.tdameritrade.com/",
     "description": "TD Ameritrade is a top U.S. brokerage firm, providing online trading and investment services to individual investors. With a wide range of investment options, tools, and advanced platforms, TD Ameritrade aims to empower traders and help them make informed decisions in the financial markets.",
-    "reference_url": "https://developer.tdameritrade.com/apis"
+    "reference_url": "https://developer.tdameritrade.com/apis",
+    "type": "individualPages",
+    "globs_exclude": ["https://developer.tdameritrade.com/content/**", "https://developer.tdameritrade.com/guides"]
   },
   {
     "service_id": 88,
     "name": "Hugging Face",
     "url": "https://huggingface.co/",
     "description": "Hugging Face is a machine learning and natural language processing company that specializes in developing state-of-the-art models for tasks like text generation, translation, and sentiment analysis. They provide libraries and frameworks for researchers and developers to build and deploy their own AI applications.",
-    "reference_url": "https://huggingface.co/docs/api-inference"
+    "reference_url": "https://huggingface.co/docs/api-inference/detailed_parameters?code=curl",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "h3"
+    }
   },
   {
     "service_id": 158,
     "name": "Zoho Desk",
     "url": "https://www.zoho.com/desk/",
     "description": "Zoho Desk is a cloud-based help desk software that enables businesses to effectively manage customer support tickets. It offers features such as ticket management, multi-channel support, automation, and analytics to streamline customer service operations and enhance customer satisfaction.",
-    "reference_url": "https://desk.zoho.com/DeskAPIDocument"
+    "reference_url": "https://desk.zoho.com/DeskAPIDocument",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h1",
+      "delimiter": ".twooverflow > div:not(.totalmain) >"
+    }
   },
   {
     "service_id": 75,
     "name": "SmartSuite",
     "url": "https://www.smartsuite.com/",
     "description": "Smartsuite is a software package designed for productivity and collaboration, frequently used by businesses and professionals. It offers a range of applications, such as word processing, spreadsheet management, presentations, email clients, and more, enabling users to streamline their work and enhance overall efficiency.",
-    "reference_url": "https://developers.smartsuite.com/docs/intro"
+    "reference_url": "https://developers.smartsuite.com/docs/intro",
+    "type": "individualPages",
+    "globs": ["https://developers.smartsuite.com/docs/**"]
   },
   {
     "service_id": 100,
     "name": "ShipStation",
     "url": "https://shipstation.com",
     "description": "ShipStation is a powerful online tool that simplifies and automates the process of managing and shipping orders for e-commerce businesses. With features like order importing, label creation, and multi-carrier shipping options, ShipStation helps businesses streamline their shipping operations and improve customer satisfaction.",
-    "reference_url": "https://www.shipstation.com/docs/api/"
-  },
-  {
-    "service_id": 157,
-    "name": "ShipHero",
-    "url": "https://shiphero.com",
-    "description": "ShipHero is a logistics software platform that streamlines e-commerce operations. It offers inventory management, order fulfillment, and shipping solutions to help businesses efficiently handle their supply chain. With features like real-time tracking, warehouse optimization, and automated processes, ShipHero simplifies and enhances e-commerce fulfillment.",
-    "reference_url": "https://developer.shiphero.com/"
+    "reference_url": "https://www.shipstation.com/docs/api/",
+    "type": "individualPages",
+    "globs": ["https://www.shipstation.com/docs/api/**"]
   },
   {
     "service_id": 261,
     "name": "Acquire",
     "url": "https://acquire.io",
     "description": "Acquire is a customer engagement platform that enables companies to provide exceptional conversational experiences.",
-    "reference_url": "https://developer.acquire.io/rest-apis"
+    "reference_url": "https://developer.acquire.io/rest-apis",
+    "type": "individualPages",
+    "globs": ["https://developer.acquire.io/rest-apis/**"]
   },
   {
     "service_id": 164,
     "name": "Samsung SmartThings",
     "url": "https://smartthings.com",
     "description": "SmartThings is a versatile and intelligent platform that connects and automates various smart devices in your home or office. It enables users to conveniently control and monitor everything from lights and thermostats to security systems and appliances through a single interface.",
-    "reference_url": "https://developer.smartthings.com/docs/api/public"
+    "reference_url": "https://developer.smartthings.com/docs/api/public",
+    "type": "singlePageSections",
+    "selectors": {
+      "name": "h2",
+      "delimiter": ".api-content > div[id]:has(div[data-section-id])"
+    }
   },
   {
     "service_id": 218,
     "name": "awork",
     "url": "https://awork.io",
     "description": "awork serves as a comprehensive work management tool for teams, merging project management, workload scheduling, and time tracking into a single central hub. It organizes your tasks into useful lists, agile kanban boards, or an intuitive timeline, contributing to your team's organization, efficiency, and job satisfaction.",
-    "reference_url": "https://developers.awork.com/"
+    "reference_url": "https://openapi.awork.com/",
+    "type": "swagger"
   },
   {
     "service_id": 134,
     "name": "ReCharge",
     "url": "https://rechargepayments.com",
     "description": "The ReCharge API is a handy tool for adding subscription billing to your existing apps or creating new ones. By connecting your app to ReCharge, you can use ReCharge's features to manage subscription payments easily.",
-    "reference_url": "https://developer.rechargepayments.com/"
+    "reference_url": "https://developer.rechargepayments.com/2021-11/",
+    "type": "singlePageSections",
+    "selectors": {
+      "name": "h1",
+      "delimiter": "section > section > section:has(.api-section)"
+    }
   },
   {
     "service_id": 163,
     "name": "3Scribe",
     "url": "https://3scri.be/",
     "description": "Threescribe is a writing tool that assists in generating engaging and creative content for various purposes. It aids in brainstorming ideas, structuring writing pieces, and improving overall writing quality. With Threescribe, users can enhance their writing skills and produce compelling content effortlessly.",
-    "reference_url": "https://developers.3scri.be/"
+    "reference_url": "https://developers.3scri.be/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h1",
+      "delimiter": "h1[id]"
+    }
   },
   {
     "service_id": 160,
     "name": "SignRequest",
     "url": "https://signrequest.com/#/",
     "description": "SignRequest is an online platform that allows users to send and sign documents electronically. It simplifies the signing process, eliminates the need for printing and scanning, and ensures the security and legality of digital signatures.",
-    "reference_url": "https://signrequest.com/api/v1/docs/"
+    "reference_url": "https://signrequest.com/api/v1/docs/",
+    "type": "singlePageSections",
+    "selectors": {
+      "name": ["h2", "h1"],
+      "delimiter": ".api-content > div[id]"
+    }
   },
   {
     "service_id": 121,
     "name": "Datarobot",
     "url": "https://datarobot.com",
     "description": "DataRobot is a leading automated machine learning platform that empowers organizations to rapidly build and deploy accurate predictive models. Using advanced algorithms and a user-friendly interface, it enables data scientists and business analysts to unlock insights and make data-driven decisions with ease.",
-    "reference_url": "https://docs.datarobot.com/en/docs/api/reference/index.html"
+    "reference_url": "https://docs.datarobot.com/en/docs/api/reference/public-api/index.html",
+    "type": "individualPages",
+    "globs": ["https://docs.datarobot.com/en/docs/api/reference/public-api/**"]
   },
   {
     "service_id": 111,
     "name": "Teamgate",
     "url": "https://www.teamgate.com",
     "description": "Teamgate is a comprehensive sales CRM software designed to boost productivity and efficiency. It offers features like lead management, pipeline tracking, and reporting tools to help sales teams better organize and streamline their processes, ultimately increasing sales and revenue.",
-    "reference_url": "https://developers.teamgate.com/"
+    "reference_url": "https://developers.teamgate.com/#b74f937d-56d5-4d48-bcc0-ebdf1282a61e",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "#doc-wrapper section > section[id]:has(h3)",
+      "click": ".documentation-core-list__item-name"
+    }
   },
   {
     "service_id": 113,
     "name": "Teamdeck",
     "url": "https://teamdeck.io/",
     "description": "Teamdeck is a resource management tool designed to help teams effectively allocate and manage their time and skills. It allows for easy scheduling, timesheet tracking, and skill monitoring, enabling teams to optimize their workflow and increase productivity.",
-    "reference_url": "https://teamdeck.io/developers/api"
-  },
-  {
-    "service_id": 118,
-    "name": "Pusher",
-    "url": "https://pusher.com/",
-    "description": "Pusher is a user-friendly technology that simplifies the process of integrating real-time features into applications for developers. By leveraging the Pusher API, developers can create a wide range of applications and services, spanning from real-time voting systems to collaborative games and more.",
-    "reference_url": "https://pusher.com/docs/channels/library_auth_reference/rest-api/"
+    "reference_url": "https://teamdeck.io/developers/api",
+    "type": "singlePageSections",
+    "selectors": {
+      "name": ["h2", "h3", "h1"],
+      "delimiter": ".api-content > div[id]"
+    }
   },
   {
     "service_id": 206,
     "name": "Patreon",
     "url": "https://patreon.com",
     "description": "Patreon is a membership platform that allows creators to earn a recurring income from their audience in exchange for exclusive content, rewards, and other perks. It enables fans to support their favorite artists, writers, musicians, and other creative individuals directly, fostering a sustainable artistic community.",
-    "reference_url": "https://docs.patreon.com/"
-  },
-  {
-    "service_id": 161,
-    "name": "Quickbooks Sandbox",
-    "url": "https://quickbooks.com",
-    "description": "QuickBooks Sandbox is a platform that allows users to test and explore the features of QuickBooks software in a safe and simulated environment. It provides a risk-free space for users to experiment and learn without affecting real financial data.",
-    "reference_url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
+    "reference_url": "https://docs.patreon.com/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2[id]"
+    }
   },
   {
     "service_id": 212,
     "name": "Formsite",
     "url": "https://www.formsite.com",
     "description": "Formsite is a cloud-based platform that enables users to create forms and surveys easily. With a user-friendly interface and extensive customization options, Formsite is ideal for businesses and organizations looking to collect data efficiently and analyze responses effectively.",
-    "reference_url": "https://support.formsite.com/hc/en-us/articles/360000288594-API"
+    "reference_url": "https://support.formsite.com/hc/en-us/articles/360000288594-API",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "h3"
+    }
   },
-  {
-    "service_id": 219,
-    "name": "FullContact",
-    "url": "https://fullcontact.com",
-    "description": "FullContact is a top SaaS provider for privacy-conscious Identity Resolution, employing its patented Identity Graph to facilitate the connection, consolidation, and enhancement of fragmented or incomplete offline, online, professional, and personal identifiers for brands and marketing platforms.",
-    "reference_url": "https://docs.fullcontact.com/docs"
-  },
-  {
-    "service_id": 213,
-    "name": "TurboHire",
-    "url": "https://turbohire.co",
-    "description": "TurboHire is an AI-powered recruitment software designed to streamline and enhance the hiring process. It uses advanced algorithms to identify the best candidates for job openings, simplifying the process for recruiters while delivering efficient and effective hiring solutions.",
-    "reference_url": "https://api.turbohire.co"
-  },
-  {
-    "service_id": 224,
-    "name": "HeySummit",
-    "url": "https://www.heysummit.com/",
-    "description": "HeySummit is a platform that allows people to easily create and host virtual summits, conferences, and webinars. It provides a seamless experience for both organizers and attendees, with features like ticketing, networking, and live interactive sessions.",
-    "reference_url": "https://api-docs.heysummit.com/#introduction"
-  },
+
   {
     "service_id": 238,
     "name": "Sierra Interactive",
     "url": "https://www.sierrainteractive.com/",
     "description": "Sierra-Interactive is a software company specializing in creating interactive and user-friendly solutions. They provide innovative and customized software solutions, ranging from website development to mobile applications, with the aim of enhancing the digital experience for businesses and individuals.",
-    "reference_url": "https://api.sierrainteractivedev.com/"
+    "reference_url": "https://api.sierrainteractivedev.com/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "h3[id]"
+    }
   },
-  {
-    "service_id": 239,
-    "name": "AirNow",
-    "url": "https://www.airnow.gov/",
-    "description": "AirNow is a comprehensive online platform that provides real-time information about air quality across the United States. It monitors various air pollutants and offers forecasts, health advisories, and interactive maps to help individuals and communities make informed decisions regarding their outdoor activities.",
-    "reference_url": "https://docs.airnowapi.org/webservices"
-  },
-  {
-    "service_id": 105,
-    "name": "ConvertAPI",
-    "url": "https://www.convertapi.com/",
-    "description": "ConvertAPI is a versatile cloud-based file conversion service that simplifies the process of converting various types of documents, images, spreadsheets, and more. It offers an intuitive API interface, supporting a wide range of file formats, making it a convenient tool for developers and businesses.",
-    "reference_url": "https://www.convertapi.com/doc"
-  },
+
   {
     "service_id": 223,
     "name": "HUB Planner",
     "url": "https://hubplanner.com/",
     "description": "Hub Planner is a comprehensive resource management and scheduling tool. It allows teams to efficiently allocate and track resources, manage projects, and collaborate seamlessly. With its intuitive interface and robust features, Hub Planner simplifies the complexities of resource planning, improving productivity and project success.",
-    "reference_url": "https://api-docs.hubplanner.com/"
-  },
-  {
-    "service_id": 242,
-    "name": "Google Forms",
-    "url": "https://www.google.com/forms",
-    "description": "Google Forms is a free online tool that allows users to create and distribute surveys and questionnaires. It offers a simple and intuitive interface, real-time response tracking, and the ability to analyze collected data.",
-    "reference_url": ""
+    "reference_url": "https://api-docs.hubplanner.com/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "#doc-wrapper section > section[id]:has(h3)",
+      "click": ".documentation-core-list__item-name"
+    }
   },
   {
     "service_id": 237,
     "name": "Sales Simplify",
     "url": "https://salessimplify.com/",
     "description": "Sales-simplify is a software platform that helps businesses streamline their sales processes. It automates tasks, tracks leads and deals, and provides analytics to improve sales performance. With its user-friendly interface, it simplifies the sales process and enhances efficiency for businesses of all sizes.",
-    "reference_url": "https://apidocs.salessimplify.com/"
+    "reference_url": "https://apidocs.salessimplify.com/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "#doc-wrapper section > section[id]:has(h3)"
+    }
   },
-  {
-    "service_id": 107,
-    "name": "SnatchBot",
-    "url": "https://snatchbot.me/",
-    "description": "Snatchbot is a versatile and user-friendly chatbot platform that allows businesses to automate customer interactions through conversational AI. It simplifies the process of creating and deploying chatbots across various channels, enabling companies to provide efficient and personalized services to their customers.",
-    "reference_url": "https://support.snatchbot.me/docs/api"
-  },
+
   {
     "service_id": 102,
     "name": "IdealPostcodes",
     "url": "https://ideal-postcodes.co.uk/",
     "description": "Ideal Postcodes is a platform that provides accurate and up-to-date address lookup and validation solutions. It offers postcode and address data services to businesses, helping them improve efficiency, reduce costs, and enhance customer experience.",
-    "reference_url": "https://docs.ideal-postcodes.co.uk/docs/api"
+    "reference_url": "https://docs.ideal-postcodes.co.uk/docs/api",
+    "type": "individualPages",
+    "globs": ["**/docs/api/**"]
   },
   {
     "service_id": 103,
     "name": "Pinboard",
     "url": "https://pinboard.in",
     "description": "Pinboard is an online bookmarking tool that allows users to save, organize, and discover webpages. It serves as a personal library where individuals can easily access and manage their favorite links, making online research and content organization more efficient.",
-    "reference_url": "https://pinboard.in/api/"
+    "reference_url": "https://pinboard.in/api/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "h3"
+    }
   },
   {
     "service_id": 104,
     "name": "Linode",
     "url": "https://www.linode.com/",
     "description": "Linode is a cloud hosting provider known for providing high-performance virtual servers that can be tailored to individual needs. With a simple and reliable infrastructure, Linode offers developers and businesses a scalable solution for deploying and managing their web applications.",
-    "reference_url": "https://www.linode.com/docs/api/"
+    "reference_url": "https://www.linode.com/docs/api/",
+    "type": "individualPages",
+    "globs": ["**/docs/api/**"],
+    "globs_exclude": ["**/docs/api/*.yaml"],
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2[id]"
+    }
   },
   {
     "service_id": 19,
     "name": "Float",
     "url": "https://www.float.com/",
     "description": "Float in computer programming refers to a data type used to store decimal numbers. It allows for the representation of numbers with fractional components, making it ideal for mathematically oriented applications that require precise calculations involving real numbers.",
-    "reference_url": "https://developer.float.com/"
+    "reference_url": "https://developer.float.com/api_reference.html",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "#resources > .resource"
+    }
   },
   {
     "service_id": 172,
     "name": "Corsizio",
     "url": "https://www.corsizio.com",
     "description": "Corsizio is an event management platform that offers tools for creating and managing events, selling tickets, and tracking attendance. It simplifies event organization by providing a user-friendly interface and various customizable features to help streamline the event planning process.",
-    "reference_url": "https://help.corsizio.com/category/28-developer-api"
+    "reference_url": "https://help.corsizio.com/category/28-developer-api",
+    "type": "individualPages",
+    "globs": ["https://help.corsizio.com/**"],
+    "selectors": {
+      "name": "h1",
+      "delimiter": "#fullArticle:has(.api-path)"
+    }
   },
-  {
-    "service_id": 10,
-    "name": "Leadpops",
-    "url": "https://leadpops.com/",
-    "description": "Leadpops is a platform that helps businesses generate leads through high-converting landing pages and pop-ups. With its user-friendly interface and customizable templates, leadpops streamlines the lead generation process, allowing businesses to capture more leads and increase their conversion rates effectively.",
-    "reference_url": ""
-  },
-  {
-    "service_id": 17,
-    "name": "Mailmodo",
-    "url": "https://mailmodo.com",
-    "description": "Mailmodo is a versatile and interactive communication platform that enables businesses to create engaging emails that offer a personalized and dynamic user experience. It allows for the integration of various media formats and interactive elements, enhancing collaboration and customer engagement.",
-    "reference_url": ""
-  },
-  {
-    "service_id": 123,
-    "name": "Google Cloud",
-    "url": "https://cloud.google.com/",
-    "description": "Google Cloud is a comprehensive suite of cloud-based services and solutions offered by Google. It encompasses various products like computing, storage, networking, machine learning, and big data analytics, enabling businesses to build, deploy, and scale applications in a flexible and reliable cloud infrastructure.",
-    "reference_url": ""
-  },
-  {
-    "service_id": 254,
-    "name": "Planview Leankit",
-    "url": "https://www.planview.com/products-solutions/products/leankit",
-    "description": "Planview LeanKit is a project and workflow management software that helps organizations visualize work, optimize processes, and enhance collaboration. It enables teams to track progress, manage tasks, and deliver outcomes efficiently by adopting Lean principles and streamlining their workflows.",
-    "reference_url": ""
-  },
+
   {
     "service_id": 177,
     "name": "Mastodon",
     "url": "https://joinmastodon.org/",
     "description": "Mastodon is a decentralized and open-source social media platform that allows users to create accounts and interact with others through posts called \"toots.\" It emphasizes privacy, data ownership, and freedom from algorithmic manipulation, offering an alternative to mainstream social networking sites.",
-    "reference_url": "https://docs.joinmastodon.org/api/"
+    "reference_url": "https://docs.joinmastodon.org/api/",
+    "type": "individualPages",
+    "globs": ["https://docs.joinmastodon.org/methods/**"],
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2[id]"
+    }
   },
-  {
-    "service_id": 165,
-    "name": "WhatConverts",
-    "url": "https://whatconverts.com/",
-    "description": "WhatConverts is a powerful marketing analytics platform that helps businesses track and understand their marketing efforts. It provides extensive data on lead sources, conversions, and keywords, enabling businesses to optimize their marketing strategies and increase their ROI.",
-    "reference_url": "https://www.whatconverts.com/api/overview/"
-  },
-  {
-    "service_id": 66,
-    "name": "TRIGGERcmd",
-    "url": "https://www.triggercmd.com/en/",
-    "description": "Triggercmd is a software that allows users to execute commands remotely across various platforms. By creating customizable voice commands, Triggercmd enables the automation of tasks and control of devices, simplifying daily activities and enhancing productivity.",
-    "reference_url": "https://docs.triggercmd.com/"
-  },
+
   {
     "service_id": 67,
     "name": "Imgur",
     "url": "https://imgur.com/",
     "description": "Imgur is a popular image hosting and sharing platform that allows users to upload, share, and discuss images and GIFs. With a user-friendly interface and an active community, it has become a go-to site for entertainment, memes, and visual content.",
-    "reference_url": "https://apidocs.imgur.com/"
+    "reference_url": "https://apidocs.imgur.com/#a94d108b-d6e3-4e68-9521-47ea79501c85",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "#doc-wrapper section > section[id]:has(h3)"
+    }
   },
   {
     "service_id": 168,
     "name": "DaySchedule",
     "url": "https://dayschedule.com/",
     "description": "DaySchedule is an efficient tool that helps plan and manage daily activities. It provides a comprehensive overview of appointments, tasks, and events. Easy to use and customizable, it ensures productivity and enables effective time management, allowing individuals to stay organized throughout the day.",
-    "reference_url": "https://dayschedule.com/docs/api"
+    "reference_url": "https://dayschedule.com/docs/api",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h2",
+      "delimiter": ".api-content > div[id]:has(div[data-section-id])"
+    }
   },
-  {
-    "service_id": 166,
-    "name": "WuBook RateChecker",
-    "url": "https://en.wubook.net/blog/ratechecker/",
-    "description": "Wubook-ratechecker is a tool used by hotel businesses to monitor and compare rates of their competitors. It provides real-time information on pricing strategies to help optimize pricing decisions, attract customers, and stay competitive in the market.",
-    "reference_url": "https://tdocs.wubook.net/wired.html"
-  },
-  {
-    "service_id": 186,
-    "name": "Databricks",
-    "url": "https://www.databricks.com/",
-    "description": "Databricks is a cloud-based platform that helps enterprises process and analyze large amounts of data in a collaborative and scalable environment. It provides tools and infrastructure for data engineering, data science, and machine learning, enabling faster insights and decision-making.",
-    "reference_url": "https://api-docs.databricks.com/"
-  },
+
   {
     "service_id": 228,
     "name": "Enormail",
     "url": "https://enormail.eu/",
     "description": "Enormail is an email marketing tool that simplifies the process of expanding your subscriber list and setting up automated email campaigns.",
-    "reference_url": "https://developer.enormail.eu/"
-  },
-  {
-    "service_id": 232,
-    "name": "MoonMail",
-    "url": "https://moonmail.io/",
-    "description": "Moonmail is a simple and efficient email marketing platform that allows businesses to send personalized emails, automate campaigns, and track performance. With its user-friendly interface and robust features, Moonmail helps businesses stay connected with their customers and drive better marketing results.",
-    "reference_url": "https://docs.moonmail.io/docs/"
+    "reference_url": "https://developer.enormail.eu/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h3",
+      "delimiter": "section[id] h3"
+    }
   },
   {
     "service_id": 241,
     "name": "Esendex",
     "url": "https://www.esendex.com",
     "description": "Esendex is a communication platform that enables businesses to send SMS messages, voice calls, and other forms of digital communication to customers. It helps businesses engage with their audience, improve customer service, and streamline communication processes, all in one convenient solution.",
-    "reference_url": "https://developers.esendex.com/api-reference/"
+    "reference_url": "https://developers.esendex.com/api-reference/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h4",
+      "delimiter": "h4"
+    }
   },
-  {
-    "service_id": 243,
-    "name": "SMS-IT",
-    "url": "https://www.smsit.ai/",
-    "description": "SMS-it is a messaging platform that allows users to send Short Message Service (SMS) texts from their computer or mobile device. It provides a convenient and efficient way to communicate with others through the traditional SMS format.",
-    "reference_url": "https://legacy.smsit.ai/api.html"
-  },
+
   {
     "service_id": 244,
     "name": "SwagUp",
     "url": "https://swagup.com",
     "description": "SwagUp is a platform that helps companies create and distribute customized merchandise and promotional products. From branded t-shirts to employee recognition gifts, SwagUp simplifies the process and provides a wide array of options to enhance a company's brand presence and employee engagement.",
-    "reference_url": "https://api.swagup.com/docs/"
+    "reference_url": "https://api.swagup.com/docs/",
+    "type": "singlePage",
+    "selectors": {
+      "name": ["h2 + div > div > p", "h2", "h1", "h3"],
+      "delimiter": ".api-content > div[data-section-id]"
+    }
   },
-  {
-    "service_id": 257,
-    "name": "Cisco Webex",
-    "url": "https://webex.com",
-    "description": "Cisco Webex is a powerful online meeting and collaboration platform. It enables users to conduct virtual meetings, video conferences, and webinars with ease. With features like screen sharing, file sharing, and interactive whiteboards, it enhances remote collaboration and communication for businesses and organizations.",
-    "reference_url": ""
-  },
+
   {
     "service_id": 230,
     "name": "LiveAgent",
     "url": "https://www.liveagent.com/",
     "description": "LiveAgent is a comprehensive customer support software that combines multiple communication channels, including email, live chat, and social media, into one unified platform. It helps businesses provide efficient and prompt support to their customers, enhancing overall customer experience.",
-    "reference_url": "https://support.liveagent.com/840770-Complete-API-reference"
-  },
-  {
-    "service_id": 262,
-    "name": "Mailersend",
-    "url": "https://mailersend.com",
-    "description": "Mailersend is an email delivery service that provides developers with a simplified platform to send transactional emails. It offers features like built-in analytics, SMTP integration, email templates, and deliverability optimization, allowing businesses to efficiently manage their email communications.",
-    "reference_url": ""
+    "reference_url": "https://support.liveagent.com/840770-Complete-API-reference",
+    "type": "singlePage",
+    "selectors": {
+      "name": ["h3"],
+      "delimiter": "h3"
+    }
   },
   {
     "service_id": 231,
     "name": "KnowBe4",
     "url": "https://www.knowbe4.com",
     "description": "KnowBe4 is a security awareness and simulated phishing platform that helps organizations educate their employees about cybersecurity threats. It offers training modules, phishing simulations, and assessment tools to test and improve the knowledge of individuals, ensuring they can spot and avoid potential cyberattacks.",
-    "reference_url": "https://developer.knowbe4.com/"
+    "reference_url": "https://developer.knowbe4.com/rest/reporting#tag/Account",
+    "type": "singlePage",
+    "selectors": {
+      "name": ["h2 + div > div > p", "h2", "h1", "h3"],
+      "delimiter": ".api-content > div[data-section-id]"
+    }
   },
-  {
-    "service_id": 233,
-    "name": "Cloze",
-    "url": "https://www.cloze.com/",
-    "description": "Cloze acts as a personal assistant for your professional connections, offering timely prompts and comprehensive consolidation of contact information and communication history from various apps, ensuring your contacts are always up-to-date.",
-    "reference_url": "https://api.cloze.com/api-docs/"
-  },
-  {
-    "service_id": 198,
-    "name": "Woodpecker.co",
-    "url": "https://woodpecker.co",
-    "description": "Woodpecker is a user-friendly cold email tool that facilitates connections between B2B companies and potential customers and business partners while maintaining ongoing conversations.",
-    "reference_url": "https://woodpecker.co/help/api-2-0-api-reference/"
-  },
+
   {
     "service_id": 180,
     "name": "Bandwidth",
     "url": "https://bandwidth.com",
     "description": "Bandwidth is a versatile communications platform that streamlines the process of delivering seamless global experiences for enterprises. It offers flexibility and seamless integration with your entire communications ecosystem, backed by our reliable global network.",
-    "reference_url": "https://dev.bandwidth.com/apis/"
+    "reference_url": "https://dev.bandwidth.com/apis/",
+    "type": "individualPages",
+    "globs": ["https://dev.bandwidth.com/apis/**"],
+    "selectors": {
+      "name": "h2",
+      "delimiter": "div[data-section-id]:has(.operation-header)"
+    }
   },
   {
     "service_id": 181,
