@@ -7,7 +7,7 @@ import { ElementHandle, Page } from 'playwright';
 import Services from '../services.json' assert { type: "json" };
 import _ from 'lodash';
 import { NodeHtmlMarkdown, NodeHtmlMarkdownOptions } from 'node-html-markdown'
-
+import { v4 as uuid } from 'uuid';
 
 // PlaywrightCrawler crawls the web using a headless
 // browser controlled by the Playwright library.
@@ -37,9 +37,22 @@ interface ScraperConfig {
     selectors?: EndpointSelectors;
     globs?: string[];
     globs_exclude?: string[];
-    dataset: Dataset;
     timeout?: number;
 }
+
+interface ActorInputSchema  {
+    startUrl: string;
+    docsType: ScraperConfig['type'];
+    name: string;
+    globs: string[];
+    globs_exclude: string[];
+    clickSelector: string;
+    sectionsDelimiterSelector: string;
+    nameSelector: string;
+    maxCrawlDepth: number;
+    maxCrawlPages: number;
+};
+  
 
 function getReadableHtml(html: string) {
     const doc = new JSDOM(html);
@@ -234,14 +247,17 @@ function parseRawHtml(rawHtml: string) {
         markdown,
     }
 }
-async function scrape({ type, url, globs, selectors, dataset, globs_exclude, timeout }: ScraperConfig) {
+async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: ScraperConfig, dataset: Dataset) {
     const crawler = new PlaywrightCrawler({
         requestHandlerTimeoutSecs: 360,
         // Use the requestHandler to process each of the crawled pages.
         async requestHandler({ request, page, enqueueLinks, log, closeCookieModals, enqueueLinksByClickingElements }) {
-            await page.waitForLoadState('networkidle')
-            
+            const start = Date.now();
             log.info(`Processing ${request.loadedUrl}`);
+            await page.waitForLoadState('networkidle')
+            const endNetworkIdle = Date.now();
+            log.info(`Network idle after ${endNetworkIdle - start}ms`);
+            
             if(timeout) {
                 console.log('Waiting for timeout', timeout)
                 await page.waitForTimeout(timeout);
@@ -363,7 +379,7 @@ async function scrape({ type, url, globs, selectors, dataset, globs_exclude, tim
         // Comment this option to scrape the full website.
         // maxRequestsPerCrawl: 20,
         // Uncomment this option to see the browser window.
-        // headless: false,
+        headless: false,
         
     });
     // Define the starting URL
@@ -373,22 +389,50 @@ async function scrape({ type, url, globs, selectors, dataset, globs_exclude, tim
 
 async function crawlServices() {
     for (const service of Services) {
-        if (service.service_id !== 152 || !service.type) continue;
-        const dataset = await Dataset.open(`${service.service_id}__${_.snakeCase(service.name)}__${service.type}`);
-        const type = service.type as ScraperConfig['type'];
-
-        await scrape({ 
-            type, 
-            dataset, 
-            url: service.reference_url, 
-            globs: service.globs, 
-            // timeout: service.timeout, 
+        if (service.service_id !== 193 || !service.type) continue;
+        const serviceData = {
+            id: service.service_id ?? uuid(),
+            name: service.name,
+            type: service.type as ScraperConfig['type'],
+            url: service.reference_url,
             selectors: service.selectors,
-            globs_exclude: service.globs_exclude
-        });
+            globs: service.globs,
+            globs_exclude: service.globs_exclude,
+            dataset: null as unknown as Dataset,
+        }
+        const dataset = await Dataset.open(`${serviceData.id}--${_.kebabCase(serviceData.name)}--${serviceData.type}`);
+
+        await scrape({
+            type: serviceData.type,
+            url: serviceData.url,
+            selectors: serviceData.selectors,
+            globs: serviceData.globs,
+            globs_exclude: serviceData.globs_exclude
+        }, dataset);
     }
 }
 await Actor.init();
+const input = await Actor.getInput() as ActorInputSchema;
+// if (input) {
+//     console.log("🚀 ~ file: main.ts:419 ~ input:", input)
+//     const payload: ScraperConfig = {
+//         url: input?.startUrl,
+//         type: input?.docsType,
+//         globs: input?.globs,
+//         globs_exclude: input?.globs_exclude,
+//         selectors: {
+//             click: input?.clickSelector,
+//             delimiter: input?.sectionsDelimiterSelector,
+//             name: input?.nameSelector
+//         },
+//         // maxCrawlDepth: input?.maxCrawlDepth,
+//         // maxCrawlPages: input?.maxCrawlPages
+//     }
+//     const dataset = await Dataset.open(`${uuid()}--${_.kebabCase(input.name)}--${payload.type}`);
+    
+//     await scrape(payload, dataset);
+// } else {
+// }
 await crawlServices();
 await Actor.exit();
 
