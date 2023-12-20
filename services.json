@@ -4,19 +4,18 @@
     "name": "Crisp",
     "url": "https://crisp.chat",
     "description": "Crisp refers to something having a firm texture, providing an enjoyable sensation when bitten or touched. It signifies freshness, clarity, and sharpness, often found in food like apples or chips. It can also describe a clear sound, clean lines, or a refreshing sensation in nature.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:52:34.436+00",
-    "status": "scraped",
-    "reference_url": "https://docs.crisp.chat/references/rest-api/v1/"
+    "reference_url": "https://docs.crisp.chat/references/rest-api/v1/",
+    "type": "singlePageSections",
+    "selectors": {
+      "name": ".request-title",
+      "delimiter": ".parts .part"
+    }
   },
   {
     "service_id": 138,
     "name": "ClickSend SMS",
     "url": "https://clicksend.com",
     "description": "ClickSend is a digital communication platform that enables users to send SMS messages, emails, faxes, voice messages, and postal mail. With its user-friendly interface and extensive features, ClickSend provides a convenient and efficient solution for businesses and individuals for their communication needs.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:43:40.625+00",
-    "status": "large_entity",
     "reference_url": "https://developers.clicksend.com/docs/rest/v3/",
     "type": "singlePage",
     "selectors": {
@@ -29,9 +28,6 @@
     "name": "Metatext.AI Inference API",
     "url": "https://metatext.io/",
     "description": "The metatext-ai-inference-api is an application programming interface (API) that allows developers to integrate and utilize the capabilities of Metatext AI for inference tasks. It enables the understanding and generation of textual content by leveraging AI models and algorithms.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:03:52.827+00",
-    "status": "parsed_content",
     "reference_url": "https://metatext.io/documentation/api",
     "type": "individualPages",
     "globs": ["**/documentation/**/*"]
@@ -41,9 +37,6 @@
     "name": "Invoiced",
     "url": "https://invoiced.com",
     "description": "An invoice is a document sent by a seller to a buyer, detailing the goods or services provided and the amount owed. It includes information such as the date of transaction, item description, quantity, price, and any applicable taxes or discounts. Payment terms and methods are also typically mentioned.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:05:04.709+00",
-    "status": "parsed_content",
     "reference_url": "https://developer.invoiced.com/api",
     "type": "singlePage",
     "selectors": {
@@ -56,9 +49,6 @@
     "name": "Alchemy",
     "url": "https://www.alchemy.com/",
     "description": "Alchemy is an ancient philosophical and proto-scientific practice that sought to transform ordinary substances into extraordinary ones, primarily the goal of turning base metals into gold. It involved a combination of spiritual, mystical, and chemical principles, and influenced the development of modern chemistry.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:46:31.447+00",
-    "status": "scraping",
     "reference_url": "https://docs.alchemy.com/reference",
     "type": "individualPages",
     "globs": ["**/reference/**/*"]
@@ -68,9 +58,6 @@
     "name": "Tisane Labs",
     "url": "https://tisane.ai/",
     "description": "Tisane Labs is a company that specializes in providing advanced technology solutions, particularly in the fields of cybersecurity and blockchain. Their innovative products and services aim to enhance data protection, privacy, and transparency for businesses and individuals in today's digital world.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:45:15.315+00",
-    "status": "parsed_content",
     "reference_url": "https://docs.tisane.ai/",
     "type": "singlePageSections",
     "selectors": {
@@ -83,9 +70,6 @@
     "name": "Workast",
     "url": "https://www.workast.com",
     "description": "Workast is a productivity tool designed to simplify task management and collaboration within teams. It allows users to create, assign, and track tasks in real-time, facilitating efficient communication and ensuring projects are completed on time. Workast integrates seamlessly with various messaging platforms for ease of use.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:08:19.015+00",
-    "status": "missing_reference",
     "reference_url": "https://developers.workast.com/",
     "type": "individualPages",
     "selectors": {
@@ -98,9 +82,6 @@
     "name": "WebScraper.IO",
     "url": "https://www.webscraper.io/",
     "description": "WebScraper.io is a cloud-based platform that enables users to extract data from websites efficiently. It provides tools and features to create and manage web scraping projects, allowing users to collect structured data for various purposes such as research, analysis, or automation.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:24:35.909+00",
-    "status": "scraped",
     "reference_url": "https://webscraper.io/documentation/web-scraper-cloud/api",
     "type": "singlePage",
     "selectors": {
@@ -113,9 +94,6 @@
     "name": "Supportivekoala",
     "url": "https://supportivekoala.com/",
     "description": "supportivekoala is an AI-powered language model designed to generate human-like text responses to prompt-based queries. It utilizes advanced natural language processing techniques to understand and generate coherent and contextually appropriate responses, making it an efficient tool for various applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:14:33.676+00",
-    "status": "scraped",
     "reference_url": "https://developers.supportivekoala.com/",
     "type": "singlePageSections",
     "selectors": {
@@ -128,9 +106,6 @@
     "name": "Forms On Fire",
     "url": "https://www.formsonfire.com/",
     "description": "Forms On Fire is a mobile data collection and business workflow software that enables users to create and deploy custom digital forms for task automation, data capturing, and real-time reporting. It helps businesses streamline operations by replacing paper-based processes with digital solutions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:20:33.666+00",
-    "status": "scraped",
     "reference_url": "https://support.formsonfire.com/en/support/solutions/36000111224",
     "type": "individualPages",
     "globs": ["**/en/support/solutions/articles/**/*"]
@@ -141,9 +116,6 @@
     "name": "UpKeep",
     "url": "https://www.upkeep.com/",
     "description": "Upkeep refers to the continuous maintenance and care required to sustain or preserve something, such as a property, system, or relationship. It involves regular repairs, cleaning, and other necessary actions to ensure its efficient functioning and longevity.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:02:33.762+00",
-    "status": "scraped",
     "reference_url": "https://developers.onupkeep.com/",
     "type": "singlePage",
     "selectors": {
@@ -156,9 +128,6 @@
     "name": "TinyURL",
     "url": "https://tinyurl.com/",
     "description": "Tinyurl is a web service that shortens long URLs into shorter, more manageable links. Created in 2002, it allows users to make long website addresses easily shareable, saving characters in text messages, social media, and other platforms.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:34:33.703+00",
-    "status": "scraped",
     "reference_url": "https://tinyurl.com/app/dev",
     "type": "swagger"
   },
@@ -167,9 +136,6 @@
     "name": "Cloudlayer",
     "url": "https://cloudlayer.io/",
     "description": "Cloudlayer is a digital platform that provides developers with access to a powerful API for generating and manipulating images. It offers a broad range of capabilities, such as adding text, graphics or effects to images, enabling the creation of dynamic and engaging visual content for various applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:24:35.912+00",
-    "status": "scraped",
     "reference_url": "https://docs.cloudlayer.io/api",
     "type": "individualPages",
     "globs_exclude": ["**/changelog/*", "**/home/**", "**/examples/**", "**/interactions/**"]
@@ -179,9 +145,6 @@
     "name": "Mux",
     "url": "https://www.mux.com/",
     "description": "Mux is a video platform with a primary focus on APIs, expertly crafted to enable development teams of all levels to achieve high-quality video streaming and analytics capabilities.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:26:33.479+00",
-    "status": "scraped",
     "reference_url": "https://docs.mux.com/api-reference",
     "type": "singlePageSections",
     "selectors": {
@@ -194,9 +157,6 @@
     "name": "Guru",
     "url": "https://www.getguru.com/",
     "description": "Guru is an integrated platform that combines AI-powered enterprise search, intranet, and wiki functionalities into a single solution.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:30:34.054+00",
-    "status": "scraped",
     "reference_url": "https://developer.getguru.com/reference",
     "type": "individualPages",
     "globs": ["**/reference/**"]
@@ -206,9 +166,6 @@
     "name": "Order Desk",
     "url": "https://www.orderdesk.com/",
     "description": "An order-desk is a dedicated customer service department or team within a company that handles all inquiries and processes orders from customers. Their main responsibility is to ensure smooth and efficient order placement, tracking, and addressing customer concerns throughout the entire purchasing process.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:33:45.396+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.orderdesk.com/",
     "type": "singlePage",
     "selectors": {
@@ -221,9 +178,6 @@
     "name": "Verifalia",
     "url": "https://verifalia.com/",
     "description": "Verifalia is an online email validation service that verifies the deliverability of email addresses. With accurate and reliable results, it helps businesses ensure their email campaigns reach the intended recipients and maintain a clean email list.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:32:05.399+00",
-    "status": "scraped",
     "reference_url": "https://verifalia.com/developers",
     "type": "singlePage",
     "selectors": {
@@ -236,9 +190,6 @@
     "name": "Daffy",
     "url": "https://www.daffy.org/",
     "description": "Daffy is a looney tunes character known for his wacky and chaotic personality. He is a black duck with a white collar and an iconic lisp. Often seen as a rival to Bugs Bunny, Daffy provides humorous and unpredictable moments in the cartoon world.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:35:51.882+00",
-    "status": "scraped",
     "reference_url": "https://docs.daffy.org/ref/balance",
     "type": "individualPages"
   },
@@ -247,9 +198,6 @@
     "name": "Draftable",
     "url": "https://draftable.com",
     "description": "Draftable offers advanced document comparison software. It lets you view two documents side by side and shows you any text changes. It works with different file types like PDF, Word, Excel, and PowerPoint.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:46:34.083+00",
-    "status": "scraped",
     "reference_url": "https://api.draftable.com/api-explorer",
     "type": "swagger"
   },
@@ -258,9 +206,6 @@
     "name": "Benchmark Email",
     "url": "https://www.benchmarkemail.com",
     "description": "Benchmark Email is an email marketing platform that provides businesses with tools to create, send, and track their email campaigns. It offers features like customizable templates, automation, A/B testing, and reporting to help businesses optimize their email marketing efforts.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:36:33.651+00",
-    "status": "scraped",
     "reference_url": "https://developer.benchmarkemail.com/",
     "type": "singlePage",
     "selectors": {
@@ -274,19 +219,18 @@
     "name": "Yodiz",
     "url": "https://www.yodiz.com/",
     "description": "Yodiz is a project management and issue tracking tool designed for agile software development teams. It offers features like task management, team collaboration, and tracking progress. Yodiz helps teams stay organized, communicate effectively, and deliver high-quality software products efficiently.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:44:33.729+00",
-    "status": "scraped",
-    "reference_url": "https://www.yodiz.com/api/"
+    "reference_url": "https://www.yodiz.com/api/",
+    "type": "singlePage",
+    "selectors": {
+      "name": "h2",
+      "delimiter": "h2[id]"
+    }
   },
   {
     "service_id": 81,
     "name": "Harry Potter API",
     "url": "https://potterapi.com/",
     "description": "The Harry Potter API is a web service that provides developers with access to a vast collection of data related to the Harry Potter series. It allows users to retrieve information about characters, spells, houses, and more programmatically.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:46:36.524+00",
-    "status": "scraped",
     "reference_url": "https://hp-api.onrender.com/"
   },
   {
@@ -294,9 +238,6 @@
     "name": "Fluent Support",
     "url": "https://fluentsupport.com/",
     "description": "Fluent Support is an adaptable and feature-packed plugin for WordPress, serving as a comprehensive solution for help desk and customer support needs. With it, you can seamlessly deliver exceptional customer assistance and efficiently handle inquiries, all directly from your WordPress dashboard.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:46:36.526+00",
-    "status": "scraped",
     "reference_url": "https://fluentsupport.com/rest-api/"
   },
   {
@@ -304,9 +245,6 @@
     "name": "ScrapeNinja",
     "url": "https://scrapeninja.net/",
     "description": "Scrapeninja is a powerful web scraping tool designed to extract data from websites. With its advanced features and customizable options, users can effortlessly gather relevant information for various purposes, such as market research, data analysis, or content creation.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:46:36.528+00",
-    "status": "scraped",
     "reference_url": "https://scrapeninja.net/docs/category/api-reference/"
   },
   {
@@ -314,9 +252,6 @@
     "name": "AdRoll",
     "url": "https://adroll.com",
     "description": "AdRoll is a digital marketing platform that offers retargeting and personalized advertising solutions for businesses. It helps companies reach their target audience effectively by displaying relevant ads across various channels, maximizing their online advertising ROI.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:50:35.51+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.nextroll.com/crud-api/"
   },
   {
@@ -324,9 +259,6 @@
     "name": "Simplero",
     "url": "https://simplero.com",
     "description": "Simplero is an all-in-one platform designed to simplify online business management. With features like website creation, email marketing tools, and membership site management, Simplero streamlines processes and empowers entrepreneurs to efficiently run and grow their businesses.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:34:31.148+00",
-    "status": "scraping",
     "reference_url": "https://github.com/Simplero/Simplero-API"
   },
   {
@@ -334,9 +266,6 @@
     "name": "Ortto",
     "url": "https://ortto.com/",
     "description": "Ortto is a comprehensive marketing automation and analytics platform that enables marketers to execute effective campaigns for business growth. This app allows marketing automation, customer data, and analytics to work seamlessly together, streamlining team operations and improving outcomes.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:40:34.269+00",
-    "status": "scraped",
     "reference_url": "https://help.ortto.com/developer/latest/api-reference/"
   },
   {
@@ -344,9 +273,6 @@
     "name": "Dokan",
     "url": "https://wedevs.com/dokan/",
     "description": "Dokan is a software tool and library for creating and mounting virtual file systems in Windows. It allows users to access files from various storage solutions, including cloud services and remote servers, as if they were local files on their computer.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.019+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -354,9 +280,6 @@
     "name": "WebinarJam",
     "url": "https://WebinarJam.com",
     "description": "WebinarJam is a cloud-based webinar platform that allows users to host live webinars, create automated webinars, and engage with participants through interactive features. It provides a comprehensive toolkit for online presentations, marketing, and training, making it an efficient solution for businesses and professionals.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:52:34.438+00",
-    "status": "scraped",
     "reference_url": "https://documentation.webinarjam.com/category/webinarjam-api/"
   },
   {
@@ -364,9 +287,6 @@
     "name": "WatchSignals",
     "url": "https://watchsignals.com/",
     "description": "Watchsignals is a platform that provides real-time monitoring and analysis of stock market data to help investors make informed decisions. With its advanced algorithms and customizable alerts, Watchsignals offers valuable insights and enables users to stay updated on market trends and potential opportunities.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:52:34.441+00",
-    "status": "scraped",
     "reference_url": "https://api.watchsignals.com/docs"
   },
   {
@@ -374,9 +294,6 @@
     "name": "Pirate Weather",
     "url": "https://pirateweather.net/",
     "description": "Pirate-weather refers to the ideal sailing conditions for pirates, characterized by clear skies, a steady breeze, and calm seas. It creates a perfect setting for pirate adventures, allowing them to navigate easily and plan their plundering escapades without hindrance from harsh weather conditions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:52:34.443+00",
-    "status": "scraped",
     "reference_url": "https://docs.pirateweather.net/en/latest/API/"
   },
   {
@@ -384,9 +301,6 @@
     "name": "TD Ameritrade",
     "url": "https://www.tdameritrade.com/",
     "description": "TD Ameritrade is a top U.S. brokerage firm, providing online trading and investment services to individual investors. With a wide range of investment options, tools, and advanced platforms, TD Ameritrade aims to empower traders and help them make informed decisions in the financial markets.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:50:34.344+00",
-    "status": "scraped",
     "reference_url": "https://developer.tdameritrade.com/apis"
   },
   {
@@ -394,9 +308,6 @@
     "name": "Hugging Face",
     "url": "https://huggingface.co/",
     "description": "Hugging Face is a machine learning and natural language processing company that specializes in developing state-of-the-art models for tasks like text generation, translation, and sentiment analysis. They provide libraries and frameworks for researchers and developers to build and deploy their own AI applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:50:35.506+00",
-    "status": "scraped",
     "reference_url": "https://huggingface.co/docs/api-inference"
   },
   {
@@ -404,9 +315,6 @@
     "name": "Zoho Desk",
     "url": "https://www.zoho.com/desk/",
     "description": "Zoho Desk is a cloud-based help desk software that enables businesses to effectively manage customer support tickets. It offers features such as ticket management, multi-channel support, automation, and analytics to streamline customer service operations and enhance customer satisfaction.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:36:33.653+00",
-    "status": "scraped",
     "reference_url": "https://desk.zoho.com/DeskAPIDocument"
   },
   {
@@ -414,9 +322,6 @@
     "name": "SmartSuite",
     "url": "https://www.smartsuite.com/",
     "description": "Smartsuite is a software package designed for productivity and collaboration, frequently used by businesses and professionals. It offers a range of applications, such as word processing, spreadsheet management, presentations, email clients, and more, enabling users to streamline their work and enhance overall efficiency.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:39:52.386+00",
-    "status": "scraped",
     "reference_url": "https://developers.smartsuite.com/docs/intro"
   },
   {
@@ -424,9 +329,6 @@
     "name": "ShipStation",
     "url": "https://shipstation.com",
     "description": "ShipStation is a powerful online tool that simplifies and automates the process of managing and shipping orders for e-commerce businesses. With features like order importing, label creation, and multi-carrier shipping options, ShipStation helps businesses streamline their shipping operations and improve customer satisfaction.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:00:34.01+00",
-    "status": "scraped",
     "reference_url": "https://www.shipstation.com/docs/api/"
   },
   {
@@ -434,9 +336,6 @@
     "name": "ShipHero",
     "url": "https://shiphero.com",
     "description": "ShipHero is a logistics software platform that streamlines e-commerce operations. It offers inventory management, order fulfillment, and shipping solutions to help businesses efficiently handle their supply chain. With features like real-time tracking, warehouse optimization, and automated processes, ShipHero simplifies and enhances e-commerce fulfillment.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:42:33.638+00",
-    "status": "scraped",
     "reference_url": "https://developer.shiphero.com/"
   },
   {
@@ -444,9 +343,6 @@
     "name": "Acquire",
     "url": "https://acquire.io",
     "description": "Acquire is a customer engagement platform that enables companies to provide exceptional conversational experiences.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:09:27.054+00",
-    "status": "scraped",
     "reference_url": "https://developer.acquire.io/rest-apis"
   },
   {
@@ -454,9 +350,6 @@
     "name": "Samsung SmartThings",
     "url": "https://smartthings.com",
     "description": "SmartThings is a versatile and intelligent platform that connects and automates various smart devices in your home or office. It enables users to conveniently control and monitor everything from lights and thermostats to security systems and appliances through a single interface.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:12:33.583+00",
-    "status": "scraped",
     "reference_url": "https://developer.smartthings.com/docs/api/public"
   },
   {
@@ -464,9 +357,6 @@
     "name": "awork",
     "url": "https://awork.io",
     "description": "awork serves as a comprehensive work management tool for teams, merging project management, workload scheduling, and time tracking into a single central hub. It organizes your tasks into useful lists, agile kanban boards, or an intuitive timeline, contributing to your team's organization, efficiency, and job satisfaction.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:06:34.105+00",
-    "status": "scraped",
     "reference_url": "https://developers.awork.com/"
   },
   {
@@ -474,9 +364,6 @@
     "name": "ReCharge",
     "url": "https://rechargepayments.com",
     "description": "The ReCharge API is a handy tool for adding subscription billing to your existing apps or creating new ones. By connecting your app to ReCharge, you can use ReCharge's features to manage subscription payments easily.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:45:21.097+00",
-    "status": "large_entity",
     "reference_url": "https://developer.rechargepayments.com/"
   },
   {
@@ -484,9 +371,6 @@
     "name": "3Scribe",
     "url": "https://3scri.be/",
     "description": "Threescribe is a writing tool that assists in generating engaging and creative content for various purposes. It aids in brainstorming ideas, structuring writing pieces, and improving overall writing quality. With Threescribe, users can enhance their writing skills and produce compelling content effortlessly.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:00:34.301+00",
-    "status": "scraped",
     "reference_url": "https://developers.3scri.be/"
   },
   {
@@ -494,9 +378,6 @@
     "name": "SignRequest",
     "url": "https://signrequest.com/#/",
     "description": "SignRequest is an online platform that allows users to send and sign documents electronically. It simplifies the signing process, eliminates the need for printing and scanning, and ensures the security and legality of digital signatures.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:42:33.64+00",
-    "status": "scraped",
     "reference_url": "https://signrequest.com/api/v1/docs/"
   },
   {
@@ -504,9 +385,6 @@
     "name": "Datarobot",
     "url": "https://datarobot.com",
     "description": "DataRobot is a leading automated machine learning platform that empowers organizations to rapidly build and deploy accurate predictive models. Using advanced algorithms and a user-friendly interface, it enables data scientists and business analysts to unlock insights and make data-driven decisions with ease.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:12:33.642+00",
-    "status": "scraped",
     "reference_url": "https://docs.datarobot.com/en/docs/api/reference/index.html"
   },
   {
@@ -514,9 +392,6 @@
     "name": "Teamgate",
     "url": "https://www.teamgate.com",
     "description": "Teamgate is a comprehensive sales CRM software designed to boost productivity and efficiency. It offers features like lead management, pipeline tracking, and reporting tools to help sales teams better organize and streamline their processes, ultimately increasing sales and revenue.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:02:33.761+00",
-    "status": "scraped",
     "reference_url": "https://developers.teamgate.com/"
   },
   {
@@ -524,9 +399,6 @@
     "name": "Teamdeck",
     "url": "https://teamdeck.io/",
     "description": "Teamdeck is a resource management tool designed to help teams effectively allocate and manage their time and skills. It allows for easy scheduling, timesheet tracking, and skill monitoring, enabling teams to optimize their workflow and increase productivity.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:04:33.692+00",
-    "status": "scraped",
     "reference_url": "https://teamdeck.io/developers/api"
   },
   {
@@ -534,9 +406,6 @@
     "name": "Pusher",
     "url": "https://pusher.com/",
     "description": "Pusher is a user-friendly technology that simplifies the process of integrating real-time features into applications for developers. By leveraging the Pusher API, developers can create a wide range of applications and services, spanning from real-time voting systems to collaborative games and more.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:04:33.695+00",
-    "status": "scraped",
     "reference_url": "https://pusher.com/docs/channels/library_auth_reference/rest-api/"
   },
   {
@@ -544,9 +413,6 @@
     "name": "Patreon",
     "url": "https://patreon.com",
     "description": "Patreon is a membership platform that allows creators to earn a recurring income from their audience in exchange for exclusive content, rewards, and other perks. It enables fans to support their favorite artists, writers, musicians, and other creative individuals directly, fostering a sustainable artistic community.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:52:34.627+00",
-    "status": "scraped",
     "reference_url": "https://docs.patreon.com/"
   },
   {
@@ -554,9 +420,6 @@
     "name": "Quickbooks Sandbox",
     "url": "https://quickbooks.com",
     "description": "QuickBooks Sandbox is a platform that allows users to test and explore the features of QuickBooks software in a safe and simulated environment. It provides a risk-free space for users to experiment and learn without affecting real financial data.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:14:33.497+00",
-    "status": "scraped",
     "reference_url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
   },
   {
@@ -564,9 +427,6 @@
     "name": "Formsite",
     "url": "https://www.formsite.com",
     "description": "Formsite is a cloud-based platform that enables users to create forms and surveys easily. With a user-friendly interface and extensive customization options, Formsite is ideal for businesses and organizations looking to collect data efficiently and analyze responses effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:56:35.178+00",
-    "status": "scraped",
     "reference_url": "https://support.formsite.com/hc/en-us/articles/360000288594-API"
   },
   {
@@ -574,9 +434,6 @@
     "name": "FullContact",
     "url": "https://fullcontact.com",
     "description": "FullContact is a top SaaS provider for privacy-conscious Identity Resolution, employing its patented Identity Graph to facilitate the connection, consolidation, and enhancement of fragmented or incomplete offline, online, professional, and personal identifiers for brands and marketing platforms.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:22:33.642+00",
-    "status": "scraped",
     "reference_url": "https://docs.fullcontact.com/docs"
   },
   {
@@ -584,9 +441,6 @@
     "name": "TurboHire",
     "url": "https://turbohire.co",
     "description": "TurboHire is an AI-powered recruitment software designed to streamline and enhance the hiring process. It uses advanced algorithms to identify the best candidates for job openings, simplifying the process for recruiters while delivering efficient and effective hiring solutions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:04:33.666+00",
-    "status": "scraped",
     "reference_url": "https://api.turbohire.co"
   },
   {
@@ -594,9 +448,6 @@
     "name": "HeySummit",
     "url": "https://www.heysummit.com/",
     "description": "HeySummit is a platform that allows people to easily create and host virtual summits, conferences, and webinars. It provides a seamless experience for both organizers and attendees, with features like ticketing, networking, and live interactive sessions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:08:34.256+00",
-    "status": "scraped",
     "reference_url": "https://api-docs.heysummit.com/#introduction"
   },
   {
@@ -604,9 +455,6 @@
     "name": "Sierra Interactive",
     "url": "https://www.sierrainteractive.com/",
     "description": "Sierra-Interactive is a software company specializing in creating interactive and user-friendly solutions. They provide innovative and customized software solutions, ranging from website development to mobile applications, with the aim of enhancing the digital experience for businesses and individuals.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:12:54.709+00",
-    "status": "scraped",
     "reference_url": "https://api.sierrainteractivedev.com/"
   },
   {
@@ -614,9 +462,6 @@
     "name": "AirNow",
     "url": "https://www.airnow.gov/",
     "description": "AirNow is a comprehensive online platform that provides real-time information about air quality across the United States. It monitors various air pollutants and offers forecasts, health advisories, and interactive maps to help individuals and communities make informed decisions regarding their outdoor activities.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:58:53.66+00",
-    "status": "scraped",
     "reference_url": "https://docs.airnowapi.org/webservices"
   },
   {
@@ -624,9 +469,6 @@
     "name": "ConvertAPI",
     "url": "https://www.convertapi.com/",
     "description": "ConvertAPI is a versatile cloud-based file conversion service that simplifies the process of converting various types of documents, images, spreadsheets, and more. It offers an intuitive API interface, supporting a wide range of file formats, making it a convenient tool for developers and businesses.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:02:33.757+00",
-    "status": "scraped",
     "reference_url": "https://www.convertapi.com/doc"
   },
   {
@@ -634,9 +476,6 @@
     "name": "HUB Planner",
     "url": "https://hubplanner.com/",
     "description": "Hub Planner is a comprehensive resource management and scheduling tool. It allows teams to efficiently allocate and track resources, manage projects, and collaborate seamlessly. With its intuitive interface and robust features, Hub Planner simplifies the complexities of resource planning, improving productivity and project success.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:08:34.255+00",
-    "status": "scraped",
     "reference_url": "https://api-docs.hubplanner.com/"
   },
   {
@@ -644,9 +483,6 @@
     "name": "Google Forms",
     "url": "https://www.google.com/forms",
     "description": "Google Forms is a free online tool that allows users to create and distribute surveys and questionnaires. It offers a simple and intuitive interface, real-time response tracking, and the ability to analyze collected data.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.086+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -654,9 +490,6 @@
     "name": "Sales Simplify",
     "url": "https://salessimplify.com/",
     "description": "Sales-simplify is a software platform that helps businesses streamline their sales processes. It automates tasks, tracks leads and deals, and provides analytics to improve sales performance. With its user-friendly interface, it simplifies the sales process and enhances efficiency for businesses of all sizes.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:34:54.342+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.salessimplify.com/"
   },
   {
@@ -664,9 +497,6 @@
     "name": "SnatchBot",
     "url": "https://snatchbot.me/",
     "description": "Snatchbot is a versatile and user-friendly chatbot platform that allows businesses to automate customer interactions through conversational AI. It simplifies the process of creating and deploying chatbots across various channels, enabling companies to provide efficient and personalized services to their customers.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:02:33.759+00",
-    "status": "scraped",
     "reference_url": "https://support.snatchbot.me/docs/api"
   },
   {
@@ -674,9 +504,6 @@
     "name": "IdealPostcodes",
     "url": "https://ideal-postcodes.co.uk/",
     "description": "Ideal Postcodes is a platform that provides accurate and up-to-date address lookup and validation solutions. It offers postcode and address data services to businesses, helping them improve efficiency, reduce costs, and enhance customer experience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:00:34.013+00",
-    "status": "scraped",
     "reference_url": "https://docs.ideal-postcodes.co.uk/docs/api"
   },
   {
@@ -684,9 +511,6 @@
     "name": "Pinboard",
     "url": "https://pinboard.in",
     "description": "Pinboard is an online bookmarking tool that allows users to save, organize, and discover webpages. It serves as a personal library where individuals can easily access and manage their favorite links, making online research and content organization more efficient.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:00:34.015+00",
-    "status": "scraped",
     "reference_url": "https://pinboard.in/api/"
   },
   {
@@ -694,9 +518,6 @@
     "name": "Linode",
     "url": "https://www.linode.com/",
     "description": "Linode is a cloud hosting provider known for providing high-performance virtual servers that can be tailored to individual needs. With a simple and reliable infrastructure, Linode offers developers and businesses a scalable solution for deploying and managing their web applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:00:34.017+00",
-    "status": "scraped",
     "reference_url": "https://www.linode.com/docs/api/"
   },
   {
@@ -704,9 +525,6 @@
     "name": "Float",
     "url": "https://www.float.com/",
     "description": "Float in computer programming refers to a data type used to store decimal numbers. It allows for the representation of numbers with fractional components, making it ideal for mathematically oriented applications that require precise calculations involving real numbers.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:07:28.181+00",
-    "status": "parsed_content",
     "reference_url": "https://developer.float.com/"
   },
   {
@@ -714,9 +532,6 @@
     "name": "Corsizio",
     "url": "https://www.corsizio.com",
     "description": "Corsizio is an event management platform that offers tools for creating and managing events, selling tickets, and tracking attendance. It simplifies event organization by providing a user-friendly interface and various customizable features to help streamline the event planning process.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:06:33.84+00",
-    "status": "scraped",
     "reference_url": "https://help.corsizio.com/category/28-developer-api"
   },
   {
@@ -724,9 +539,6 @@
     "name": "Leadpops",
     "url": "https://leadpops.com/",
     "description": "Leadpops is a platform that helps businesses generate leads through high-converting landing pages and pop-ups. With its user-friendly interface and customizable templates, leadpops streamlines the lead generation process, allowing businesses to capture more leads and increase their conversion rates effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:09.98+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -734,9 +546,6 @@
     "name": "Mailmodo",
     "url": "https://mailmodo.com",
     "description": "Mailmodo is a versatile and interactive communication platform that enables businesses to create engaging emails that offer a personalized and dynamic user experience. It allows for the integration of various media formats and interactive elements, enhancing collaboration and customer engagement.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:09.985+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -744,9 +553,6 @@
     "name": "Google Cloud",
     "url": "https://cloud.google.com/",
     "description": "Google Cloud is a comprehensive suite of cloud-based services and solutions offered by Google. It encompasses various products like computing, storage, networking, machine learning, and big data analytics, enabling businesses to build, deploy, and scale applications in a flexible and reliable cloud infrastructure.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.033+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -754,9 +560,6 @@
     "name": "Planview Leankit",
     "url": "https://www.planview.com/products-solutions/products/leankit",
     "description": "Planview LeanKit is a project and workflow management software that helps organizations visualize work, optimize processes, and enhance collaboration. It enables teams to track progress, manage tasks, and deliver outcomes efficiently by adopting Lean principles and streamlining their workflows.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.13+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -764,9 +567,6 @@
     "name": "Mastodon",
     "url": "https://joinmastodon.org/",
     "description": "Mastodon is a decentralized and open-source social media platform that allows users to create accounts and interact with others through posts called \"toots.\" It emphasizes privacy, data ownership, and freedom from algorithmic manipulation, offering an alternative to mainstream social networking sites.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:16:34.707+00",
-    "status": "scraped",
     "reference_url": "https://docs.joinmastodon.org/api/"
   },
   {
@@ -774,9 +574,6 @@
     "name": "WhatConverts",
     "url": "https://whatconverts.com/",
     "description": "WhatConverts is a powerful marketing analytics platform that helps businesses track and understand their marketing efforts. It provides extensive data on lead sources, conversions, and keywords, enabling businesses to optimize their marketing strategies and increase their ROI.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:04:33.69+00",
-    "status": "scraped",
     "reference_url": "https://www.whatconverts.com/api/overview/"
   },
   {
@@ -784,9 +581,6 @@
     "name": "TRIGGERcmd",
     "url": "https://www.triggercmd.com/en/",
     "description": "Triggercmd is a software that allows users to execute commands remotely across various platforms. By creating customizable voice commands, Triggercmd enables the automation of tasks and control of devices, simplifying daily activities and enhancing productivity.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:46:36.521+00",
-    "status": "scraped",
     "reference_url": "https://docs.triggercmd.com/"
   },
   {
@@ -794,9 +588,6 @@
     "name": "Imgur",
     "url": "https://imgur.com/",
     "description": "Imgur is a popular image hosting and sharing platform that allows users to upload, share, and discuss images and GIFs. With a user-friendly interface and an active community, it has become a go-to site for entertainment, memes, and visual content.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:37:52.627+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.imgur.com/"
   },
   {
@@ -804,9 +595,6 @@
     "name": "DaySchedule",
     "url": "https://dayschedule.com/",
     "description": "DaySchedule is an efficient tool that helps plan and manage daily activities. It provides a comprehensive overview of appointments, tasks, and events. Easy to use and customizable, it ensures productivity and enables effective time management, allowing individuals to stay organized throughout the day.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:12:33.585+00",
-    "status": "scraped",
     "reference_url": "https://dayschedule.com/docs/api"
   },
   {
@@ -814,9 +602,6 @@
     "name": "WuBook RateChecker",
     "url": "https://en.wubook.net/blog/ratechecker/",
     "description": "Wubook-ratechecker is a tool used by hotel businesses to monitor and compare rates of their competitors. It provides real-time information on pricing strategies to help optimize pricing decisions, attract customers, and stay competitive in the market.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:14:33.514+00",
-    "status": "scraped",
     "reference_url": "https://tdocs.wubook.net/wired.html"
   },
   {
@@ -824,9 +609,6 @@
     "name": "Databricks",
     "url": "https://www.databricks.com/",
     "description": "Databricks is a cloud-based platform that helps enterprises process and analyze large amounts of data in a collaborative and scalable environment. It provides tools and infrastructure for data engineering, data science, and machine learning, enabling faster insights and decision-making.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:26:31.77+00",
-    "status": "missing_reference",
     "reference_url": "https://api-docs.databricks.com/"
   },
   {
@@ -834,9 +616,6 @@
     "name": "Enormail",
     "url": "https://enormail.eu/",
     "description": "Enormail is an email marketing tool that simplifies the process of expanding your subscriber list and setting up automated email campaigns.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:24:33.559+00",
-    "status": "scraped",
     "reference_url": "https://developer.enormail.eu/"
   },
   {
@@ -844,9 +623,6 @@
     "name": "MoonMail",
     "url": "https://moonmail.io/",
     "description": "Moonmail is a simple and efficient email marketing platform that allows businesses to send personalized emails, automate campaigns, and track performance. With its user-friendly interface and robust features, Moonmail helps businesses stay connected with their customers and drive better marketing results.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:26:34.853+00",
-    "status": "scraped",
     "reference_url": "https://docs.moonmail.io/docs/"
   },
   {
@@ -854,9 +630,6 @@
     "name": "Esendex",
     "url": "https://www.esendex.com",
     "description": "Esendex is a communication platform that enables businesses to send SMS messages, voice calls, and other forms of digital communication to customers. It helps businesses engage with their audience, improve customer service, and streamline communication processes, all in one convenient solution.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:30:53.711+00",
-    "status": "scraped",
     "reference_url": "https://developers.esendex.com/api-reference/"
   },
   {
@@ -864,9 +637,6 @@
     "name": "SMS-IT",
     "url": "https://www.smsit.ai/",
     "description": "SMS-it is a messaging platform that allows users to send Short Message Service (SMS) texts from their computer or mobile device. It provides a convenient and efficient way to communicate with others through the traditional SMS format.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:32:54.067+00",
-    "status": "scraped",
     "reference_url": "https://legacy.smsit.ai/api.html"
   },
   {
@@ -874,9 +644,6 @@
     "name": "SwagUp",
     "url": "https://swagup.com",
     "description": "SwagUp is a platform that helps companies create and distribute customized merchandise and promotional products. From branded t-shirts to employee recognition gifts, SwagUp simplifies the process and provides a wide array of options to enhance a company's brand presence and employee engagement.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:40:53.986+00",
-    "status": "scraped",
     "reference_url": "https://api.swagup.com/docs/"
   },
   {
@@ -884,9 +651,6 @@
     "name": "Cisco Webex",
     "url": "https://webex.com",
     "description": "Cisco Webex is a powerful online meeting and collaboration platform. It enables users to conduct virtual meetings, video conferences, and webinars with ease. With features like screen sharing, file sharing, and interactive whiteboards, it enhances remote collaboration and communication for businesses and organizations.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.133+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -894,9 +658,6 @@
     "name": "LiveAgent",
     "url": "https://www.liveagent.com/",
     "description": "LiveAgent is a comprehensive customer support software that combines multiple communication channels, including email, live chat, and social media, into one unified platform. It helps businesses provide efficient and prompt support to their customers, enhancing overall customer experience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:32:54.065+00",
-    "status": "scraped",
     "reference_url": "https://support.liveagent.com/840770-Complete-API-reference"
   },
   {
@@ -904,9 +665,6 @@
     "name": "Mailersend",
     "url": "https://mailersend.com",
     "description": "Mailersend is an email delivery service that provides developers with a simplified platform to send transactional emails. It offers features like built-in analytics, SMTP integration, email templates, and deliverability optimization, allowing businesses to efficiently manage their email communications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.142+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -914,9 +672,6 @@
     "name": "KnowBe4",
     "url": "https://www.knowbe4.com",
     "description": "KnowBe4 is a security awareness and simulated phishing platform that helps organizations educate their employees about cybersecurity threats. It offers training modules, phishing simulations, and assessment tools to test and improve the knowledge of individuals, ensuring they can spot and avoid potential cyberattacks.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:08:53.648+00",
-    "status": "scraped",
     "reference_url": "https://developer.knowbe4.com/"
   },
   {
@@ -924,9 +679,6 @@
     "name": "Cloze",
     "url": "https://www.cloze.com/",
     "description": "Cloze acts as a personal assistant for your professional connections, offering timely prompts and comprehensive consolidation of contact information and communication history from various apps, ensuring your contacts are always up-to-date.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:10:53.659+00",
-    "status": "scraped",
     "reference_url": "https://api.cloze.com/api-docs/"
   },
   {
@@ -934,9 +686,6 @@
     "name": "Woodpecker.co",
     "url": "https://woodpecker.co",
     "description": "Woodpecker is a user-friendly cold email tool that facilitates connections between B2B companies and potential customers and business partners while maintaining ongoing conversations.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:48:33.746+00",
-    "status": "scraped",
     "reference_url": "https://woodpecker.co/help/api-2-0-api-reference/"
   },
   {
@@ -944,9 +693,6 @@
     "name": "Bandwidth",
     "url": "https://bandwidth.com",
     "description": "Bandwidth is a versatile communications platform that streamlines the process of delivering seamless global experiences for enterprises. It offers flexibility and seamless integration with your entire communications ecosystem, backed by our reliable global network.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:28:34.669+00",
-    "status": "scraped",
     "reference_url": "https://dev.bandwidth.com/apis/"
   },
   {
@@ -954,9 +700,6 @@
     "name": "GoCanvas",
     "url": "https://www.gocanvas.com/",
     "description": "GoCanvas is a mobile app platform that allows businesses to replace paper forms with customizable digital forms, providing a simple and efficient way to collect, share, and analyze data in real-time. It streamlines processes, improves productivity, and eliminates paperwork, enabling businesses to work smarter and more effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:18:33.851+00",
-    "status": "scraped",
     "reference_url": "https://www.gocanvas.com/content/integrations/custom-rest-api/"
   },
   {
@@ -964,9 +707,6 @@
     "name": "Sellix",
     "url": "https://sellix.io/",
     "description": "Sellix is a popular online platform that allows individuals and businesses to sell digital products and services. It provides a user-friendly interface, secure payment processing, and various features to manage and grow an online business effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:26:33.543+00",
-    "status": "scraped",
     "reference_url": "https://developers.sellix.io/"
   },
   {
@@ -974,9 +714,6 @@
     "name": "SSLMate — Cert Spotter API",
     "url": "https://sslmate.com/certspotter/api/docs-v1",
     "description": "sslmate-cert-spotter-api is an application programming interface (API) that allows users to interact with the SSLMate Cert Spotter service. It helps monitor SSL/TLS certificates and provides information about revoked, expiring, and newly issued certificates.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:20:33.664+00",
-    "status": "scraped",
     "reference_url": "https://sslmate.com/help/reference/ct_search_api_v1"
   },
   {
@@ -984,9 +721,6 @@
     "name": "AbuselPDB",
     "url": "https://www.abuseipdb.com/",
     "description": "abuselpdb stands for Abuse Longitudinal Database, which is a resource used for tracking and studying patterns of abuse over time. It helps analyze data and identify trends, providing valuable insights to aid in understanding and addressing various forms of abuse in society.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:24:33.545+00",
-    "status": "scraped",
     "reference_url": "https://docs.abuseipdb.com/"
   },
   {
@@ -994,9 +728,6 @@
     "name": "Pipefy",
     "url": "https://pipefy.com",
     "description": "Pipefy is a powerful business process management software that helps teams streamline and automate their workflows. With its intuitive interface and customizable features, Pipefy allows organizations to enhance productivity and drive efficiency in various areas, such as project management, customer support, and HR processes.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:24:33.548+00",
-    "status": "scraped",
     "reference_url": "https://developers.pipefy.com/docs"
   },
   {
@@ -1004,9 +735,6 @@
     "name": "Statuscake",
     "url": "https://www.statuscake.com/",
     "description": "StatusCake is a website monitoring and performance testing tool that helps businesses track the uptime and performance of their websites. It provides real-time alerts, performance analytics, and comprehensive reports to ensure optimal website functionality.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:26:33.545+00",
-    "status": "scraped",
     "reference_url": "https://developers.statuscake.com/api/"
   },
   {
@@ -1014,9 +742,6 @@
     "name": "Crowdin",
     "url": "https://crowdin.com/",
     "description": "Crowdin is a platform that enables crowdsourcing of translation, localization, and other content-related tasks. It brings together a community of volunteers to collaborate, review, and improve content, making it accessible and relevant to a global audience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:30:33.694+00",
-    "status": "scraped",
     "reference_url": "https://developer.crowdin.com/api/v2/"
   },
   {
@@ -1024,9 +749,6 @@
     "name": "Dock Certs",
     "url": "https://www.dock.io/certs",
     "description": "Dock-certs are digital certificates issued by permissioned entities on the Dock blockchain. These certificates provide verifiable proof of achievements, qualifications, and other credentials, allowing individuals to easily share and demonstrate their skills and knowledge in a secure and transparent manner.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:30:33.697+00",
-    "status": "scraped",
     "reference_url": "https://docs.api.dock.io/"
   },
   {
@@ -1034,9 +756,6 @@
     "name": "Chatrace",
     "url": "https://chatrace.com/",
     "description": "Chatrace is a fast-paced competition where participants engage in a real-time conversation while a language model predicts their next message. They strive to fool others into thinking they are human, while distinguishing the model's responses from those generated by actual people.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.002+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1044,9 +763,6 @@
     "name": "SimpleKPI",
     "url": "https://www.simplekpi.com/",
     "description": "SimpleKPI is a performance management tool that allows businesses to track and visualize their key performance indicators (KPIs) in a user-friendly dashboard. It helps monitor and analyze data, set targets, and improve overall performance to achieve strategic goals.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:58:33.543+00",
-    "status": "scraped",
     "reference_url": "https://support.simplekpi.com/Developers"
   },
   {
@@ -1054,9 +770,6 @@
     "name": "Zoho WorkDrive",
     "url": "https://zoho.com/workdrive",
     "description": "Zoho WorkDrive is a cloud-based document management and collaboration platform designed to streamline file sharing, storage, and collaboration within teams. It offers advanced security features, easy file organization, and seamless integration with other Zoho applications to enhance productivity and efficiency.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.007+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1064,9 +777,6 @@
     "name": "VivifyScrum",
     "url": "https://www.vivifyscrum.com/",
     "description": "VivifyScrum is an agile project management tool that helps teams collaborate and manage their tasks effectively. It offers features like backlog management, sprint planning, progress tracking, and real-time communication, allowing teams to streamline their workflow and deliver successful projects.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.015+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1074,9 +784,6 @@
     "name": "LaGrowthMachine",
     "url": "https://lagrowthmachine.com/",
     "description": "Lagrowthmachine is a digital growth marketing platform that focuses on driving organic traffic, increasing engagement, and improving conversions. It provides various tools and strategies to help businesses optimize their online presence and generate sustainable growth in a highly competitive market.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.05+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1084,9 +791,6 @@
     "name": "Docupilot",
     "url": "https://docupilot.app",
     "description": "Docupilot is a document automation software that simplifies the process of generating custom documents, forms, and contracts. By automating the creation and customization of documents, it saves time and reduces errors, improving overall efficiency in document management tasks.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.054+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1094,9 +798,6 @@
     "name": "Gitea",
     "url": "https://gitea.io",
     "description": "Gitea is a self-hosted Git service that allows users to easily create and manage repositories. It provides a lightweight, simple, and efficient way to collaborate on code, track changes, and host Git repositories privately or publicly.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:02:33.568+00",
-    "status": "scraped",
     "reference_url": "https://try.gitea.io/api/swagger"
   },
   {
@@ -1104,9 +805,6 @@
     "name": "Badger Maps",
     "url": "https://www.badgermapping.com/",
     "description": "Badger Maps is a mobile app designed to enhance the productivity of field salespeople. It offers features like territory management, route optimization, and lead generation, helping sales reps effectively plan their visits, increase efficiency, and close more deals while on the go.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:54:33.578+00",
-    "status": "scraped",
     "reference_url": "https://badgerupdatedapi.docs.apiary.io/"
   },
   {
@@ -1114,9 +812,6 @@
     "name": "Gupshup",
     "url": "https://www.gupshup.io/developer/home",
     "description": "Gupshup is a messaging platform for conversations that enables developers and companies to create, test, and oversee solutions that incorporate instant messaging applications, such as chatbots, help desk tools, and marketing automation solutions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:44:33.941+00",
-    "status": "scraped",
     "reference_url": "https://docs.gupshup.io/reference"
   },
   {
@@ -1124,9 +819,6 @@
     "name": "Kaggle",
     "url": "https://kaggle.com",
     "description": "Kaggle is an online platform for data science competitions and collaboration. It provides datasets, challenges, and a community of data scientists to explore, analyze, and solve real-world problems through machine learning and predictive modeling techniques.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:43:29.916+00",
-    "status": "scraped",
     "reference_url": "https://www.kaggle.com/docs/api"
   },
   {
@@ -1134,9 +826,6 @@
     "name": "Rewardful",
     "url": "https://www.rewardful.com/",
     "description": "Rewardful provides a solution for SaaS companies to establish affiliate and referral programs seamlessly using Stripe and Paddle. Designed with a focus on subscription-based services, Rewardful automatically adapts commission structures for downgrades, upgrades, free trials, cancellations, and refunds.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:46:34.082+00",
-    "status": "scraped",
     "reference_url": "https://developers.rewardful.com/rest-api/overview"
   },
   {
@@ -1144,9 +833,6 @@
     "name": "7todos",
     "url": "https://www.7todos.com/",
     "description": "7todos is a task board designed for individuals juggling multiple projects, aiding in task management and organization.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:48:33.742+00",
-    "status": "scraped",
     "reference_url": "https://www.7todos.com/app/api"
   },
   {
@@ -1154,9 +840,6 @@
     "name": "Better Proposals",
     "url": "https://betterproposals.io/",
     "description": "Better Proposals is an innovative platform that streamlines the process of creating professional, eye-catching proposals. With its user-friendly interface and customizable templates, it helps businesses impress clients and close deals more effectively. It also offers features like online signatures and payment integration for a seamless experience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:48:33.745+00",
-    "status": "scraped",
     "reference_url": "https://betterproposals.io/resources/api/"
   },
   {
@@ -1164,9 +847,6 @@
     "name": "SurveySparrow",
     "url": "https://surveysparrow.com/",
     "description": "Surveysparrow is a user-friendly survey software that enables businesses to quickly create and distribute surveys to gather feedback. With an interactive and conversational interface, it aims to provide an engaging experience for respondents, making the process of surveying easier and more effective.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:50:34.342+00",
-    "status": "scraped",
     "reference_url": "https://developers.surveysparrow.com/rest-apis"
   },
   {
@@ -1174,9 +854,6 @@
     "name": "Accuranker",
     "url": "https://accuranker.com",
     "description": "AccuRanker is a powerful SEO platform that provides accurate and real-time keyword ranking data. It enables businesses and marketers to track and analyze their website's performance in search engine results pages, helping them make data-driven decisions to improve their organic search rankings.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:56:35.176+00",
-    "status": "scraped",
     "reference_url": "https://www.accuranker.com/integration/rest-api/"
   },
   {
@@ -1184,9 +861,6 @@
     "name": "PDFMonkey",
     "url": "https://www.pdfmonkey.io/",
     "description": "Pdfmonkey is a reliable online service that allows users to easily convert HTML to PDF. With its versatile API and user-friendly interface, pdfmonkey simplifies the process of creating high-quality PDF documents from web content.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.011+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1194,9 +868,6 @@
     "name": "Formcarry",
     "url": "https://formcarry.com",
     "description": "formcarry is a web service that enables easy handling of HTML forms by providing a backend solution. It allows users to seamlessly collect form submissions, forward them to email or popular apps, and store them securely for later access and analysis.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.062+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1204,9 +875,6 @@
     "name": "Headless Testing",
     "url": "https://headlesstesting.com/",
     "description": "Headless testing is a type of software testing that allows for automated testing of websites and applications without an actual graphical user interface. It is done through a command-line interface, allowing for faster and more efficient testing in various environments.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.058+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1214,9 +882,6 @@
     "name": "Platform.ly",
     "url": "https://www.platformly.com/",
     "description": "Platform-ly\" refers to an adverbial form that describes actions or processes occurring on a platform. It signifies activities specific to a specific digital platform, emphasizing the integration and utilization of its features, tools, or networks.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.072+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1224,9 +889,6 @@
     "name": "InfluxDB Cloud",
     "url": "https://www.influxdata.com/products/influxdb-cloud/",
     "description": "InfluxDB Cloud is a fully managed time series database-as-a-service (DBaaS) platform that enables users to store, analyze, and visualize time series data in real-time. It provides scalability, high availability, and ease of use for developers and businesses.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:20:33.583+00",
-    "status": "scraped",
     "reference_url": "https://docs.influxdata.com/influxdb/cloud/api/"
   },
   {
@@ -1234,9 +896,6 @@
     "name": "Big Cartel",
     "url": "https://bigcartel.com",
     "description": "Big Cartel is an e-commerce platform that helps independent artists, makers, and small businesses to easily set up and manage their online stores. It provides a user-friendly interface, customizable themes, and various tools to sell products, collaborate with others, and reach a wider audience, empowering creativity and entrepreneurship.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.066+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1244,9 +903,6 @@
     "name": "Google PaLM",
     "url": "https://developers.generativeai.google/",
     "description": "The google-palm-api is an API developed by Google that provides developers with the ability to integrate palm detection and recognition features into their applications. It allows the detection of the palm region in an image and can be used for various applications like image editing or augmented reality.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:25:31.427+00",
-    "status": "scraping",
     "reference_url": "https://developers.generativeai.google/api/rest/generativelanguage"
   },
   {
@@ -1254,9 +910,6 @@
     "name": "Thankster",
     "url": "https://www.thankster.com/",
     "description": "Thankster is a platform that offers personalized, handwritten thank-you notes. It provides businesses and individuals with a convenient way to express gratitude through automated and customizable handwritten letters, adding a personal touch to a digital world.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:10:33.663+00",
-    "status": "scraped",
     "reference_url": "https://thankster.com/api/"
   },
   {
@@ -1264,9 +917,6 @@
     "name": "Reverse Contact",
     "url": "https://www.reversecontact.com/",
     "description": "Reverse contact is a reverse email lookup tool crafted to enhance your data enrichment workflow.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:46:34.079+00",
-    "status": "scraped",
     "reference_url": "https://docs.reversecontact.com/"
   },
   {
@@ -1274,9 +924,6 @@
     "name": "Botstar",
     "url": "https://botstar.com",
     "description": "BotStar is a powerful chatbot building platform that allows users to create intelligent and interactive bots for various purposes. With its user-friendly interface and extensive features, BotStar enables businesses to automate customer conversations and provide efficient support, all without coding skills.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:24:35.908+00",
-    "status": "scraped",
     "reference_url": "https://apis.botstar.com/docs/"
   },
   {
@@ -1284,9 +931,6 @@
     "name": "Accelo",
     "url": "https://accelo.com",
     "description": "Accelo is a cloud-based software platform that offers tools for managing business processes and workflows. It assists businesses by automating tasks, tracking projects and time, managing client relationships, and streamlining operations, ultimately increasing productivity and efficiency.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:26:33.481+00",
-    "status": "scraped",
     "reference_url": "https://api.accelo.com/docs/"
   },
   {
@@ -1294,9 +938,6 @@
     "name": "DeTrack",
     "url": "https://www.detrack.com/",
     "description": "Detrack refers to the process of eliminating or reducing the practice of tracking students into different academic levels or classes based on abilities. It aims to promote equality and provide all students with equal opportunities for learning and success.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:34:33.701+00",
-    "status": "scraped",
     "reference_url": "https://detrackapiv2.docs.apiary.io/"
   },
   {
@@ -1304,9 +945,6 @@
     "name": "Lusha",
     "url": "https://lusha.com",
     "description": "Lusha is a software tool that allows users to find contact information for individuals and businesses. It provides accurate and up-to-date data, including phone numbers and email addresses, making it easier for companies to reach out to potential clients or leads for their products or services.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:00:53.74+00",
-    "status": "scraped",
     "reference_url": "https://www.lusha.com/docs/"
   },
   {
@@ -1314,9 +952,6 @@
     "name": "Free Dictionary",
     "url": "https://dictionaryapi.dev/",
     "description": "Dictionary-api refers to an application programming interface (API) that provides access to a dictionary's database of words. This API allows developers to retrieve definitions, synonyms, translations, and other information about specific words, enabling integration into various software applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:44:33.726+00",
-    "status": "scraped",
     "reference_url": "https://dictionaryapi.dev/"
   },
   {
@@ -1324,9 +959,6 @@
     "name": "Project Bubble (ProProfs Project)",
     "url": "https://www.proprofsproject.com/",
     "description": "ProProfs Project is a platform that empowers developers to construct advanced project management applications. Its simple integration and rich toolkits make it a convenient option for developing impactful websites and applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:00:34.295+00",
-    "status": "scraped",
     "reference_url": "https://help.proprofsproject.com/api-for-developers"
   },
   {
@@ -1334,9 +966,6 @@
     "name": "Deepgram",
     "url": "https://deepgram.com",
     "description": "Deepgram is a powerful speech recognition platform that uses deep learning technology to transcribe and analyze audio data in real-time. It enables businesses to extract valuable insights from spoken content and unlock new opportunities for understanding and optimizing their operations.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:08:34.251+00",
-    "status": "scraped",
     "reference_url": "https://developers.deepgram.com/reference"
   },
   {
@@ -1344,9 +973,6 @@
     "name": "CrowdPower",
     "url": "https://crowdpower.io",
     "description": "Crowdpower assists in the development of personalized and uncomplicated email workflows based on user behavior. These workflows are designed to educate users about your product and foster engagement during critical moments, ultimately boosting engagement, sales, and referrals.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:44:33.939+00",
-    "status": "scraped",
     "reference_url": "https://docs.crowdpower.io/"
   },
   {
@@ -1354,9 +980,6 @@
     "name": "BrandMentions",
     "url": "https://brandmentions.com/",
     "description": "Brandmentions is a powerful online tool that monitors and tracks brand mentions across various platforms such as social media, news websites, blogs, and forums. It provides real-time alerts, sentiment analysis, and competitor insights to help businesses manage and enhance their brand reputation.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:47:29.204+00",
-    "status": "scraped",
     "reference_url": "https://api.brandmentions.com/documentation.html"
   },
   {
@@ -1364,9 +987,6 @@
     "name": "Amazon",
     "url": "https://amazon.com",
     "description": "Amazon is a multinational technology company and online marketplace known for its wide range of products, including electronics, books, and household items. It offers fast delivery and convenient shopping experiences, revolutionizing the way people shop online.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:50:34.346+00",
-    "status": "scraped",
     "reference_url": "https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html"
   },
   {
@@ -1374,9 +994,6 @@
     "name": "Launch27",
     "url": "https://www.launch27.com",
     "description": "Launch27 is a powerful software that helps businesses automate their scheduling and online booking processes. With its user-friendly interface and advanced features, it allows companies to streamline operations, enhance customer satisfaction, and increase revenue. It is a game-changer for service-based industries.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.025+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1384,9 +1001,6 @@
     "name": "Mx Toolbox",
     "url": "https://mxtoolbox.com/",
     "description": "MX Toolbox is an online domain tool that helps diagnose email delivery issues. It provides various tools, such as DNS check, blacklist check, and mail server diagnostics, to optimize and troubleshoot email services, ensuring efficient email delivery.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:04:33.694+00",
-    "status": "scraped",
     "reference_url": "https://mxtoolbox.com/c/products/mxtoolboxapi"
   },
   {
@@ -1394,9 +1008,6 @@
     "name": "Capsule",
     "url": "https://capsulecrm.com",
     "description": "Capsule is a Customer Relationship Management Tool (CRM) that empowers you to independently or collaboratively build valuable connections with your contacts.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:02:33.546+00",
-    "status": "scraped",
     "reference_url": "https://developer.capsulecrm.com/"
   },
   {
@@ -1404,9 +1015,6 @@
     "name": "Instabot",
     "url": "https://www.instabot.io/",
     "description": "Instabot is a chatbot platform that allows users to create, customize and deploy chatbots across various communication channels, such as websites and messaging apps. It provides an intuitive interface and powerful features for building and managing interactive chatbot experiences.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:14:33.674+00",
-    "status": "scraped",
     "reference_url": "https://docs.instabot.io/docs/serverapi"
   },
   {
@@ -1414,9 +1022,6 @@
     "name": "Myphoner",
     "url": "https://www.myphoner.com",
     "description": "Myphoner is a sales CRM platform that helps businesses manage and streamline their outbound sales campaigns. With features such as lead management, call scheduling, and real-time analytics, Myphoner allows sales teams to improve efficiency, increase conversion rates, and track their progress effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.242+00",
-    "status": "scraped",
     "reference_url": "https://www.myphoner.com/docs/api/"
   },
   {
@@ -1424,9 +1029,6 @@
     "name": "Zoho Books",
     "url": "https://books.zoho.com",
     "description": "Zoho Books is an online accounting software tailored for small businesses and freelancers. It helps track expenses, send invoices, manage inventory, and generate financial reports. With its user-friendly interface and robust features, Zoho Books simplifies financial management and streamlines business operations effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:30:34.049+00",
-    "status": "scraped",
     "reference_url": "https://www.zoho.com/books/api/v3/"
   },
   {
@@ -1434,9 +1036,6 @@
     "name": "Plecto",
     "url": "https://www.plecto.com/",
     "description": "Plecto is a data visualization tool that helps businesses track and display their key performance indicators (KPIs) in real-time. It allows users to create customized dashboards and reports for better insights into their company's performance and to make data-driven decisions for improvement.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:54:33.581+00",
-    "status": "scraped",
     "reference_url": "https://docs.plecto.com/kb/en/api-developer-299244"
   },
   {
@@ -1444,9 +1043,6 @@
     "name": "SimpleTexting",
     "url": "https://simpletexting.com/",
     "description": "SimpleTexting is a user-friendly text marketing platform that allows businesses to send SMS messages, automate campaigns, and engage with customers. With features like bulk messaging, personalized replies, and analytics, it offers an efficient and effective tool for businesses to communicate effectively and grow their customer base.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:54:33.582+00",
-    "status": "scraped",
     "reference_url": "https://simpletexting.com/api/docs/"
   },
   {
@@ -1454,9 +1050,6 @@
     "name": "Switchboard",
     "url": "https://www.switchboard.ai/",
     "description": "Switchboard.ai is an AI-powered solution that automates image creation for digital marketers, creatives, and developers, offering adaptable templates and the ability to generate multiple images through a single API request.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:06:53.643+00",
-    "status": "scraped",
     "reference_url": "https://developers.switchboard.ai/"
   },
   {
@@ -1464,9 +1057,6 @@
     "name": "RD Station CRM",
     "url": "https://www.rdstation.com/es/crm/",
     "description": "rd-station-crm is a customer relationship management software developed by RD Station, designed to help businesses effectively manage their customer interactions and improve sales processes. It provides tools for organizing customer data, tracking leads, and optimizing communication for enhanced customer relationship management.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:10:33.963+00",
-    "status": "scraped",
     "reference_url": "https://developers.rdstation.com/docs/api-rest"
   },
   {
@@ -1474,9 +1064,6 @@
     "name": "AnnounceKit",
     "url": "https://announcekit.app/",
     "description": "AnnounceKit is a cloud-based platform that enables businesses to effectively communicate product updates and company news to their audience. It offers customizable widgets, notification banners, and in-app messaging, allowing organizations to engage and inform users about important announcements and improvements.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:12:34.981+00",
-    "status": "scraped",
     "reference_url": "https://announcekit.app/docs"
   },
   {
@@ -1484,9 +1071,6 @@
     "name": "PaperForm",
     "url": "https://paperform.co/",
     "description": "Paperform is an online form builder and data collection tool that allows users to create customized forms, surveys, and landing pages. With its intuitive interface and flexible design options, Paperform simplifies the process of collecting information, making it ideal for businesses, organizations, and individuals.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:45:29.161+00",
-    "status": "scraped",
     "reference_url": "https://paperform.readme.io/reference"
   },
   {
@@ -1494,9 +1078,6 @@
     "name": "WOXO",
     "url": "https://woxo.tech/",
     "description": "WOXO enables your team to work together on video editing and creation within a spreadsheet, resulting in the rapid generation of dynamic videos at scale in just a matter of minutes.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.045+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1504,9 +1085,6 @@
     "name": "OPN (formerly Omise)",
     "url": "https://www.opn.ooo/th-en/",
     "description": "Omise is a payment gateway provider that enables businesses to process online transactions in Southeast Asia. It offers secure and efficient payment solutions, including credit card processing and digital wallets. Omise aims to simplify the payment process and improve the overall customer experience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:56:32.059+00",
-    "status": "scraping",
     "reference_url": "https://docs.opn.ooo/"
   },
   {
@@ -1514,9 +1092,6 @@
     "name": "Accredible",
     "url": "https://www.accredible.com",
     "description": "Accredible stands as the foremost digital credentialing platform, facilitating users in securely issuing, managing, tracking, and verifying digital badges and certificates with increased speed and convenience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:16:34.705+00",
-    "status": "scraped",
     "reference_url": "https://accrediblecredentialapi.docs.apiary.io/"
   },
   {
@@ -1524,9 +1099,6 @@
     "name": "Route4Me",
     "url": "https://route4me.io/",
     "description": "Route4Me is a route optimization software that helps businesses streamline their delivery routes. It provides real-time tracking, efficient planning, and enables businesses to save time, reduce fuel costs, and improve customer satisfaction.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:52:34.629+00",
-    "status": "scraped",
     "reference_url": "https://route4me.io/docs/"
   },
   {
@@ -1534,9 +1106,6 @@
     "name": "Klaviyo",
     "url": "https://klaviyo.com",
     "description": "Klaviyo is an advanced email marketing and automation platform that helps businesses effectively engage with their customers. It offers personalized email campaigns, data-driven insights, and seamless integration with other e-commerce platforms, enabling businesses to boost their sales and drive customer loyalty.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:32:05.394+00",
-    "status": "scraped",
     "reference_url": "https://developers.klaviyo.com/en/reference/api_overview"
   },
   {
@@ -1544,9 +1113,6 @@
     "name": "Team Up",
     "url": "https://www.teamup.com/",
     "description": "Team-up refers to the collaborative effort of individuals working together towards a common goal. It involves combining unique skills and perspectives to enhance productivity and achieve results that would be difficult or impossible to attain individually.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:26:54.636+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.teamup.com/"
   },
   {
@@ -1554,9 +1120,6 @@
     "name": "Gumroad",
     "url": "https://gumroad.com/",
     "description": "Gumroad is an online platform that helps creators sell digital products directly to their audience. It enables artists, authors, musicians, and other creators to share and monetize their work easily, making the process of selling and buying digital products simple and convenient.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.245+00",
-    "status": "scraped",
     "reference_url": "https://app.gumroad.com/api"
   },
   {
@@ -1564,9 +1127,6 @@
     "name": "GoDaddy",
     "url": "https://www.godaddy.com/",
     "description": "GoDaddy is a well-known internet domain registrar and web hosting company. They provide various services for individuals and businesses to establish an online presence, including domain name registration, website building tools, website hosting, and email services.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:25:27.148+00",
-    "status": "scraped",
     "reference_url": "https://developer.godaddy.com/doc"
   },
   {
@@ -1574,9 +1134,6 @@
     "name": "Nusii Proposals",
     "url": "https://nusii.com/",
     "description": "Nusii-proposals is a proposal software that streamlines and simplifies the process of creating and sending professional-looking proposals to clients. It offers various templates, customization options, and features to ensure an efficient and visually appealing proposal creation experience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:32:05.397+00",
-    "status": "scraped",
     "reference_url": "https://developer.nusii.com/"
   },
   {
@@ -1584,9 +1141,6 @@
     "name": "Pinterest",
     "url": "https://www.pinterest.com/",
     "description": "Pinterest is a popular online platform that allows users to discover, collect, and share images and ideas through virtual pinboards. It serves as a visual search engine, inspiring and connecting people with similar interests like fashion, cooking, home decor, and more.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:33:45.391+00",
-    "status": "scraped",
     "reference_url": "https://developers.pinterest.com/docs/api/v5/"
   },
   {
@@ -1594,9 +1148,6 @@
     "name": "Marketplacer",
     "url": "https://marketplacer.com",
     "description": "Marketplacer is a platform that enables businesses to create, operate and grow complex online marketplaces. It provides customizable solutions and tools for sellers, buyers, and administrators to connect, trade, and manage various types of products and services within a digital marketplace ecosystem.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:30:14.289+00",
-    "status": "scraped",
     "reference_url": "https://api.marketplacer.com/docs/"
   },
   {
@@ -1604,9 +1155,6 @@
     "name": "Papyrs",
     "url": "https://papyrs.com",
     "description": "Papyrs is a cloud-based collaboration platform that allows users to create, manage, and share content within teams and organizations. It offers features like document collaboration, knowledge sharing, task management, and integrates with other tools to streamline workflows.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:30:14.298+00",
-    "status": "scraped",
     "reference_url": "https://papyrs.com/docs/api/"
   },
   {
@@ -1614,9 +1162,6 @@
     "name": "OCRSpace",
     "url": "https://ocr.space",
     "description": "OCR.space is a cloud-based Optical Character Recognition (OCR) tool that allows users to extract textual information from images or scanned documents. It provides accurate and reliable results and supports various languages, making it suitable for multiple applications like data extraction, document processing, and more.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:58:33.545+00",
-    "status": "scraped",
     "reference_url": "https://ocr.space/ocrapi"
   },
   {
@@ -1624,9 +1169,6 @@
     "name": "Envoy",
     "url": "https://envoy.com/",
     "description": "An envoy is a representative or messenger of a government or organization, typically tasked with carrying out diplomatic missions or negotiations. They serve as a link between different parties and help promote understanding and cooperation in international relations.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:22:33.64+00",
-    "status": "scraped",
     "reference_url": "https://developers.envoy.com/hub/reference/overview-1"
   },
   {
@@ -1634,9 +1176,6 @@
     "name": "Signaturit",
     "url": "https://www.signaturit.com/",
     "description": "Signaturit is a cloud-based electronic signature solution that helps individuals and businesses securely sign and manage documents online. Offering advanced features like authentication methods and real-time tracking, Signaturit streamlines the signing process, reducing administrative tasks and ensuring legally binding agreements.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:00:53.747+00",
-    "status": "scraped",
     "reference_url": "https://docs.signaturit.com/api/latest"
   },
   {
@@ -1644,9 +1183,6 @@
     "name": "Vimeo",
     "url": "https://vimeo.com",
     "description": "Vimeo is a video-sharing platform that allows users to upload, share, and watch high-quality videos. It focuses on showcasing creative content, such as films, animations, and music videos, and provides a supportive community for filmmakers and artists.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:43:29.921+00",
-    "status": "scraped",
     "reference_url": "https://developer.vimeo.com/api/reference"
   },
   {
@@ -1654,9 +1190,6 @@
     "name": "Airbrake",
     "url": "https://airbrake.io/",
     "description": "Airbrake is a software tool used for error tracking and monitoring in web and mobile applications. It helps developers identify and fix bugs, providing real-time insights and alerts to improve the overall quality and stability of the software.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:45:29.173+00",
-    "status": "scraped",
     "reference_url": "https://docs.airbrake.io/docs/devops-tools/api/"
   },
   {
@@ -1664,9 +1197,6 @@
     "name": "Brex",
     "url": "https://brex.com",
     "description": "Brex is a financial technology company that offers a corporate credit card specifically designed for startups and scale-ups. It provides these businesses with higher credit limits, simplified expense management, and tailored rewards, aiming to help them optimize their financial operations and growth.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:06:34.115+00",
-    "status": "scraped",
     "reference_url": "https://developer.brex.com/docs/quickstart/"
   },
   {
@@ -1674,9 +1204,6 @@
     "name": "Zonka Feedback",
     "url": "https://www.zonkafeedback.com",
     "description": "Zonka-feedback is a customer feedback and survey platform that helps businesses collect, analyze, and act on feedback to improve customer experience and drive growth. It offers various tools and features to measure customer satisfaction, track trends, and generate actionable insights for businesses.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:49:29.213+00",
-    "status": "scraped",
     "reference_url": "https://developers.zonkafeedback.com/docs/api-reference"
   },
   {
@@ -1684,9 +1211,6 @@
     "name": "Unbounce",
     "url": "https://unbounce.com/",
     "description": "Unbounce is a landing page builder and conversion platform that allows businesses to create and optimize landing pages without the need for coding or IT involvement. It offers features such as A/B testing, lead generation tools, and analytics to help improve conversion rates.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:04:33.689+00",
-    "status": "scraped",
     "reference_url": "https://developer.unbounce.com/api_reference/"
   },
   {
@@ -1694,9 +1218,6 @@
     "name": "Textgain",
     "url": "https://www.textgain.com/solutions/analytics-api/",
     "description": "Textgain is a software tool that uses Natural Language Processing (NLP) techniques to analyze and extract insights from text. It can process text data in various languages, allowing users to gain valuable information and intelligence from large volumes of text quickly and efficiently.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:08:34.254+00",
-    "status": "scraped",
     "reference_url": "https://hexdocs.pm/textgain/api-reference.html"
   },
   {
@@ -1704,9 +1225,6 @@
     "name": "Nightfall.ai",
     "url": "https://nightfall.ai/",
     "description": "Nightfall-ai is an advanced technology leveraging artificial intelligence to protect sensitive data by automatically discovering and redacting personally identifiable information (PII). It ensures privacy by applying machine learning algorithms to aid in the secure handling of information and prevent data breaches.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.041+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1714,9 +1232,6 @@
     "name": "Short.io",
     "url": "https://short.io",
     "description": "Short.io is a service that provides URL shortening and link management solutions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:24:35.906+00",
-    "status": "scraped",
     "reference_url": "https://developers.short.io/reference"
   },
   {
@@ -1724,9 +1239,6 @@
     "name": "Pivotal Tracker",
     "url": "https://www.pivotaltracker.com",
     "description": "Pivotal Tracker is a project management tool designed for agile software development teams. It helps teams plan, track, and collaborate on projects by providing a centralized platform to prioritize tasks, manage resources, and ensure transparency throughout the development process.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:45:29.166+00",
-    "status": "scraped",
     "reference_url": "https://www.pivotaltracker.com/help/api/rest/v5"
   },
   {
@@ -1734,9 +1246,6 @@
     "name": "RAWG Video Games Database",
     "url": "https://rawg.io/",
     "description": "RAWG is a video game database that provides information on various games, including platforms, release dates, ratings, and more. It is a comprehensive resource for gamers to explore and discover new games, track their gaming history, and connect with fellow gaming enthusiasts.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:37:52.629+00",
-    "status": "scraped",
     "reference_url": "https://api.rawg.io/docs/"
   },
   {
@@ -1744,9 +1253,6 @@
     "name": "Big Data Cloud",
     "url": "https://www.bigdatacloud.com/",
     "description": "Big data cloud refers to the storage and analysis of large volumes of complex data in a cloud computing environment. It allows organizations to leverage scalable resources and sophisticated tools for processing and deriving insights from massive datasets efficiently and cost-effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:25:27.151+00",
-    "status": "scraped",
     "reference_url": "https://www.bigdatacloud.com/free-api"
   },
   {
@@ -1754,9 +1260,6 @@
     "name": "Calendly",
     "url": "https://calendly.com",
     "description": "Calendly is an updated version of the popular scheduling software known as Calendly. It includes several new features and improvements over its predecessor, allowing users to easily manage and schedule appointments, meetings, and events with others.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:49:29.215+00",
-    "status": "scraped",
     "reference_url": "https://developer.calendly.com/api-docs/"
   },
   {
@@ -1764,9 +1267,6 @@
     "name": "Radar",
     "url": "https://radar.com/",
     "description": "Radar is a technology that uses electromagnetic waves to detect and track objects such as airplanes, ships, and even weather patterns. It works by emitting pulses of radio waves and analyzing their reflections to determine the range, speed, and direction of the objects.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.27+00",
-    "status": "scraped",
     "reference_url": "https://radar.com/documentation/api"
   },
   {
@@ -1774,9 +1274,6 @@
     "name": "SuiteDash",
     "url": "https://suitedash.com/",
     "description": "SuitDash is a versatile business automation software that streamlines operations and enhances collaboration within organizations. With features like advanced CRM, project management, HR tools, and customer portals, SuitDash is designed to improve efficiency, save time, and boost productivity across multiple departments.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.275+00",
-    "status": "scraped",
     "reference_url": "https://help.suitedash.com/article/550-secure-api"
   },
   {
@@ -1784,9 +1281,6 @@
     "name": "Handwrytten",
     "url": "https://www.handwrytten.com/",
     "description": "Handwrytten is a digital platform offering personalized handwritten notes and cards. Users can customize their messages, choose the handwriting style, and have the physical cards delivered via mail. It provides a modern and convenient way to send heartfelt greetings with a personal touch.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.276+00",
-    "status": "scraped",
     "reference_url": "https://app.swaggerhub.com/apis-docs/Handwrytten/handwrytten/"
   },
   {
@@ -1794,9 +1288,6 @@
     "name": "Landbot",
     "url": "https://landbot.io",
     "description": "Landbot is a user-friendly online chatbot builder that allows businesses to create interactive chatbots without coding knowledge. With its drag-and-drop interface and various integrations, Landbot helps automate customer support, lead generation, and other conversational tasks to enhance customer experience and efficiency.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:37:08.044+00",
-    "status": "scraped",
     "reference_url": "https://dev.landbot.io/docs/"
   },
   {
@@ -1804,9 +1295,6 @@
     "name": "DarkSky API",
     "url": "https://darksky.net/",
     "description": "The darksky-api is a weather data API that provides accurate and detailed information about current and forecasted weather conditions. It allows developers to access various weather parameters such as temperature, precipitation, wind speed, and more, making it a useful tool for weather-based applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:09.991+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1814,9 +1302,6 @@
     "name": "Botbaba",
     "url": "https://botbaba.io/",
     "description": "Botbaba is a technological assistant designed to perform automated tasks. It utilizes artificial intelligence and algorithms to provide efficient solutions to queries and perform various functions. It acts as a virtual bot, simplifying processes and enhancing productivity in both personal and professional settings.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:09.998+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1824,9 +1309,6 @@
     "name": "Occasion",
     "url": "https://www.getoccasion.com/",
     "description": "Occasion is an event booking platform designed to assist businesses in efficiently handling bookings through a calendar system and optimizing their marketing efforts.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.037+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1834,9 +1316,6 @@
     "name": "Microsoft Dynamics 365 Business Central API",
     "url": "https://dynamics.microsoft.com/en-us/business-central/overview/",
     "description": "The Dynamics 365 Business Central API is an interface that allows users to integrate and extend the functionalities of the Business Central software. It enables developers to connect external systems, retrieve, update, and manipulate data, and automate various processes within the application.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:40:34.458+00",
-    "status": "scraped",
     "reference_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/"
   },
   {
@@ -1844,9 +1323,6 @@
     "name": "RealPhoneValidation",
     "url": "https://realphonevalidation.com/",
     "description": "RealPhoneValidation is a software tool that verifies the authenticity of phone numbers by checking their validity and whether they are active or disconnected. It helps businesses in improving the quality of their contact information and reducing costs associated with incorrect or outdated numbers.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:04:33.692+00",
-    "status": "scraped",
     "reference_url": "https://realphonevalidation.com/api-documentation/"
   },
   {
@@ -1854,9 +1330,6 @@
     "name": "imgbb",
     "url": "https://imgbb.com",
     "description": "imgbb is an image hosting and sharing platform that allows users to upload, store, and share their images for free. It provides an easy-to-use interface, unlimited storage, and multiple sharing options, making it convenient for individuals and businesses alike.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:41:29.642+00",
-    "status": "scraped",
     "reference_url": "https://api.imgbb.com/"
   },
   {
@@ -1864,9 +1337,6 @@
     "name": "Focuster",
     "url": "https://www.focuster.com",
     "description": "Focuster is a productivity tool that helps individuals prioritize and manage their tasks more effectively. It uses a unique algorithm to schedule and organize tasks based on importance, allowing users to stay focused and accomplish more in less time.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.081+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1874,9 +1344,6 @@
     "name": "Gatekeeper",
     "url": "https://www.gatekeeperhq.com/",
     "description": "Gatekeeper serves as a platform for vendor and contract lifecycle management (VCLM), offering the advantage of enhanced visibility into your vendor and contract portfolios. It identifies opportunities for cost consolidation and provides insight into upcoming renewals.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:14:33.518+00",
-    "status": "scraped",
     "reference_url": "https://knowledge.gatekeeperhq.com/en/docs/configuring-api"
   },
   {
@@ -1884,9 +1351,6 @@
     "name": "TextMagic",
     "url": "https://www.textmagic.com/",
     "description": "TextMagic is a messaging platform that allows businesses to send SMS messages, voice messages, and emails to their customers. With features like bulk messaging, two-way communication, and integration capabilities, TextMagic simplifies and streamlines communication for organizations of all sizes.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:18:33.847+00",
-    "status": "scraped",
     "reference_url": "https://rest.textmagic.com/api/v2/doc/"
   },
   {
@@ -1894,9 +1358,6 @@
     "name": "Raven Tools",
     "url": "https://raventools.com",
     "description": "Raven Tools is a digital marketing platform that offers a suite of SEO, social media, content, and PPC tools. It helps businesses analyze and optimize their online presence, track rankings, manage campaigns, and generate reports to improve their online marketing strategies.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:28:34.672+00",
-    "status": "scraped",
     "reference_url": "https://api.raventools.com/docs/"
   },
   {
@@ -1904,9 +1365,6 @@
     "name": "Salesmsg",
     "url": "https://www.salesmessage.com/",
     "description": "Salesmsg is a platform that provides businesses with advanced SMS and text message marketing tools. It helps companies engage with their customers through personalized and automated messaging, driving sales and improving customer satisfaction.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:26:34.85+00",
-    "status": "scraped",
     "reference_url": "https://www.salesmessage.com/salesmessage-api"
   },
   {
@@ -1914,9 +1372,6 @@
     "name": "GetScreenshot",
     "url": "https://www.getscreenshotapi.com/",
     "description": "GetScreenshot is a robust, customizable website screenshot API that enables cost-effective large-scale screenshot capture operations, with a user-friendly approach suitable for both non-coders and those using minimal coding.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:44:53.634+00",
-    "status": "scraped",
     "reference_url": "https://restpack.io/screenshot/docs"
   },
   {
@@ -1924,9 +1379,6 @@
     "name": "Databox",
     "url": "https://databox.com/",
     "description": "Databox is a tool that allows users to collect, analyze, and visualize data from various sources in real-time. It provides a centralized hub for data management, ensuring easy access and making data-driven decision making more efficient and effective.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:42:53.95+00",
-    "status": "scraped",
     "reference_url": "https://developers.databox.com/"
   },
   {
@@ -1934,9 +1386,6 @@
     "name": "Mews",
     "url": "https://www.mews.com/",
     "description": "Mews is a property management system that streamlines and automates all hotel operations, from booking to check-out, front desk to revenue management, fostering a simpler, faster, and more interconnected experience for both hoteliers and guests.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:34:54.335+00",
-    "status": "scraped",
     "reference_url": "https://mews-systems.gitbook.io/connector-api/"
   },
   {
@@ -1944,9 +1393,6 @@
     "name": "Thrivecart",
     "url": "https://thrivecart.com",
     "description": "ThriveCart is a robust e-commerce platform that enables businesses to create and sell various digital and physical products and services. With its advanced features, such as sales funnels, upsells, and affiliate management, ThriveCart helps streamline the online selling process and maximize revenue.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:46:53.756+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.thrivecart.com/"
   },
   {
@@ -1954,9 +1400,6 @@
     "name": "Breezy HR",
     "url": "https://breezy.hr/",
     "description": "Breezy HR is a cloud-based HR software that helps streamline and automate the hiring process. It facilitates resume screening, candidate tracking, interview scheduling, and collaboration among team members. With its user-friendly interface, Breezy HR simplifies recruitment and empowers businesses to make better hiring decisions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:58:53.662+00",
-    "status": "scraped",
     "reference_url": "https://developer.breezy.hr/reference"
   },
   {
@@ -1964,9 +1407,6 @@
     "name": "Relink - URL Shortener",
     "url": "https://rel.ink/",
     "description": "relink-url-shortener is a tool that transforms long URLs into shorter ones to make them more convenient for sharing. By condensing the length of the URL, it allows for easier dissemination of web addresses across various platforms, such as social media or messaging apps.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-15 11:38:10.123+00",
-    "status": "missing_reference",
     "reference_url": ""
   },
   {
@@ -1974,9 +1414,6 @@
     "name": "LeadBoxer",
     "url": "https://www.leadboxer.com/",
     "description": "LeadBoxer is a powerful lead generation and lead scoring tool that uses machine learning algorithms to track, analyze, and predict website visitor behavior. It allows businesses to identify their most valuable leads, understand customer intent, and optimize marketing and sales efforts for better results.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:46:53.758+00",
-    "status": "scraped",
     "reference_url": "http://developers.leadboxer.com/"
   },
   {
@@ -1984,9 +1421,6 @@
     "name": "CalendarHero",
     "url": "https://calendarhero.com/",
     "description": "CalendarHero is a versatile scheduling tool designed to streamline and simplify your calendar management. It integrates seamlessly with your existing calendars, allowing you to efficiently schedule, reschedule, and manage meetings with ease. With its user-friendly interface, CalendarHero helps you save time and improve productivity.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:44:53.676+00",
-    "status": "scraped",
     "reference_url": "https://api.calendarhero.com/documentation"
   },
   {
@@ -1994,9 +1428,6 @@
     "name": "SmartReach",
     "url": "https://smartreach.io/",
     "description": "SmartReach is an innovative technology that allows businesses to effectively target and engage with their audience through personalized messaging across various communication channels. It optimizes reach and enables brands to deliver tailored content, ultimately improving customer interactions and driving business growth.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 18:44:53.679+00",
-    "status": "scraped",
     "reference_url": "https://smartreach.io/api_docs"
   },
   {
@@ -2004,9 +1435,6 @@
     "name": "Confluent",
     "url": "https://www.confluent.io/",
     "description": "Confluent is a cloud-native data-in-motion service developed by the original creators of Apache Kafka®.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:45:29.163+00",
-    "status": "scraped",
     "reference_url": "https://docs.confluent.io/platform/current/kafka-rest/index.html"
   },
   {
@@ -2014,9 +1442,6 @@
     "name": "Confluence",
     "url": "https://www.atlassian.com/software/confluence",
     "description": "Confluence refers to the merging or coming together of different factors, ideas, or events. It represents a point where various elements converge or unite, often leading to significant changes or outcomes due to their combined influence.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.273+00",
-    "status": "scraped",
     "reference_url": "https://developer.atlassian.com/cloud/confluence/rest/api-group-content/"
   },
   {
@@ -2024,9 +1449,6 @@
     "name": "Omniconvert",
     "url": "https://www.omniconvert.com/",
     "description": "Omniconvert is a conversion rate optimization software that helps businesses improve their website's performance. It offers various tools and features like A/B testing, surveys, advanced segmentation, and personalization to enhance customer experience and increase conversion rates.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:41:29.644+00",
-    "status": "scraped",
     "reference_url": "https://www.omniconvert.com/api/"
   },
   {
@@ -2034,9 +1456,6 @@
     "name": "Freshping",
     "url": "https://freshping.com",
     "description": "Freshping is a monitoring tool that checks the uptime and performance of websites and servers. It sends alerts in real-time when issues are detected, helping businesses ensure uninterrupted online presence and improve customer experience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:41:29.646+00",
-    "status": "scraped",
     "reference_url": "https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation"
   },
   {
@@ -2044,9 +1463,6 @@
     "name": "Qualaroo",
     "url": "https://qualaroo.com",
     "description": "Qualaroo is a customer feedback tool that helps businesses gather insights and understand user behavior on their websites. It allows businesses to design surveys, collect data, and make informed decisions to improve user experience and increase conversions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:41:29.647+00",
-    "status": "scraped",
     "reference_url": "https://help.qualaroo.com/hc/en-us/sections/200469946-API-Documentation"
   },
   {
@@ -2054,9 +1470,6 @@
     "name": "Chargify",
     "url": "https://chargify.com",
     "description": "Chargify is a subscription billing and revenue management platform that helps businesses automate the billing process, manage subscriptions, and deliver a seamless customer experience. It enables businesses to track and analyze recurring revenue, handle subscription changes, and implement flexible pricing models.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:43:29.919+00",
-    "status": "scraped",
     "reference_url": "https://chargify.api-docs.io/"
   },
   {
@@ -2064,9 +1477,6 @@
     "name": "What Converts",
     "url": "https://whatconverts.com",
     "description": "WhatConverts is a powerful tracking and lead generation software that helps businesses track and analyze their marketing efforts. It provides real-time insights, call tracking, form tracking, and reports, helping companies optimize their marketing campaigns and maximize their ROI.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:47:29.201+00",
-    "status": "scraped",
     "reference_url": "https://www.whatconverts.com/api/"
   },
   {
@@ -2074,9 +1484,6 @@
     "name": "Faros",
     "url": "https://www.faros.ai/",
     "description": "Faros allows you to create applications capable of comprehending and providing natural language responses to user inquiries, encompassing various uses from chatbots to virtual assistants and more.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:01:27.082+00",
-    "status": "scraped",
     "reference_url": "https://docs.faros.ai/reference"
   },
   {
@@ -2084,9 +1491,6 @@
     "name": "Rapid7 Insight Platform",
     "url": "https://www.rapid7.com/products/insight-platform/",
     "description": "Rapid7 Insight Platform is a comprehensive cybersecurity solution that offers advanced analytics, automation, and orchestration capabilities. It helps organizations detect and respond to threats faster, improve their security posture, and gain valuable insights into their network and cloud environments.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:45:29.165+00",
-    "status": "scraped",
     "reference_url": "https://help.rapid7.com/insightvm/en-us/api/index.html"
   },
   {
@@ -2094,9 +1498,6 @@
     "name": "College Football Data",
     "url": "https://collegefootballdata.com/",
     "description": "College-football-data is a comprehensive database that contains detailed statistics and information on college football games, teams, players, and conferences. It serves as a valuable resource for researchers, analysts, and fans who seek accurate and up-to-date data for various purposes related to college football.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:45:29.168+00",
-    "status": "scraped",
     "reference_url": "https://api.collegefootballdata.com/documentation"
   },
   {
@@ -2104,9 +1505,6 @@
     "name": "Mailify",
     "url": "https://www.mailify.com/",
     "description": "Mailify is an email marketing software that enables businesses to create and send professional email campaigns. It offers a range of features including customizable templates, list management, tracking tools, and automation. With Mailify, businesses can optimize their email marketing efforts and engage with their target audience effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:24:35.911+00",
-    "status": "scraped",
     "reference_url": "https://developers.mailify.com/"
   },
   {
@@ -2114,9 +1512,6 @@
     "name": "ISN",
     "url": "https://www.inspectionsupport.com/",
     "description": "ISN serves as software designed for home inspectors, streamlining various aspects of their operations. This includes simplifying scheduling, billing, report delivery, bookkeeping, and other related tasks.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 16:14:33.516+00",
-    "status": "scraped",
     "reference_url": "http://development.isnadmin.com.s3-website-us-west-2.amazonaws.com/"
   },
   {
@@ -2124,9 +1519,6 @@
     "name": "Sitecreator.io",
     "url": "https://sitecreator.io/",
     "description": "sitecreator-io is a website building platform that allows users to easily create and customize professional-looking websites without any coding knowledge. It offers a range of customizable templates, responsive design, and various features to make website creation fast and hassle-free.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:30:34.052+00",
-    "status": "scraped",
     "reference_url": "http://api-doc.sitecreator.io/"
   },
   {
@@ -2134,9 +1526,6 @@
     "name": "MoonClerk",
     "url": "https://www.moonclerk.com",
     "description": "MoonClerk is an online payment solution designed to help businesses and organizations securely accept recurring and one-time payments. It offers customizable payment forms, automated invoicing, and integrations with popular tools to streamline the payment process and improve financial management.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:11:31.976+00",
-    "status": "scraping",
     "reference_url": "https://github.com/moonclerk/developer"
   },
   {
@@ -2144,9 +1533,6 @@
     "name": "Mem",
     "url": "https://mem.ai/",
     "description": "In a digital context, \"mem\" is short for \"memory.\" It refers to the storage capacity of a computer system for storing and retrieving information. It plays a crucial role in the performance and functionality of various electronic devices, including computers, smartphones, and tablets.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.24+00",
-    "status": "scraped",
     "reference_url": "https://get.mem.ai/help-and-support/build-with-the-mem-api"
   },
   {
@@ -2154,9 +1540,6 @@
     "name": "Fitbit",
     "url": "https://fitbit.com",
     "description": "Fitbit is a popular brand of wearable fitness trackers that monitor physical activities, heart rate, sleep patterns, and provide data analysis through a mobile app. It helps users track their fitness goals, promote a healthy lifestyle, and make informed decisions about their overall well-being.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-11-20 21:07:16.412+00",
-    "status": "scraped",
     "reference_url": "https://dev.fitbit.com/build/reference/web-api/"
   },
   {
@@ -2164,9 +1547,6 @@
     "name": "Planyo Online Booking",
     "url": "https://www.planyo.com",
     "description": "Planyo-online-booking is a comprehensive reservation management system that provides businesses with a seamless online booking platform. It enables businesses to efficiently manage reservations, payments, and availability while offering customers a user-friendly and convenient way to book services or make appointments.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:25:27.149+00",
-    "status": "scraped",
     "reference_url": "https://www.planyo.com/api.php"
   },
   {
@@ -2174,9 +1554,6 @@
     "name": "SMS Magic",
     "url": "https://www.sms-magic.com/",
     "description": "SMS-Magic is a leading global provider of text messaging solutions, enabling businesses to engage with their customers through SMS. With advanced features like automation, analytics, and integration capabilities, SMS-Magic helps businesses enhance their communication and drive better results.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:01.595+00",
-    "status": "scraped",
     "reference_url": "https://api.sms-magic.com/doc/"
   },
   {
@@ -2184,9 +1561,6 @@
     "name": "ecwid",
     "url": "https://ecwid.com",
     "description": "Ecwid is an e-commerce platform that allows businesses to easily sell products online. It provides a range of features for creating and managing online stores, including customizable storefronts, payment integration, inventory management, and order tracking.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.259+00",
-    "status": "scraped",
     "reference_url": "https://api-docs.ecwid.com/reference/overview"
   },
   {
@@ -2194,9 +1568,6 @@
     "name": "Laposta",
     "url": "https://laposta.nl/",
     "description": "Laposta is a versatile email marketing platform that helps businesses reach their target audience effectively. With features like automation, segmentation, and customizable templates, it streamlines campaigns and enhances customer engagement. Its user-friendly interface simplifies the process and delivers results efficiently.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:25:27.145+00",
-    "status": "scraped",
     "reference_url": "https://api.laposta.nl/doc/"
   },
   {
@@ -2204,9 +1575,6 @@
     "name": "IdealSpot",
     "url": "https://www.idealspot.com/",
     "description": "Idealspot is a data-driven platform that provides insights and analysis on location intelligence. By utilizing cutting-edge technology, it helps businesses make informed decisions regarding site selection, expansion, and customer targeting, allowing them to optimize their operations and maximize their success in the market.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.236+00",
-    "status": "scraped",
     "reference_url": "https://idealspot.gitlab.io/developer-docs"
   },
   {
@@ -2214,9 +1582,6 @@
     "name": "Docparser",
     "url": "https://docparser.com",
     "description": "Docparser is a software tool that extracts and automates the processing of data from documents. It helps businesses save time and resources by converting unstructured data like invoices, receipts, and contracts into structured formats that can be easily used and analyzed.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.243+00",
-    "status": "scraped",
     "reference_url": "https://docparser.com/api/"
   },
   {
@@ -2224,9 +1589,6 @@
     "name": "Formstack Documents",
     "url": "https://www.formstack.com/products/documents",
     "description": "Formstack Documents is a versatile document generation software that automates the creation of personalized documents. With seamless integration with various apps and services, Formstack Documents streamlines document generation processes for businesses of all sizes.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:30:14.287+00",
-    "status": "scraped",
     "reference_url": "https://developers.formstack.com/reference"
   },
   {
@@ -2234,9 +1596,6 @@
     "name": "Canvas",
     "url": "https://www.instructure.com/canvas",
     "description": "Canvas is a versatile surface commonly used for painting and drawing. It is made from woven fabric, typically cotton or linen, and provides a stable and absorbent base for various artistic mediums.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:38:46.295+00",
-    "status": "scraped",
     "reference_url": "https://canvas.instructure.com/doc/api/"
   },
   {
@@ -2244,9 +1603,6 @@
     "name": "Totango",
     "url": "https://totango.com",
     "description": "Totango is a customer success platform that helps businesses understand and manage their customers' interactions and experiences. By providing actionable insights and analytics, Totango enables companies to increase customer satisfaction and retention, ultimately driving growth and revenue.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.239+00",
-    "status": "scraped",
     "reference_url": "https://support.totango.com/hc/en-us/articles/203639605-Totango-HTTP-API-"
   },
   {
@@ -2254,9 +1610,6 @@
     "name": "Blockchain Exchange",
     "url": "https://exchange.blockchain.com/",
     "description": "Blockchain-exchange is a decentralized digital platform that enables peer-to-peer transactions securely using blockchain technology. It eliminates the need for intermediaries like banks, providing increased transparency, security, and efficiency. It revolutionizes traditional financial systems by enabling direct and trustless transactions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.246+00",
-    "status": "scraped",
     "reference_url": "https://exchange.blockchain.com/api/"
   },
   {
@@ -2264,9 +1617,6 @@
     "name": "Kanban Tool",
     "url": "https://kanbantool.com",
     "description": "Kanban-tool is a project management software that facilitates visualizing workflow and managing tasks in real-time. It helps teams improve productivity and reduces bottlenecks by providing a clear overview of work progress and allowing for efficient collaboration and task allocation.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.247+00",
-    "status": "scraped",
     "reference_url": "https://kanbantool.com/developer/api-v3"
   },
   {
@@ -2274,9 +1624,6 @@
     "name": "Reply.io",
     "url": "https://reply.io/",
     "description": "Reply-IO is an AI-powered communication tool that enables businesses to automate and enhance their customer support via various channels, such as email and chat. It assists in managing and responding to large volumes of inquiries intelligently and efficiently, enhancing overall customer experience.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.248+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.reply.io/"
   },
   {
@@ -2284,9 +1631,6 @@
     "name": "Caspio",
     "url": "https://www.caspio.com/",
     "description": "Caspio is a low-code cloud platform that allows businesses to build custom database applications, web forms, and dashboards without coding. With its drag-and-drop interface and scalable infrastructure, Caspio enables organizations to streamline their operations and enhance productivity.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.255+00",
-    "status": "scraped",
     "reference_url": "https://howto.caspio.com/web-services-api/rest-api/"
   },
   {
@@ -2294,9 +1638,6 @@
     "name": "Product Hunt",
     "url": "https://www.producthunt.com/",
     "description": "Product Hunt is an online platform that allows users to discover and share new products and technologies. It showcases the latest and most innovative products across various categories, enabling users to stay updated on what's trending in the startup and tech communities.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.26+00",
-    "status": "scraped",
     "reference_url": "https://api.producthunt.com/v2/docs"
   },
   {
@@ -2304,9 +1645,6 @@
     "name": "Ritekit",
     "url": "https://ritekit.com",
     "description": "RiteKit is a social media optimization tool that offers various features like hashtag suggestions, image optimization, text analysis, and post scheduling, helping users to enhance the reach and engagement of their social media posts.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.263+00",
-    "status": "scraped",
     "reference_url": "https://ritekit.docs.apiary.io/#"
   },
   {
@@ -2314,9 +1652,6 @@
     "name": "Sifter",
     "url": "https://sifterapp.com",
     "description": "A sifter is a kitchen tool used to separate large particles from finer ones. It typically consists of a mesh or screen that allows smaller particles to pass through while retaining larger ones. Sifters are commonly used in baking to aerate and remove lumps from dry ingredients like flour.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.265+00",
-    "status": "scraped",
     "reference_url": "https://sifterapp.com/developer/documentation/"
   },
   {
@@ -2324,9 +1659,6 @@
     "name": "Snipcart",
     "url": "https://snipcart.com",
     "description": "Snipcart is an e-commerce platform that allows developers to easily add customizable shopping cart functionalities to websites using simple HTML and JavaScript, without the need for backend integration. It provides a seamless and hassle-free solution for building online stores.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.266+00",
-    "status": "scraped",
     "reference_url": "https://docs.snipcart.com/v3/api-reference/introduction"
   },
   {
@@ -2334,9 +1666,6 @@
     "name": "Missive",
     "url": "https://missiveapp.com/",
     "description": "A missive is a written message or letter, often of great importance or significance. It is a formal and deliberate form of communication, intended to convey information, make requests, or express thoughts and emotions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.267+00",
-    "status": "scraped",
     "reference_url": "https://missiveapp.com/help/api-documentation/overview"
   },
   {
@@ -2344,9 +1673,6 @@
     "name": "Reply",
     "url": "https://reply.com",
     "description": "It's a response or answer given in return to a message, question, or statement. It can be written or spoken, and it usually addresses or acknowledges the original communication. It allows for back-and-forth communication and facilitates conversation or discussion.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.268+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.reply.io/"
   },
   {
@@ -2354,9 +1680,6 @@
     "name": "Ably",
     "url": "https://ably.com",
     "description": "Ably is an adverb that means skillfully, competently, or proficiently. It implies the ability to perform a task or handle a situation with expertise and efficiency. It suggests a high level of skill or capability in the given context.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.271+00",
-    "status": "scraped",
     "reference_url": "https://ably.com/docs/api/rest-api"
   },
   {
@@ -2364,9 +1687,6 @@
     "name": "Mixpanel",
     "url": "https://mixpanel.com/",
     "description": "Mixpanel is a powerful analytics platform that helps businesses track and analyze user interactions with their websites and mobile applications. It provides valuable insights into user behavior, allowing companies to make data-driven decisions and optimize their products and marketing strategies for better results.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.272+00",
-    "status": "scraped",
     "reference_url": "https://developer.mixpanel.com/reference/overview"
   },
   {
@@ -2374,9 +1694,6 @@
     "name": "Nozbe Teams",
     "url": "https://nozbe.com/",
     "description": "Nozbe-Teams is a collaborative project management software that helps teams streamline their workflows and collaborate effectively. It offers features like task management, project tracking, communication tools, and integration with popular apps, all aimed at improving productivity and efficiency.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.277+00",
-    "status": "scraped",
     "reference_url": "https://api4.nozbe.com/v1/api"
   },
   {
@@ -2384,9 +1701,6 @@
     "name": "Formdesk",
     "url": "https://en.formdesk.com/",
     "description": "Formdesk is an online form builder that allows users to easily create and customize forms for various purposes. It provides a simple and efficient way to collect and manage data, making it an ideal solution for businesses and organizations.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:22:35.279+00",
-    "status": "scraped",
     "reference_url": "https://en.formdesk.com/features/webservice-api/"
   },
   {
@@ -2394,9 +1708,6 @@
     "name": "Spondyr",
     "url": "http://www.spondyr.io/",
     "description": "Spondyr is a fictional term with no specific meaning. It could be used as a made-up word for a character, place, or object in a creative work, allowing authors to give it any desired interpretation or significance within the context of their story.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:30:14.295+00",
-    "status": "scraped",
     "reference_url": "https://client.spondyr.io/#/Public/Public/Documentation"
   },
   {
@@ -2404,9 +1715,6 @@
     "name": "Unisender",
     "url": "https://www.unisender.com",
     "description": "Unisender is a marketing automation platform that offers email and SMS messaging services. It allows businesses to create, send, and track personalized campaigns, helping to reach a wider audience and engage customers effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:30:14.296+00",
-    "status": "scraped",
     "reference_url": "https://www.unisender.com/ru/support/api/common/bulk-email/"
   },
   {
@@ -2414,9 +1722,6 @@
     "name": "ChargeOver",
     "url": "https://chargeover.com/",
     "description": "ChargeOver is a comprehensive billing automation software that helps businesses streamline their invoicing and payment processes. By automating tasks like sending invoices, tracking payments, and managing subscriptions, ChargeOver enables businesses to focus on growth and customer satisfaction.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:33:45.394+00",
-    "status": "scraped",
     "reference_url": "https://developer.chargeover.com/"
   },
   {
@@ -2424,9 +1729,6 @@
     "name": "ApiFlash",
     "url": "https://apiflash.com",
     "description": "Apiflash is an online API service that allows users to capture web page screenshots in high quality using a simple API call. It provides developers with a convenient way to automate and customize web page screenshot functionality within their applications.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:33:45.397+00",
-    "status": "scraped",
     "reference_url": "https://apiflash.com/documentation"
   },
   {
@@ -2434,9 +1736,6 @@
     "name": "Snapdocs",
     "url": "https://www.snapdocs.com/",
     "description": "Snapdocs is a digital platform designed to streamline the mortgage closing process. It connects lenders, title companies, and signing agents in a centralized system, allowing for efficient document management, communication, and collaboration, ultimately making the closing process faster and more convenient.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:06:34.113+00",
-    "status": "scraped",
     "reference_url": "https://snapdocs-closings.readme.io/"
   },
   {
@@ -2444,9 +1743,6 @@
     "name": "Survicate",
     "url": "https://survicate.com/",
     "description": "Survicate is a customer feedback platform that helps businesses gather and analyze feedback through various channels, including surveys, feedback widgets, and website analytics. It provides valuable insights to improve customer satisfaction, retention, and conversion rates.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:38:46.296+00",
-    "status": "scraped",
     "reference_url": "https://developers.survicate.com/"
   },
   {
@@ -2454,9 +1750,6 @@
     "name": "Cloud Convert",
     "url": "https://cloudconvert.com",
     "description": "CloudConvert is an online file conversion service that allows users to convert files from one format to another. It supports a wide range of file types, including documents, images, audio, video, and more, making it a versatile tool for users with diverse conversion needs.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:34:13.231+00",
-    "status": "scraped",
     "reference_url": "https://cloudconvert.com/api/v2"
   },
   {
@@ -2464,9 +1757,6 @@
     "name": "Marketing Master IO",
     "url": "https://marketingmaster.io",
     "description": "Marketing Master is a comprehensive online platform aimed at helping businesses optimize their marketing strategies. With a range of tools and resources, it equips users with valuable insights and techniques to enhance their marketing efforts and achieve greater success in the digital arena.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:35:51.884+00",
-    "status": "scraped",
     "reference_url": "https://developers.marketingmaster.io/"
   },
   {
@@ -2474,9 +1764,6 @@
     "name": "Karbon",
     "url": "https://karbonhq.com/",
     "description": "Karbon is an innovative material known for its exceptional strength and lightweight properties. It is widely used in industries such as aerospace, automotive, and sports, offering improved performance, durability, and fuel efficiency. Its applications range from aircraft components to bicycle frames and tennis rackets.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:36:28.585+00",
-    "status": "scraped",
     "reference_url": "https://developers.karbonhq.com/api/"
   },
   {
@@ -2484,9 +1771,6 @@
     "name": "Workboard",
     "url": "https://www.workboard.com/",
     "description": "Workboard is a software tool designed to help teams manage and prioritize their work efficiently. It provides a centralized platform for task tracking, performance measurement, and goal setting. Workboard streamlines communication and collaboration, enabling teams to stay organized and achieve their objectives effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:38:46.298+00",
-    "status": "scraped",
     "reference_url": "https://apidocs.myworkboard.com/"
   },
   {
@@ -2494,9 +1778,6 @@
     "name": "Giphy",
     "url": "https://giphy.com",
     "description": "Giphy is a popular online platform that allows users to search for and share animated GIFs. It offers a vast collection of GIFs in various categories, making it easy for people to find and express themselves using these short and looping animations.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:39:52.389+00",
-    "status": "scraped",
     "reference_url": "https://developers.giphy.com/docs/api/"
   },
   {
@@ -2504,9 +1785,6 @@
     "name": "Trengo",
     "url": "https://trengo.com",
     "description": "Trengo is a platform that combines multiple communication channels into one unified inbox. It helps businesses manage their customer interactions more efficiently, allowing them to provide quick and seamless support across channels like email, social media, chat, and phone calls.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:51:24.613+00",
-    "status": "scraped",
     "reference_url": "https://developers.trengo.com/docs"
   },
   {
@@ -2514,9 +1792,6 @@
     "name": "ChartMogul",
     "url": "https://chartmogul.comd",
     "description": "ChartMogul is a data analytics platform that helps businesses measure, understand, and grow their subscription revenue. It provides real-time insights and visualizations, allowing companies to track key metrics, analyze customer behavior, and make data-driven decisions to drive their subscription business forward.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:45:00.929+00",
-    "status": "scraped",
     "reference_url": "https://dev.chartmogul.com/reference"
   },
   {
@@ -2524,9 +1799,6 @@
     "name": "CleverReach",
     "url": "https://www.cleverreach.com/",
     "description": "CleverReach is a software company known for its email marketing platform. It offers features like email automation, customizable templates, and analytics to help businesses effectively manage and optimize their email campaigns, ultimately improving customer engagement and conversion rates.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:45:00.931+00",
-    "status": "scraped",
     "reference_url": "https://rest.cleverreach.com/howto/"
   },
   {
@@ -2534,9 +1806,6 @@
     "name": "SportsData",
     "url": "https://sportsdata.io/",
     "description": "Sports data refers to statistics and information collected during various sports events, such as scores, player and team performance, injuries, and other relevant details. This data is used for analysis, predictions, and insights by sports organizations, media, bettors, and fans.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:45:00.932+00",
-    "status": "scraped",
     "reference_url": "https://sportsdata.io/developers/api-documentation"
   },
   {
@@ -2544,9 +1813,6 @@
     "name": "iAuditor by SafetyCulture",
     "url": "https://safetyculture.com/iauditor/",
     "description": "iAuditor by SafetyCulture is a digital inspection app that allows businesses to conduct audits and inspections efficiently. It enables users to easily create checklists, collect data, and generate reports, improving safety and compliance procedures for organizations across various industries.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:45:00.936+00",
-    "status": "scraped",
     "reference_url": "https://developer.safetyculture.com/reference"
   },
   {
@@ -2554,9 +1820,6 @@
     "name": "Studio by AI21 Labs",
     "url": "https://www.ai21.com/studio",
     "description": "Studio by AI21 Labs is an innovative platform where AI-powered tools are developed to enhance creativity in writing. It provides various writing utilities and models that assist users in generating high-quality content by using the power of artificial intelligence, allowing for improved productivity and efficiency.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:45:00.942+00",
-    "status": "scraped",
     "reference_url": "https://docs.ai21.com/reference"
   },
   {
@@ -2564,9 +1827,6 @@
     "name": "Linkish",
     "url": "https://linkish.io",
     "description": "Linkish refers to the quality or nature of something resembling a link. It is often associated with items, styles, or behaviors that are resemblant to or evoke the concept of connecting or linking things together.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:45:00.943+00",
-    "status": "scraped",
     "reference_url": "https://help.linkish.io/api-docs"
   },
   {
@@ -2574,9 +1834,6 @@
     "name": "BunnyCDN",
     "url": "https://bunnycdn.com",
     "description": "BunnyCDN is a content delivery network (CDN) that helps accelerate the delivery of web and video content to users worldwide. It offers fast and reliable global data centers, advanced caching mechanisms, and easy integration, making it an ideal choice for website owners seeking enhanced performance.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:45:00.944+00",
-    "status": "scraped",
     "reference_url": "https://docs.bunny.net/reference/bunnynet-api-overview"
   },
   {
@@ -2584,9 +1841,6 @@
     "name": "Let's Enhance",
     "url": "https://letsenhance.io",
     "description": "Let's Enhance is an online platform that uses AI technology to enhance and upscale low-resolution images, improving their clarity, details, and overall quality. It offers a simple and convenient way to enhance images for various purposes, such as printing, digital art, or personal use.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:51:24.42+00",
-    "status": "scraped",
     "reference_url": "https://docs.claid.ai/"
   },
   {
@@ -2594,9 +1848,6 @@
     "name": "Smaily",
     "url": "https://smaily.com",
     "description": "Smaily is a platform that offers email marketing solutions. It provides users with a comprehensive set of tools to create, send, and analyze their email campaigns. With features like email templates, automation, and analytics, Smaily helps businesses optimize their communication and reach their target audience effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:51:24.558+00",
-    "status": "scraped",
     "reference_url": "https://smaily.com/help/api/"
   },
   {
@@ -2604,9 +1855,6 @@
     "name": "Miestro",
     "url": "https://miestro.com/",
     "description": "Miestro offers a user-friendly, customizable platform that empowers you to harness the capabilities of intelligent AI tools for creating a vibrant community, courses, and video programs, all without the complexities of dealing with technical challenges.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 14:51:24.623+00",
-    "status": "scraped",
     "reference_url": "http://developers.maestro.io/api/rest"
   },
   {
@@ -2614,9 +1862,6 @@
     "name": "Amilia",
     "url": "https://www.amilia.com/",
     "description": "Amilia is an intelligent virtual assistant designed to assist users with various tasks. It leverages AI and natural language processing to provide personalized and efficient support. From answering questions to organizing schedules, Amilia aims to enhance productivity and streamline daily activities.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:05:00.911+00",
-    "status": "scraped",
     "reference_url": "https://app.amilia.com/apidocs/"
   },
   {
@@ -2624,9 +1869,6 @@
     "name": "Helcim",
     "url": "https://www.helcim.com/",
     "description": "Helcim is a Canadian-based fintech company that provides payment processing and merchant services to businesses of all sizes. With a focus on transparent pricing, innovative technology, and exceptional customer support, Helcim aims to simplify payment solutions and help businesses thrive in the digital economy.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:05:01.256+00",
-    "status": "scraped",
     "reference_url": "https://devdocs.helcim.com/reference"
   },
   {
@@ -2634,9 +1876,6 @@
     "name": "Mav",
     "url": "https://hiremav.com/",
     "description": "Mav stands for \"maverick,\" referring to someone who is independent, unconventional, or rebellious. It encompasses traits like defiance, innovation, and nonconformity. A mav is willing to challenge the status quo and think outside the box, often leading to groundbreaking ideas or actions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:05:01.261+00",
-    "status": "scraped",
     "reference_url": "https://documenter.getpostman.com/view/11606268/TzseGkXr"
   },
   {
@@ -2644,9 +1883,6 @@
     "name": "Firmao",
     "url": "https://firmao.net/",
     "description": "Firmao is an online platform that provides a range of business services, including digital marketing, web development, and graphic design. It aims to help businesses establish a strong online presence and effectively reach their target audience through professional and quality solutions.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:05:01.263+00",
-    "status": "scraped",
     "reference_url": "https://firmao.net/api.php"
   },
   {
@@ -2654,9 +1890,6 @@
     "name": "SimpleHash",
     "url": "https://simplehash.com/",
     "description": "Simplehash is a basic procedure that converts data into a fixed-size string of characters. It uses a hashing algorithm to ensure uniqueness and is commonly employed in computer programming to efficiently store and retrieve information.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 21:52:15.908+00",
-    "status": "scraped",
     "reference_url": "https://docs.simplehash.com/reference"
   },
   {
@@ -2664,9 +1897,6 @@
     "name": "Easyship",
     "url": "https://www.easyship.com/",
     "description": "Easyship is a comprehensive shipping platform that simplifies the process of sending packages internationally. By providing access to multiple couriers worldwide, automated customs documentation, and competitive rates, it enables businesses of all sizes to streamline their shipping operations efficiently and cost-effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:48:30.192+00",
-    "status": "scraped",
     "reference_url": "https://developers.easyship.com/reference"
   },
   {
@@ -2674,9 +1904,6 @@
     "name": "Oxylabs",
     "url": "https://oxylabs.io",
     "description": "Oxylabs is a leading provider of proxy and data scraping solutions. They offer a wide range of residential and data center proxies, enabling businesses to gather and analyze data from the web efficiently and effectively.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 20:48:30.768+00",
-    "status": "scraped",
     "reference_url": "https://developers.oxylabs.io/"
   },
   {
@@ -2684,9 +1911,6 @@
     "name": "Writesonic",
     "url": "https://writesonic.com/",
     "description": "Writesonic is an AI-powered writing tool that enables users to generate high-quality content in a matter of seconds. It uses advanced algorithms to assist with blog posts, Facebook ads, product descriptions, and more, making it a valuable resource for anyone in need of efficient and effective writing assistance.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:48:32.88+00",
-    "status": "scraped",
     "reference_url": "https://docs.writesonic.com/reference"
   },
   {
@@ -2694,9 +1918,6 @@
     "name": "Bitrix24",
     "url": "https://bitrix24.com",
     "description": "Bitrix24 is a comprehensive business collaboration and communication platform. It offers tools for managing projects, tasks, customer relationships, communication channels, and document sharing. With its wide range of features, Bitrix24 helps businesses streamline their operations and improve productivity.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:18:50.388+00",
-    "status": "scraped",
     "reference_url": "https://training.bitrix24.com/rest_help/"
   },
   {
@@ -2704,9 +1925,6 @@
     "name": "Dynatrace API",
     "url": "https://www.dynatrace.com/",
     "description": "Dynatrace-api is a powerful tool that allows developers and system administrators to interact with the Dynatrace platform programmatically. It provides access to a wide range of functionalities, enabling users to automate tasks, retrieve monitoring data, and integrate Dynatrace with other tools and systems efficiently.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:24:58.457+00",
-    "status": "scraped",
     "reference_url": "https://docs.dynatrace.com/docs/dynatrace-api/environment-api"
   },
   {
@@ -2714,9 +1932,6 @@
     "name": "Teachable",
     "url": "https://teachable.com/",
     "description": "Teachable is a platform designed for creators seeking to enhance the effectiveness of their businesses by offering courses, coaching, and digital downloads, all without the need for coding skills.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:48:33.427+00",
-    "status": "scraped",
     "reference_url": "https://docs.teachable.com/reference"
   },
   {
@@ -2724,9 +1939,6 @@
     "name": "Gender API",
     "url": "https://gender-api.com/",
     "description": "Gender-API is an online service that uses machine learning algorithms to predict the gender of a person based on their name. It provides a simple and efficient way to determine the gender of individuals for various purposes, such as marketing, demographics, or personalization.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:48:33.492+00",
-    "status": "scraped",
     "reference_url": "https://gender-api.com/en/api-docs"
   },
   {
@@ -2734,9 +1946,6 @@
     "name": "Klazify",
     "url": "https://www.klazify.com/",
     "description": "Klazify is a digital platform designed to simplify and categorize various forms of information. It efficiently organizes content such as articles, blog posts, and documents, helping users to easily navigate and find the information they need.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 15:48:33.507+00",
-    "status": "scraped",
     "reference_url": "https://www.klazify.com/category#docs"
   },
   {
@@ -2744,9 +1953,6 @@
     "name": "UserVoice",
     "url": "https://uservoice.com",
     "description": "UserVoice is a customer feedback platform that helps businesses collect and prioritize customer ideas, suggestions, and support requests. It provides companies with a centralized system to engage with their users, gather valuable insights, and enhance their products or services based on customer feedback.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 19:18:51.612+00",
-    "status": "scraped",
     "reference_url": "https://developer.uservoice.com/docs/api/v2/reference"
   },
   {
@@ -2754,9 +1960,6 @@
     "name": "DigiCert",
     "url": "https://www.digicert.com",
     "description": "DigiCert is a leading provider of digital certificates and SSL/TLS security solutions, ensuring secure communication and encryption for websites. With a vast range of services, they help businesses and organizations authenticate and protect their identities and data online.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:25:00.903+00",
-    "status": "scraped",
     "reference_url": "https://dev.digicert.com/"
   },
   {
@@ -2764,9 +1967,6 @@
     "name": "Active Trail",
     "url": "https://activetrail.com/",
     "description": "Active-trail refers to the specific path or route that a user follows while navigating through a website or application. It visually highlights the currently active page or section, providing clear indications of the user's location within the overall structure of the interface.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:25:01.808+00",
-    "status": "scraped",
     "reference_url": "https://webapi.mymarketing.co.il/api/docs/"
   },
   {
@@ -2774,9 +1974,6 @@
     "name": "Foursquare",
     "url": "https://foursquare.com/",
     "description": "Foursquare is a location-based social media platform that allows users to check-in at different venues, discover new places, and share recommendations with friends. It also offers personalized recommendations based on users' preferences and allows businesses to engage with customers.",
-    "created_at": "2023-11-15 09:10:09.822961+00",
-    "updated_at": "2023-12-14 17:25:01.81+00",
-    "status": "scraped",
     "reference_url": "https://location.foursquare.com/developer/reference"
   }
 ]
