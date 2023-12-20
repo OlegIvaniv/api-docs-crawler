@@ -65,22 +65,18 @@ async function parserSinglePageSections({ page, selectors }: SinglePageFlatSecti
     if (!selectors?.delimiter || !selectors?.name) {
         throw new Error('Delimiter and name is required for singlePageSections');
     } 
-    let endpoints: Endpoint[] = [];
+    let endpoints: Partial<Endpoint>[] = [];
     const htmlSections = await page.locator(selectors?.delimiter).all();
     for (const delimiterElement of htmlSections) {
-        await delimiterElement.evaluate((element) => element.scrollIntoView());
         const rawHtml = await delimiterElement.evaluate((element) => element.outerHTML);
-        const parsedHtml = getReadableHtml(rawHtml);
-        const markdown = NodeHtmlMarkdown.translate(rawHtml);
-        const name = await delimiterElement.evaluate((element, selectors) => element.querySelector(selectors?.name ?? '')?.textContent ?? '', selectors);
+        const name = await delimiterElement
+            .evaluate(
+                (element, selectors) => element.querySelector(selectors?.name ?? '')?.textContent ?? '', selectors
+            ) ?? '';
 
-        console.log('After name text', name)
-        
         endpoints.push({
             name,
-            parsedHtml,
-            // rawHtml,
-            markdown,
+            rawHtml,
         })
     }
 
@@ -126,91 +122,33 @@ async function parserSinglePageFlatSection({ page, selectors }: SinglePageFlatSe
             let htmlContent = delimiterElement.outerHTML;
             let nextElement = delimiterElement.nextElementSibling;
 
-            // While there is a next element and it's not the next h2
+            // While there is a next element and it's not the next delimiter
             while (nextElement && nextElement !== nextDelimiter) {
                 htmlContent += nextElement.outerHTML;
                 nextElement = nextElement.nextElementSibling;
             }
-            // nextElement?.scrollIntoView();
-            // Add the html content to the sections array
+
+
             return htmlContent;
         });
 
         return endpointPromises;
     });
 
-    const completeEndpoints = await Promise.all(htmlSections.map(async (rawHtml: string) => {
-        const doc = new JSDOM(rawHtml);
-        
-        // const markdown = NodeHtmlMarkdown.translate(rawHtml);
-        // const parsedHtml = getReadableHtml(rawHtml);
-        const name = doc.window.document.querySelector(selectors?.name ?? '')?.textContent ?? '';
-        // console.log("🚀 ~ file: main.ts:133 ~ completeEndpoints ~ name:", name)
+    const completeEndpoints = await Promise.all(
+        htmlSections.map(async (rawHtml: string) => {
+            const doc = new JSDOM(rawHtml);
+            const name = doc.window.document.querySelector(selectors?.name ?? '')?.textContent ?? '';
 
-        return {
-            name,
-            // parsedHtml,
-            rawHtml,
-            // markdown,
-        }
-    }));
+            return {
+                name,
+                rawHtml,
+            }
+        })
+    );
 
     return completeEndpoints;
 }
-
-// async function parserSinglePageFlatSection({ page, selectors }: SinglePageFlatSectionParserArgs): Promise<Endpoint[]> {
-//     if (!selectors?.delimiter || !selectors?.name) {
-//         throw new Error('Delimiter and name are required for parserSinglePageFlatSection');
-//     }
-
-//     const endpoints: Endpoint[] = [];
-//     const delimiterLocator = page.locator(selectors?.delimiter);
-//     const sectionCount = await delimiterLocator.count();
-
-//     for (let i = 0; i < sectionCount; i++) {
-//         // Define the range for this section
-//         const startDelimiter = delimiterLocator.nth(i);
-//         const endDelimiter = i + 1 < sectionCount ? delimiterLocator.nth(i + 1) : null;
-//         // console.log('Processing before scroll')
-//         // Scroll the start delimiter into view
-//         await startDelimiter.evaluate((element) => element.scrollIntoView());
-//         // console.log('Processing after scroll')
-//         // await startDelimiter.scrollIntoViewIfNeeded();
-
-//         // Extract the HTML content for this section
-//         const htmlContent = await page.evaluate(({ start, end }) => {
-//             let content = start?.outerHTML;
-//             let element = start?.nextElementSibling;
-//             while (element && (!end || element !== end)) {
-//                 content += element.outerHTML;
-//                 element = element.nextElementSibling;
-//             }
-//             return content ?? '';
-//         }, {
-//             start: await startDelimiter.elementHandle(),
-//             end: endDelimiter ? await endDelimiter.elementHandle() : null
-//         });
-
-
-//         const doc = new JSDOM(htmlContent);
-//         const markdown = NodeHtmlMarkdown.translate(htmlContent);
-//         const parsedHtml = getReadableHtml(htmlContent);
-//         const name = doc.window.document.querySelector(selectors?.name ?? '')?.textContent ?? '';
-//         console.log("🚀 ~ file: main.ts:142 ~ parserSinglePageFlatSection ~ name:", name)
-
-
-//         // Push the endpoint data to the array
-//         endpoints.push({
-//             name: name.trim(),
-//             rawHtml: htmlContent,
-//             markdown,
-//             parsedHtml,
-//         });
-//     }
-
-//     return endpoints
-// }
-
 
 async function parserIndividualPage({ page }: { page: Page, log: Log; }) {
     const rawHtml = await page.$eval('body', (body) => body.innerHTML)
@@ -233,7 +171,6 @@ async function parserIndividualPage({ page }: { page: Page, log: Log; }) {
     return [{
         name: h1 ?? title,
         parsedHtml,
-        // rawHtml,
         markdown
     }];
 }
@@ -247,6 +184,13 @@ function parseRawHtml(rawHtml: string) {
         markdown,
     }
 }
+
+function isStableForLastNScrolls(history: number[], n: number) {
+    if (history.length < n) return false;
+    const recentHistory = history.slice(-n);
+    return new Set(recentHistory).size === 1;
+}
+
 async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: ScraperConfig, dataset: Dataset) {
     const crawler = new PlaywrightCrawler({
         requestHandlerTimeoutSecs: 360,
@@ -273,50 +217,46 @@ async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: S
             log.info(`Title of ${request.loadedUrl} is '${title}'`);
 
             let endpoints: Endpoint[] = [];
-            if (type === 'singlePage' && selectors) {                
+            if (['singlePage', 'singlePageSections'].includes(type) && selectors) {               
+                const parsingFunction = type === 'singlePage' ? parserSinglePageFlatSection : parserSinglePageSections; 
                 const endpointsSet: Map<string, Partial<Endpoint>> = new Map();
-                
                 
                 // Scroll in intervals of 1/4 of the window height
                 const windowHeight = await page.evaluate(() => window.innerHeight);
-                let offsetHeight = await page.evaluate(() => document.body.offsetHeight);
+                let scrollHeight = await page.evaluate(() => document.body.scrollHeight);
                 let scrollAmount = windowHeight * 1;
                 let scrollPosition = 0;
+                const scrollSizeHistory: number[] = [];
                 const startTime = Date.now();
-                while (scrollPosition < offsetHeight) {
+                while (scrollPosition < scrollHeight) {
                     await page.evaluate((scrollAmount) => window.scrollBy(0, scrollAmount), scrollAmount);
-                    // await page.waitForTimeout(100);
-                    const scrollEndpoints = await parserSinglePageFlatSection({ page, selectors, log });
-                    scrollEndpoints.forEach(newEndpoint => endpointsSet.set(newEndpoint.name, newEndpoint));
+                    const scrollEndpoints = await parsingFunction({ page, selectors, log });
+
+                    if (scrollEndpoints.filter(e => !e.name || e.name === '').length > 0) {
+                        console.log('Missing endpoint name', scrollEndpoints.filter(e => !e.name || e.name === ''))
+                    }
+                    scrollEndpoints.forEach(newEndpoint => endpointsSet.set(newEndpoint.name ?? '', newEndpoint));
                     
-                    scrollPosition += scrollAmount;
-                    offsetHeight = await page.evaluate(() => document.body.offsetHeight);
-                    // scrollAmount = offsetHeight * 0.1;
-                    // Log scroll position in %
-                    log.info(`Scroll position: ${Math.round(scrollPosition / offsetHeight * 100)}%`);
-                    log.info(`Items: ${endpointsSet.size}`);
+                    const endpointsCount = endpointsSet.size;
+                    scrollSizeHistory.push(endpointsCount);
+
+                    const isStable = isStableForLastNScrolls(scrollSizeHistory, 2);
+                    const isLastScroll = scrollHeight - scrollPosition < scrollAmount;
+
+                    if(isStable && !isLastScroll) {
+                        log.info(`Scrolling is stable, next scroll will be the last one`);
+                    }
+
+                    scrollPosition =  isStable && !isLastScroll
+                        ? scrollHeight - 1
+                        : scrollPosition + scrollAmount;
+                    scrollHeight = await page.evaluate(() => document.body.scrollHeight);
+
+                    log.info(`Scroll position: ${Math.round(scrollPosition / scrollHeight * 100)}%, ${endpointsCount} items parsed`);
                 }
                 const endScrollingTime = Date.now();
                 log.info(`Scrolling took ${endScrollingTime - startTime}ms`);
-                // await page.waitForTimeout(3000);
-                // await page.keyboard.press('End');
-                // await page.waitForTimeout(3000);
-                // await page.keyboard.press('Home');
-                // await infiniteScroll({ 
-                //     scrollDownAndUp: true,
-                //     timeoutSecs: 10,
-                //     stopScrollCallback: async () => {
-                //         log.info('Scrolling')
-                //         const scrollEndpoints = await parserSinglePageFlatSection({ page, selectors, log });
-                //         scrollEndpoints.forEach(newEndpoint => endpointsSet.set(newEndpoint.name, newEndpoint));
-                //         log.info(`Items: ${endpointsSet.size}%`);
-                //     }
-                // })
-                // await page.waitForTimeout(1000);
-                // 344 endpoints
-                // const scrollEndpoints = await parserSinglePageFlatSection({ page, selectors, log });
-                //     scrollEndpoints.forEach(newEndpoint => endpointsSet.set(newEndpoint.name, newEndpoint));
-                // scrollEndpoints.forEach(newEndpoint => endpointsSet.add(newEndpoint));
+
                 console.log('Endpoints', endpointsSet.size)
                 const partialEndpoints = [...endpointsSet.values()];
                 const parsedEndpoints: Endpoint[] = partialEndpoints
@@ -329,11 +269,12 @@ async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: S
                 const endParsingTime = Date.now();
                 log.info(`Parsing took ${endParsingTime - endScrollingTime}ms`);
                 endpoints.push(...parsedEndpoints);
-            } else if (type === 'singlePageSections' && selectors) {
-                endpoints = await parserSinglePageSections({ page, selectors, log });
-            } else if (type === 'individualPages') {
+            } 
+            
+            if (type === 'individualPages') {
                 endpoints = await parserIndividualPage({ page, log });
-            } else if (type === 'swagger') {
+            }
+            if (type === 'swagger') {
                 endpoints = await parseSwagger({ page });
             }
 
@@ -379,7 +320,7 @@ async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: S
         // Comment this option to scrape the full website.
         // maxRequestsPerCrawl: 20,
         // Uncomment this option to see the browser window.
-        headless: false,
+        // headless: false,
         
     });
     // Define the starting URL
@@ -389,7 +330,7 @@ async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: S
 
 async function crawlServices() {
     for (const service of Services) {
-        if (service.service_id !== 193 || !service.type) continue;
+        if (service.service_id !== 152 || !service.type) continue;
         const serviceData = {
             id: service.service_id ?? uuid(),
             name: service.name,
@@ -412,7 +353,7 @@ async function crawlServices() {
     }
 }
 await Actor.init();
-const input = await Actor.getInput() as ActorInputSchema;
+// const input = await Actor.getInput() as ActorInputSchema;
 // if (input) {
 //     console.log("🚀 ~ file: main.ts:419 ~ input:", input)
 //     const payload: ScraperConfig = {
