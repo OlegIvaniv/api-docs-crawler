@@ -400,9 +400,6 @@ async function scrape({ type, url, globs, selectors, globs_exclude, timeout }: S
             }            
         },
         maxConcurrency: 3,
-        // Comment this option to scrape the full website.
-        // maxRequestsPerCrawl: 20,
-        // Uncomment this option to see the browser window.
         // headless: false,
         
     });
@@ -443,7 +440,6 @@ await Actor.init();
 await crawlServices(Number(serviceId));
 // const input = await Actor.getInput() as ActorInputSchema;
 // if (input) {
-//     console.log("🚀 ~ file: main.ts:419 ~ input:", input)
 //     const payload: ScraperConfig = {
 //         url: input?.startUrl,
 //         type: input?.docsType,
@@ -464,10 +460,3 @@ await crawlServices(Number(serviceId));
 // }
 
 await Actor.exit();
-
-
-// const singlePageFlat = [
-//     'https://developers.clicksend.com/docs/rest/v3',
-
-// ]
-// Add first URL to the queue and start the crawl.

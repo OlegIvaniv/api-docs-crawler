@@ -38,7 +38,7 @@
     "url": "https://invoiced.com",
     "description": "An invoice is a document sent by a seller to a buyer, detailing the goods or services provided and the amount owed. It includes information such as the date of transaction, item description, quantity, price, and any applicable taxes or discounts. Payment terms and methods are also typically mentioned.",
     "reference_url": "https://developer.invoiced.com/api",
-    "type": "singlePage",
+    "type": "singlePageSections",
     "selectors": {
       "name": "h2",
       "delimiter": "h2[id]"
